@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stock Signals</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--tx:#1b1f24;--mu:#667085;--bd:#e3e6ea;--up:#0a7d3b;--dn:#c0262d;--ac:#2f5fd0;--wa:#a86400}
+@media(prefers-color-scheme:dark){:root{--bg:#14161a;--card:#1d2026;--tx:#e8eaed;--mu:#98a0ab;--bd:#2c3038;--up:#4cc27f;--dn:#ff6b6b;--ac:#7ea2ff;--wa:#f0b453}}
+*{box-sizing:border-box}body{margin:0 auto;background:var(--bg);color:var(--tx);font:15px/1.45 system-ui,sans-serif;padding:12px 16px;max-width:780px}
+h1{font-size:20px;margin:8px 0 2px}.mu{color:var(--mu);font-size:13px}
+.ctl{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px;margin:12px 0;display:grid;gap:10px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+input,select,button{font:inherit;color:var(--tx);background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:7px 10px}
+input[type=number]{width:110px}input[type=search]{flex:1;min-width:120px}
+button.chip{cursor:pointer;padding:4px 10px;border-radius:99px}button.chip.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;margin-bottom:8px;overflow:hidden}
+.top{display:flex;justify-content:space-between;gap:8px;padding:12px;cursor:pointer}
+.tk{font-weight:700;font-size:17px}.up{color:var(--up)}.dn{color:var(--dn)}
+.sig{display:inline-block;font-size:12px;font-weight:700;border-radius:6px;padding:2px 8px;color:#fff}
+.sig.buy{background:var(--up)}.sig.sell{background:var(--dn)}.sig.hold{background:var(--ac)}.sig.wait{background:var(--mu)}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}.tag{font-size:12px;color:var(--mu);background:var(--bg);border-radius:6px;padding:2px 6px}
+.tag.b{color:var(--wa)}.tag.v{color:var(--up)}
+.det{display:none;padding:0 12px 12px;border-top:1px solid var(--bd)}.card.open .det{display:block}
+svg{width:100%;height:130px;margin-top:10px}a{color:var(--ac)}ul{padding-left:18px;margin:6px 0}
+table{border-collapse:collapse;width:100%;font-size:13px;margin:8px 0}td,th{border-bottom:1px solid var(--bd);padding:4px 6px;text-align:right}td:first-child,th:first-child{text-align:left}
+h3{font-size:14px;margin:12px 0 4px}.foot{font-size:12px;color:var(--mu);margin:16px 0}
+</style></head><body>
+<h1>Stock signals</h1>
+<div class="mu" id="stamp">Loading…</div>
+<div class="ctl">
+  <div class="row" id="sigs"></div>
+  <div class="row"><label>Max price $ <input id="max" type="number" min="0" step="1" placeholder="any"></label><span id="chips" class="row"></span></div>
+  <div class="row"><input id="q" type="search" placeholder="Search ticker">
+    <select id="sort"><option value="score">Sort: Best overall</option><option value="ret1">Today %</option><option value="price">Price (low first)</option><option value="edge">Backtest edge</option></select></div>
+  <div class="row"><label><input type="checkbox" id="val"> History-tested only</label><label><input type="checkbox" id="qual"> Good fundamentals only</label></div>
+</div>
+<div class="ctl"><b>My positions</b><div class="mu">Saved in this browser only.</div>
+<div class="row"><input id="pt" placeholder="Ticker" size="7"><input id="pb" type="number" step="0.01" placeholder="Buy price"><button id="padd" class="chip">Add</button></div><div id="plist"></div></div>
+<div id="list"></div>
+<div class="foot">Signals come from rules tested on past prices. Past results don't guarantee future ones. Research ideas only, not financial advice.</div>
+<script>
+const $=id=>document.getElementById(id);let D=[],SIG="all";
+const f=(n,d=1)=>n==null?"–":(+n).toFixed(d);
+const pct=n=>n==null?"–":`<span class="${n>=0?'up':'dn'}">${n>=0?'+':''}${f(n)}%</span>`;
+const LBL={buy:"BUY",sell:"SELL",hold:"HOLD",wait:"WAIT"};
+function mk(t,c,h){const e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e}
+function txt(t,c,s){const e=mk(t,c);e.textContent=s;return e}
+function chart(s){const c=s.closes,W=600,H=130,lo=Math.min(...c),hi=Math.max(...c),r=hi-lo||1;
+ const y=v=>(H-14-(v-lo)/r*(H-28)).toFixed(1);
+ const pts=c.map((v,i)=>`${(i/(c.length-1)*W).toFixed(1)},${y(v)}`).join(" ");
+ const mark=(d,col)=>{const i=s.dates.indexOf(d);return i<0?"":`<circle cx="${(i/(c.length-1)*W).toFixed(1)}" cy="${y(c[i])}" r="5" fill="${col}"/>`};
+ const m=s.recent_trades.map(t=>mark(t.buy,"var(--up)")+mark(t.sell,"var(--dn)")).join("");
+ return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none"><polyline fill="none" stroke="var(--ac)" stroke-width="2" points="${pts}"/>${m}
+ <text x="4" y="12" font-size="11" fill="var(--mu)">$${f(hi,2)}</text><text x="4" y="${H-3}" font-size="11" fill="var(--mu)">$${f(lo,2)}</text></svg>
+ <div class="mu">Last ${c.length} trading days · green dot = past buy signal, red = past sell</div>`}
+function btTable(s){const r=(lab,p)=>{const a=p.strategy,h=p.hold;return `<tr><td>${lab}</td><td>${pct(a.ret)}</td><td>${pct(h.ret)}</td><td>${f(a.maxdd,0)}% / ${f(h.maxdd,0)}%</td><td>${a.trades}</td><td>${a.win==null?"–":f(a.win,0)+"%"}</td></tr>`};
+ return `<div style="overflow-x:auto"><table><tr><th>Period</th><th>Rule</th><th>Buy &amp; hold</th><th>Worst drop (rule/hold)</th><th>Trades</th><th>Win rate</th></tr>${r("Tuning (~3.5 yrs)",s.train)}${r("Unseen test (~1.5 yrs)",s.test)}</table></div>`}
+function render(){
+ const mx=parseFloat($("max").value),q=$("q").value.trim().toUpperCase(),k=$("sort").value;
+ let a=D.filter(s=>(SIG=="all"||s.signal==SIG)&&(isNaN(mx)||s.price<=mx)&&(!q||s.ticker.includes(q))&&(!$("val").checked||s.validated)&&(!$("qual").checked||s.quality));
+ const key=s=>k=="edge"?s.test.strategy.ret-s.test.hold.ret:s[k];
+ a.sort((x,y)=>k=="price"?x.price-y.price:(key(y)??-1e9)-(key(x)??-1e9));
+ const L=$("list");L.innerHTML="";
+ if(!a.length){L.appendChild(txt("div","mu","No stocks match these filters. If you filtered to BUY, nothing passed every check today, and waiting is a valid choice."));return}
+ a.forEach(s=>{const c=mk("div","card"),t=mk("div","top"),left=mk("div");
+  left.innerHTML=`<span class="tk"></span> $${f(s.price,2)} <div class="mu">Today ${pct(s.ret1)} · 5-day ${pct(s.ret5)}</div>`;
+  left.querySelector(".tk").textContent=s.ticker;left.querySelector(".mu").prepend(txt("span","",(s.name||"")+" · "));
+  const tg=mk("div","tags");if(s.validated)tg.appendChild(txt("span","tag v","✓ history-tested"));
+  s.reasons.filter(r=>!r.startsWith("rule beat")).forEach(r=>tg.appendChild(txt("span","tag",r)));
+  s.blockers.forEach(r=>tg.appendChild(txt("span","tag b","⚠ "+r)));left.appendChild(tg);
+  const right=mk("div","",`<span class="sig ${s.signal}">${LBL[s.signal]}</span>`);right.style.textAlign="right";
+  t.append(left,right);
+  const d=mk("div","det");d.innerHTML=chart(s);
+  const lv=mk("p");lv.textContent=s.signal=="sell"?`Exit level broken: price is below the 50-day average ($${f(s.sma50,2)}) or the trailing exit ($${f(s.trail,2)}).`
+   :`If buying near $${f(s.price,2)}: stop-loss ~$${f(s.stop,2)} (${f((s.stop/s.price-1)*100)}%), then sell if it closes below the trailing exit (currently $${f(s.trail,2)}) or the 50-day average ($${f(s.sma50,2)}). Reference target ~$${f(s.target,2)}.`;d.appendChild(lv);
+  d.appendChild(txt("h3","","How this exact buy/sell rule did on "+s.ticker));d.insertAdjacentHTML("beforeend",btTable(s));
+  if(s.recent_trades.length){d.appendChild(txt("h3","","Recent signals from the rule"));const ul=mk("ul");s.recent_trades.slice().reverse().forEach(x=>{const li=mk("li");li.innerHTML=`${x.buy} → ${x.sell}: ${pct(x.ret)}`;ul.appendChild(li)});d.appendChild(ul)}
+  d.appendChild(txt("h3","","Business check"));d.appendChild(txt("div","mu",(s.quality==null?"Unknown: ":s.quality?"Passes: ":"Fails: ")+s.quality_notes.join(" · ")+(s.earnings?` · next earnings ${s.earnings}`:"")));
+  d.appendChild(txt("div","mu",`RSI ${f(s.rsi,0)} · volume ${f(s.vol_ratio)}x normal · news tone ${f(s.sent,2)}`));
+  if(s.heads.length){d.appendChild(txt("h3","","News"));const ul=mk("ul");s.heads.forEach(n=>{const li=mk("li"),a=txt("a","",n.title);if(/^https?:/.test(n.link)){a.href=n.link;a.target="_blank";a.rel="noopener"}li.appendChild(a);ul.appendChild(li)});d.appendChild(ul)}
+  t.onclick=()=>c.classList.toggle("open");c.append(t,d);L.appendChild(c)})}
+let P=[];try{P=JSON.parse(localStorage.getItem("pos")||"[]")}catch(e){}
+function savePos(){try{localStorage.setItem("pos",JSON.stringify(P))}catch(e){}}
+function renderPos(){const b=$("plist");b.innerHTML="";P.forEach((p,i)=>{const s=D.find(x=>x.ticker==p.t),r=mk("div","row");
+ if(!s)r.appendChild(txt("span","",p.t+": not in today's scan (add it to HOLDINGS)"));
+ else{const lv=Math.max(p.b-2*s.atr,s.trail),bad=s.signal=="sell"||s.price<lv;
+  r.innerHTML=`<b></b> bought $${f(p.b,2)}, now $${f(s.price,2)} ${pct((s.price/p.b-1)*100)} · `;r.querySelector("b").textContent=p.t;
+  r.appendChild(txt("span",bad?"dn":"up",bad?"SELL signal":`Hold: exit if below $${f(lv,2)}`))}
+ const x=mk("button","chip","Remove");x.onclick=()=>{P.splice(i,1);savePos();renderPos()};r.appendChild(x);b.appendChild(r)})}
+$("padd").onclick=()=>{const t=$("pt").value.trim().toUpperCase(),b=parseFloat($("pb").value);if(t&&b>0){P.push({t,b});savePos();$("pt").value=$("pb").value="";renderPos()}};
+function sigBtns(){const b=$("sigs");b.innerHTML="";["all","buy","hold","sell","wait"].forEach(k=>{const n=k=="all"?D.length:D.filter(s=>s.signal==k).length;
+ const e=txt("button","chip"+(SIG==k?" on":""),(k=="all"?"All":LBL[k])+` (${n})`);e.onclick=()=>{SIG=k;sigBtns();render()};b.appendChild(e)})}
+const PR=[10,25,50,100,""];PR.forEach(v=>{const b=txt("button","chip",v?"Under $"+v:"Any");b.onclick=()=>{$("max").value=v;render();sync()};$("chips").appendChild(b)});
+function sync(){[...$("chips").children].forEach((b,i)=>b.classList.toggle("on",String($("max").value)==String(PR[i])))}
+["max","q","sort","val","qual"].forEach(i=>$(i).addEventListener("input",()=>{render();sync()}));sync();
+fetch("data.json?"+Date.now()).then(r=>r.json()).then(j=>{D=j.stocks;
+ $("stamp").textContent="Updated "+new Date(j.generated).toLocaleString()+" · "+D.length+" stocks scanned";sigBtns();render();renderPos()})
+ .catch(()=>{$("stamp").textContent="No data yet. Run the bot once (Actions tab > Run workflow), wait 2 to 5 minutes, then reload."});
+</script></body></html>
