@@ -59,7 +59,7 @@ VALIDATION = "none"       # per-stock history test: "none", "loose" or "strict"
 
 # Prediction model
 USE_MODEL = True          # require the model to agree before a BUY
-MODEL_MIN_TIER = "medium" # "high" = fewest, strongest BUYs; "medium"; "low" = model ignored
+MODEL_MIN_TIER = "high"   # "high" = model's top 10% (only level that tested better), "medium" = top 30%, "low" = ignore model
 HORIZON = 20              # the model predicts the next 20 trading days (~1 month)
 
 STOP_ATR = 2.0            # stop-loss = buy price - 2 x normal daily swing
@@ -347,33 +347,17 @@ def fit_model(rows):
 
 
 def calibrate(model, rows):
-    """Bucket held-out predictions into 10 groups and record what actually happened."""
+    """Rank stocks against each other each day (held-out months), split into 10 groups,
+    and record what actually happened to each group over the next month."""
     rows = rows[rows["y_ex"].notna()].copy()
     rows["p"] = model.predict_proba(rows[FEATS])[:, 1]
-    edges = np.unique(np.quantile(rows["p"], np.linspace(0, 1, 11)))
-    rows["b"] = np.clip(np.searchsorted(edges, rows["p"], side="right") - 1, 0, len(edges) - 2)
-    out = []
-    for b, g in rows.groupby("b"):
-        out.append(dict(lo=float(edges[b]), hi=float(edges[b + 1]), n=int(len(g)),
-                        hit=float((g["y_ex"] > 0).mean()), avg_ex=float(g["y_ex"].mean())))
-    return out
+    rows["b"] = np.minimum((rows.groupby("date")["p"].rank(pct=True) * 10).astype(int), 9)
+    return [dict(group=int(b) + 1, n=int(len(g)), hit=float((g["y_ex"] > 0).mean()),
+                 avg_ex=float(g["y_ex"].mean())) for b, g in rows.groupby("b")]
 
 
-def tier_of(cal_bucket):
-    if cal_bucket is None:
-        return "low"
-    if cal_bucket["hit"] >= 0.56 and cal_bucket["avg_ex"] > 0.005:
-        return "high"
-    if cal_bucket["hit"] >= 0.52 and cal_bucket["avg_ex"] > 0:
-        return "medium"
-    return "low"
-
-
-def bucket_for(p, cal):
-    for c in cal:
-        if c["lo"] <= p <= c["hi"]:
-            return c
-    return cal[0] if p < cal[0]["lo"] else cal[-1]
+def tier_of(rank_pct):
+    return "high" if rank_pct >= 90 else ("medium" if rank_pct >= 70 else "low")
 
 
 def score_today(panel):
@@ -391,10 +375,12 @@ def score_today(panel):
     latest["p"] = model.predict_proba(latest[FEATS])[:, 1]
     latest["p_rank"] = latest["p"].rank(pct=True)
     out = {}
+    by_group = {c["group"]: c for c in cal}
     for _, r in latest.iterrows():
-        b = bucket_for(float(r["p"]), cal)
-        out[r["ticker"]] = dict(prob=round(float(r["p"]) * 100, 1), rank=round(float(r["p_rank"]) * 100),
-                                tier=tier_of(b), hit=round(b["hit"] * 100, 1),
+        rank = float(r["p_rank"]) * 100
+        b = by_group.get(min(int(rank / 10), 9) + 1, {"hit": 0.5, "avg_ex": 0.0})
+        out[r["ticker"]] = dict(prob=round(float(r["p"]) * 100, 1), rank=round(rank),
+                                tier=tier_of(rank), hit=round(b["hit"] * 100, 1),
                                 avg_ex=round(b["avg_ex"] * 100, 2))
     info = dict(trained_until=str(pd.Timestamp(embargo).date()),
                 checked_on=f"{pd.Timestamp(calib_start).date()} to {pd.Timestamp(last_lab).date()}",
@@ -585,9 +571,9 @@ def evaluate(t, meta, ind, bt, model=None, f=None, earn=None, sent=0.0, heads=No
     if setup:
         reasons.append("uptrend setup today")
     if model and tier != "low":
-        reasons.append(f"model: {tier} confidence")
+        reasons.append(f"model: top {max(1, 101 - model['rank'])}% today")
     if setup and USE_MODEL and model and TIER_RANK.get(tier, 0) < TIER_RANK[MODEL_MIN_TIER]:
-        blockers.append(f"model not convinced ({tier} confidence)")
+        blockers.append(f"model rank not high enough (top {max(1, 101 - model['rank'])}%)")
     if setup and USE_MODEL and not model:
         warnings.append("model unavailable today: rule only")
     if not bt["validated"]:
@@ -685,7 +671,7 @@ def run_scan(live):
     ranked = sorted(prelim, key=lambda t: prelim[t]["score"], reverse=True)
     cands = [t for t in ranked if prelim[t]["reasons"] and prelim[t]["signal"] != "sell"
              and "uptrend setup today" in prelim[t]["reasons"] and t not in HOLDINGS
-             and not any(b.startswith("model not") for b in prelim[t]["blockers"])]
+             and not any(b.startswith("model rank") for b in prelim[t]["blockers"])]
     must = [t for t in ranked if t in HOLDINGS] + cands[:SHORTLIST * 2]
     shortlist = must + [t for t in ranked if t not in must][:max(0, SHORTLIST - len(must))]
     print(f"shortlist: {len(shortlist)} stocks")
@@ -847,7 +833,7 @@ def message(session, market_ok, new, cancelled, sells, status, book, n):
         lines.append(f"{len(new)} new BUY{'s' if len(new) > 1 else ''}{tag}:")
         for r in new[:TOP_N]:
             m = r.get("model") or {}
-            conf = f", {m['tier']} confidence ({m['hit']:.0f}% of similar setups beat the market)" if m else ""
+            conf = f", model rank top {max(1, 101 - m['rank'])}% (past picks like this: avg {m['avg_ex']:+.1f}% vs market next month)" if m else ""
             lines.append(f"{r['ticker']} ${r['price']:.2f}, stop ${r['stop']:.2f}{conf}")
     if status:
         lines.append("Today's BUYs: " + ", ".join(f"{t} ${p:.2f} ({s:+.1f}%)" for t, p, s in status[:6]))

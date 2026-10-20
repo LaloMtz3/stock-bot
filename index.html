@@ -35,7 +35,7 @@ h3{font-size:14px;margin:12px 0 4px}.foot{font-size:12px;color:var(--mu);margin:
 <div><span class="sig hold">UPTREND</span> Not a buy today. If you already own it, the rules say keep holding.</div>
 <div><span class="sig wait">WAIT</span> Nothing to do. No setup, or a check failed (shown in orange).</div>
 <div><span class="sig sell">SELL / AVOID</span> The uptrend is broken. Sell if you own it; don't buy.</div>
-<div><b>Confidence</b> comes from the prediction model: of past situations that looked like this one (in months the model was not trained on), how often the stock beat the S&P 500 over the next month.</div>
+<div><b>Model rank</b>: each day the prediction model ranks every stock. A BUY needs a top-10% rank, the only level that improved results in testing. The edge is small: even top-ranked stocks beat the market less than half the time; they just do a bit better on average.</div>
 <div>The 6am scan uses yesterday's closing prices. The 9am, 12pm and 2pm scans use live prices (about 15 minutes delayed).</div></div></details>
 <div class="ctl">
   <div class="row" id="sigs"></div>
@@ -82,7 +82,7 @@ function render(){
   s.blockers.forEach(r=>tg.appendChild(txt("span","tag b","⚠ "+r)));left.appendChild(tg);
   (s.events||[]).forEach(e=>tg.appendChild(txt("span","tag "+(e.bad?"b":"g"),(e.bad?"⚠ ":"• ")+e.event+" ("+e.source+")")));
   (s.warnings||[]).forEach(w=>tg.appendChild(txt("span","tag b","⚠ "+w)));
-  if(s.model){const m=s.model,cf=mk("div","conf");cf.innerHTML=`Model: <b></b> · ${m.hit}% of similar setups beat the market next month (avg ${m.avg_ex>=0?"+":""}${m.avg_ex}% vs market)`;cf.querySelector("b").textContent=m.tier+" confidence";left.appendChild(cf)}
+  if(s.model){const m=s.model,cf=mk("div","conf");cf.innerHTML=`Model rank: <b></b> of ~900 today · in months it wasn't trained on, stocks ranked like this beat the S&P 500 ${m.hit}% of the time (avg ${m.avg_ex>=0?"+":""}${m.avg_ex}% vs market next month)`;cf.querySelector("b").textContent="top "+Math.max(1,101-m.rank)+"%";left.appendChild(cf)}
   if(s.signal_price){const sp=mk("div","conf");sp.innerHTML=s.cancelled?`<span class="dn">BUY cancelled</span> after signal at $${f(s.signal_price,2)} (${s.signal_time})`:`Signal at $${f(s.signal_price,2)} (${s.signal_time}) · since then ${pct(s.since)}`;left.appendChild(sp)}
   const lab=s.signal=="buy"&&s.signal_time&&s.signal_time!="morning"?"BUY · midday":LBL[s.signal];
   const right=mk("div","",`<span class="sig ${s.signal}">${lab}</span>`);right.style.textAlign="right";
