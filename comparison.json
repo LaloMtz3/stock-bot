@@ -1,80 +1,167 @@
-[
- {
-  "version": "A. Old rules (v4)",
-  "stocks_allowed": 198,
-  "trades": 1378,
-  "trades_per_month": 76.8,
-  "win_rate": 24.0,
-  "avg_trade": 0.66,
-  "avg_win": 14.82,
-  "avg_loss": -3.82,
-  "profit_factor": 1.23,
-  "median_days": 7,
-  "buy_hold_same_stocks": 69.1
- },
- {
-  "version": "B. Old entry, no per-stock test",
-  "stocks_allowed": 898,
-  "trades": 6643,
-  "trades_per_month": 370.0,
-  "win_rate": 24.5,
-  "avg_trade": 0.73,
-  "avg_win": 13.02,
-  "avg_loss": -3.26,
-  "profit_factor": 1.3,
-  "median_days": 7,
-  "buy_hold_same_stocks": 59.1
- },
- {
-  "version": "C. Calmer entry (RSI<60, not stretched)",
-  "stocks_allowed": 898,
-  "trades": 5578,
-  "trades_per_month": 310.7,
-  "win_rate": 23.5,
-  "avg_trade": 0.46,
-  "avg_win": 12.2,
-  "avg_loss": -3.15,
-  "profit_factor": 1.19,
-  "median_days": 7,
-  "buy_hold_same_stocks": 59.1
- },
- {
-  "version": "D. Calmer entry + market filter",
-  "stocks_allowed": 898,
-  "trades": 5370,
-  "trades_per_month": 299.1,
-  "win_rate": 22.8,
-  "avg_trade": 0.18,
-  "avg_win": 11.64,
-  "avg_loss": -3.2,
-  "profit_factor": 1.07,
-  "median_days": 7,
-  "buy_hold_same_stocks": 59.1
- },
- {
-  "version": "E. D + loose per-stock test",
-  "stocks_allowed": 409,
-  "trades": 2488,
-  "trades_per_month": 138.6,
-  "win_rate": 23.0,
-  "avg_trade": 0.29,
-  "avg_win": 12.13,
-  "avg_loss": -3.26,
-  "profit_factor": 1.12,
-  "median_days": 7,
-  "buy_hold_same_stocks": 60.4
- },
- {
-  "version": "F. D + strict per-stock test",
-  "stocks_allowed": 182,
-  "trades": 1034,
-  "trades_per_month": 57.6,
-  "win_rate": 24.3,
-  "avg_trade": 0.84,
-  "avg_win": 14.49,
-  "avg_loss": -3.53,
-  "profit_factor": 1.32,
-  "median_days": 7,
-  "buy_hold_same_stocks": 85.4
+{
+ "rules": [
+  {
+   "version": "A. Old rules (v4)",
+   "stocks_allowed": 198,
+   "trades": 1378,
+   "trades_per_month": 76.8,
+   "win_rate": 24.0,
+   "avg_trade": 0.66,
+   "avg_win": 14.82,
+   "avg_loss": -3.82,
+   "profit_factor": 1.23,
+   "median_days": 7
+  },
+  {
+   "version": "B. Rule only (current rule)",
+   "stocks_allowed": 898,
+   "trades": 6644,
+   "trades_per_month": 370.1,
+   "win_rate": 24.5,
+   "avg_trade": 0.72,
+   "avg_win": 13.02,
+   "avg_loss": -3.26,
+   "profit_factor": 1.29,
+   "median_days": 7
+  },
+  {
+   "version": "C. Calmer entry (RSI<60, not stretched)",
+   "stocks_allowed": 898,
+   "trades": 5579,
+   "trades_per_month": 310.8,
+   "win_rate": 23.5,
+   "avg_trade": 0.45,
+   "avg_win": 12.2,
+   "avg_loss": -3.15,
+   "profit_factor": 1.19,
+   "median_days": 7
+  },
+  {
+   "version": "D. Calmer entry + market filter",
+   "stocks_allowed": 898,
+   "trades": 5371,
+   "trades_per_month": 299.2,
+   "win_rate": 22.8,
+   "avg_trade": 0.18,
+   "avg_win": 11.64,
+   "avg_loss": -3.2,
+   "profit_factor": 1.07,
+   "median_days": 7
+  },
+  {
+   "version": "F. D + strict per-stock test",
+   "stocks_allowed": 182,
+   "trades": 1035,
+   "trades_per_month": 57.7,
+   "win_rate": 24.3,
+   "avg_trade": 0.84,
+   "avg_win": 14.49,
+   "avg_loss": -3.53,
+   "profit_factor": 1.31,
+   "median_days": 7
+  },
+  {
+   "version": "G. Rule + model (top half)",
+   "stocks_allowed": null,
+   "trades": 3025,
+   "trades_per_month": 168.5,
+   "win_rate": 25.4,
+   "avg_trade": 0.7,
+   "avg_win": 12.35,
+   "avg_loss": -3.25,
+   "profit_factor": 1.29,
+   "median_days": 7
+  },
+  {
+   "version": "H. Rule + model (top 30%)",
+   "stocks_allowed": null,
+   "trades": 1645,
+   "trades_per_month": 91.6,
+   "win_rate": 26.2,
+   "avg_trade": 0.72,
+   "avg_win": 12.13,
+   "avg_loss": -3.33,
+   "profit_factor": 1.29,
+   "median_days": 8
+  },
+  {
+   "version": "I. Rule + model (top 10%)",
+   "stocks_allowed": null,
+   "trades": 409,
+   "trades_per_month": 22.8,
+   "win_rate": 26.9,
+   "avg_trade": 1.09,
+   "avg_win": 14.47,
+   "avg_loss": -3.83,
+   "profit_factor": 1.39,
+   "median_days": 9
+  }
+ ],
+ "model": {
+  "auc": 0.495,
+  "trained_until": "2025-03-10",
+  "test_from": "2025-04-22",
+  "deciles": [
+   {
+    "decile": 1,
+    "hit": 42.4,
+    "avg_ex": -0.78,
+    "n": 31773
+   },
+   {
+    "decile": 2,
+    "hit": 43.5,
+    "avg_ex": -0.7,
+    "n": 32130
+   },
+   {
+    "decile": 3,
+    "hit": 44.5,
+    "avg_ex": -0.43,
+    "n": 32014
+   },
+   {
+    "decile": 4,
+    "hit": 45.0,
+    "avg_ex": -0.38,
+    "n": 32040
+   },
+   {
+    "decile": 5,
+    "hit": 46.1,
+    "avg_ex": -0.15,
+    "n": 31863
+   },
+   {
+    "decile": 6,
+    "hit": 46.3,
+    "avg_ex": -0.07,
+    "n": 32130
+   },
+   {
+    "decile": 7,
+    "hit": 45.8,
+    "avg_ex": -0.19,
+    "n": 32040
+   },
+   {
+    "decile": 8,
+    "hit": 46.3,
+    "avg_ex": 0.04,
+    "n": 32014
+   },
+   {
+    "decile": 9,
+    "hit": 46.0,
+    "avg_ex": -0.09,
+    "n": 32130
+   },
+   {
+    "decile": 10,
+    "hit": 47.2,
+    "avg_ex": 0.4,
+    "n": 32130
+   }
+  ]
  }
-]
+}
