@@ -1,0 +1,57 @@
+name: Daytime sell checks
+# Runs at 9am, 12pm and 2pm Central. GitHub only understands UTC, so both
+# summer and winter times are listed; the "Check the time" step skips the
+# ones that don't match Central time today.
+on:
+  schedule:
+    - cron: "0 14 * * 1-5"
+    - cron: "0 15 * * 1-5"
+    - cron: "0 17 * * 1-5"
+    - cron: "0 18 * * 1-5"
+    - cron: "0 19 * * 1-5"
+    - cron: "0 20 * * 1-5"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: stock-bot
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check the time
+        id: gate
+        env:
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          if [ -z "$SCHEDULE" ]; then echo "go=true" >> $GITHUB_OUTPUT; exit 0; fi
+          H=$(echo "$SCHEDULE" | awk '{print $2}')
+          CTH=$(TZ=America/Chicago date -d "$(date -u +%F) $H:00 UTC" +%H)
+          echo "Scheduled for $CTH:00 Central"
+          case "$CTH" in 09|12|14) echo "go=true" >> $GITHUB_OUTPUT ;; *) echo "go=false" >> $GITHUB_OUTPUT ;; esac
+      - uses: actions/checkout@v4
+        if: steps.gate.outputs.go == 'true'
+      - uses: actions/setup-python@v5
+        if: steps.gate.outputs.go == 'true'
+        with:
+          python-version: "3.12"
+          cache: pip
+      - if: steps.gate.outputs.go == 'true'
+        run: pip install -r requirements.txt
+      - if: steps.gate.outputs.go == 'true'
+        run: python stock_idea_bot.py
+        env:
+          MODE: intraday
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          DASHBOARD_URL: ${{ secrets.DASHBOARD_URL }}
+          HOLDINGS: ${{ secrets.HOLDINGS }}
+      - if: steps.gate.outputs.go == 'true'
+        run: |
+          git config user.name "stock-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add alerts_state.json || true
+          git commit -m "Alert log" || echo "no changes"
+          git pull --rebase
+          git push
