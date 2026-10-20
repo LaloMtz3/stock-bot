@@ -18,7 +18,7 @@ button.chip{cursor:pointer;padding:4px 10px;border-radius:99px}button.chip.on{ba
 .sig{display:inline-block;font-size:12px;font-weight:700;border-radius:6px;padding:2px 8px;color:#fff}
 .sig.buy{background:var(--up)}.sig.sell{background:var(--dn)}.sig.hold{background:var(--ac)}.sig.wait{background:var(--mu)}
 .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}.tag{font-size:12px;color:var(--mu);background:var(--bg);border-radius:6px;padding:2px 6px}
-.tag.b{color:var(--wa)}.tag.v{color:var(--up)}
+.tag.b{color:var(--wa)}.tag.v{color:var(--up)}.tag.g{color:var(--up)}.conf{font-size:12px;margin-top:4px;color:var(--mu)}.conf b{color:var(--tx)}
 .det{display:none;padding:0 12px 12px;border-top:1px solid var(--bd)}.card.open .det{display:block}
 svg{width:100%;height:130px;margin-top:10px}a{color:var(--ac)}ul{padding-left:18px;margin:6px 0}
 table{border-collapse:collapse;width:100%;font-size:13px;margin:8px 0}td,th{border-bottom:1px solid var(--bd);padding:4px 6px;text-align:right}td:first-child,th:first-child{text-align:left}
@@ -31,11 +31,12 @@ h3{font-size:14px;margin:12px 0 4px}.foot{font-size:12px;color:var(--mu);margin:
 <div class="mu" id="stamp">Loading…</div>
 <div id="mkt"></div>
 <details class="ctl"><summary><b>What the labels mean</b></summary><div class="legend">
-<div><span class="sig buy">BUY</span> Passed every check today. A candidate to research and consider buying.</div>
+<div><span class="sig buy">BUY</span> Passed every check, including the prediction model. A candidate to research and consider buying. Midday BUYs say "midday": not confirmed until the 3pm close.</div>
 <div><span class="sig hold">UPTREND</span> Not a buy today. If you already own it, the rules say keep holding.</div>
 <div><span class="sig wait">WAIT</span> Nothing to do. No setup, or a check failed (shown in orange).</div>
 <div><span class="sig sell">SELL / AVOID</span> The uptrend is broken. Sell if you own it; don't buy.</div>
-<div>Signals use the previous day's closing prices.</div></div></details>
+<div><b>Confidence</b> comes from the prediction model: of past situations that looked like this one (in months the model was not trained on), how often the stock beat the S&P 500 over the next month.</div>
+<div>The 6am scan uses yesterday's closing prices. The 9am, 12pm and 2pm scans use live prices (about 15 minutes delayed).</div></div></details>
 <div class="ctl">
   <div class="row" id="sigs"></div>
   <div class="row"><label>Max price $ <input id="max" type="number" min="0" step="1" placeholder="any"></label><span id="chips" class="row"></span></div>
@@ -46,7 +47,7 @@ h3{font-size:14px;margin:12px 0 4px}.foot{font-size:12px;color:var(--mu);margin:
 <div class="ctl"><b>My positions</b><div class="mu">Saved in this browser only.</div>
 <div class="row"><input id="pt" placeholder="Ticker" size="7"><input id="pb" type="number" step="0.01" placeholder="Buy price"><button id="padd" class="chip">Add</button></div><div id="plist"></div></div>
 <div id="list"></div>
-<div class="ctl" id="paper"><h2>Paper trades</h2><div class="mu">Every BUY is tracked as a pretend trade until the rules say sell. This is the honest scorecard.</div><div id="pbody" class="mu">No paper trades yet.</div></div>
+<div class="ctl" id="paper"><h2>Paper trades</h2><div class="mu">Every BUY is tracked as a pretend trade until the rules say sell. This is the honest scorecard. Morning and midday BUYs are scored separately.</div><div id="pbody" class="mu">No paper trades yet.</div></div>
 <div class="ctl" id="cmp" style="display:none"><h2>5-year test of rule versions</h2><div class="mu">Results on the most recent ~1.5 years, which the rules never "saw" while being set up.</div><div id="cbody"></div></div>
 <div class="foot">Signals come from rules tested on past prices. Past results don't guarantee future ones. Research ideas only, not financial advice.</div>
 <script>
@@ -79,7 +80,12 @@ function render(){
   const tg=mk("div","tags");if(s.validated)tg.appendChild(txt("span","tag v","✓ history-tested"));
   s.reasons.filter(r=>!r.startsWith("rule beat")).forEach(r=>tg.appendChild(txt("span","tag",r)));
   s.blockers.forEach(r=>tg.appendChild(txt("span","tag b","⚠ "+r)));left.appendChild(tg);
-  const right=mk("div","",`<span class="sig ${s.signal}">${LBL[s.signal]}</span>`);right.style.textAlign="right";
+  (s.events||[]).forEach(e=>tg.appendChild(txt("span","tag "+(e.bad?"b":"g"),(e.bad?"⚠ ":"• ")+e.event+" ("+e.source+")")));
+  (s.warnings||[]).forEach(w=>tg.appendChild(txt("span","tag b","⚠ "+w)));
+  if(s.model){const m=s.model,cf=mk("div","conf");cf.innerHTML=`Model: <b></b> · ${m.hit}% of similar setups beat the market next month (avg ${m.avg_ex>=0?"+":""}${m.avg_ex}% vs market)`;cf.querySelector("b").textContent=m.tier+" confidence";left.appendChild(cf)}
+  if(s.signal_price){const sp=mk("div","conf");sp.innerHTML=s.cancelled?`<span class="dn">BUY cancelled</span> after signal at $${f(s.signal_price,2)} (${s.signal_time})`:`Signal at $${f(s.signal_price,2)} (${s.signal_time}) · since then ${pct(s.since)}`;left.appendChild(sp)}
+  const lab=s.signal=="buy"&&s.signal_time&&s.signal_time!="morning"?"BUY · midday":LBL[s.signal];
+  const right=mk("div","",`<span class="sig ${s.signal}">${lab}</span>`);right.style.textAlign="right";
   t.append(left,right);
   const d=mk("div","det");const build=()=>{if(d.dataset.b)return;d.dataset.b=1;d.innerHTML=chart(s);
   if(s.asof)d.appendChild(txt("div","mu",`Prices as of the ${s.asof} close · RSI ${f(s.rsi,0)} · ${f(s.stretch)} swings above 50-day avg`));
@@ -89,7 +95,7 @@ function render(){
   if(s.recent_trades.length){d.appendChild(txt("h3","","Recent signals from the rule"));const ul=mk("ul");s.recent_trades.slice().reverse().forEach(x=>{const li=mk("li");li.innerHTML=`${x.buy} → ${x.sell}: ${pct(x.ret)}`;ul.appendChild(li)});d.appendChild(ul)}
   d.appendChild(txt("h3","","Business check"));d.appendChild(txt("div","mu",(!s.checked?"":s.quality==null?"Unknown: ":s.quality?"Passes: ":"Fails: ")+s.quality_notes.join(" · ")+(s.earnings?` · next earnings ${s.earnings}`:"")));
   d.appendChild(txt("div","mu",`RSI ${f(s.rsi,0)} · volume ${f(s.vol_ratio)}x normal · news tone ${f(s.sent,2)}`));
-  if(s.heads.length){d.appendChild(txt("h3","","News"));const ul=mk("ul");s.heads.forEach(n=>{const li=mk("li"),a=txt("a","",n.title);if(/^https?:/.test(n.link)){a.href=n.link;a.target="_blank";a.rel="noopener"}li.appendChild(a);ul.appendChild(li)});d.appendChild(ul)}
+  if(s.heads.length){d.appendChild(txt("h3","",`News (last 7 days${s.news_count!=null?", "+s.news_count+" headlines":""})`));const ul=mk("ul");s.heads.forEach(n=>{const li=mk("li"),a=txt("a","",(n.source?n.source+": ":"")+n.title+(n.when?" ("+n.when+")":""));if(/^https?:/.test(n.link)){a.href=n.link;a.target="_blank";a.rel="noopener"}li.appendChild(a);ul.appendChild(li)});d.appendChild(ul)}
   };
   t.onclick=()=>{build();c.classList.toggle("open")};c.append(t,d);L.appendChild(c)});
  if(total>SHOW){const m=txt("button","chip",`Show more (${total-SHOW} left)`);m.style.margin="8px 0";m.onclick=()=>{SHOW+=50;render()};L.appendChild(m)}}
@@ -108,16 +114,19 @@ const PR=[10,25,50,100,""];PR.forEach(v=>{const b=txt("button","chip",v?"Under $
 function sync(){[...$("chips").children].forEach((b,i)=>b.classList.toggle("on",String($("max").value)==String(PR[i])))}
 ["max","q","sort","val","qual"].forEach(i=>$(i).addEventListener("input",()=>{SHOW=50;render();sync()}));sync();
 function paper(b){if(!b||!(b.open.length+b.closed.length))return;const s=b.summary,e=$("pbody");e.innerHTML="";
+ const part=(lbl,x)=>x&&x.closed?`${lbl}: ${x.closed} closed, ${x.win_rate}% winners, avg ${x.avg_ret>=0?"+":""}${x.avg_ret}%`:"";
+ const sp=[part("Morning BUYs",s.morning),part("Midday BUYs",s.midday)].filter(Boolean).join(" · ");if(sp)e.appendChild(txt("div","",sp));
  e.appendChild(txt("div","",s.closed?`${s.closed} closed · ${s.win_rate}% winners · average ${s.avg_ret>=0?"+":""}${s.avg_ret}% per trade (wins avg ${s.avg_win??"–"}%, losses avg ${s.avg_loss??"–"}%) · ${s.open} still open`:`${s.open} open, none closed yet. Give it a few weeks.`));
- const ul=mk("ul");b.open.forEach(p=>{const li=mk("li");li.innerHTML=`<b></b> bought ${p.entry_date} at $${f(p.entry,2)}, now $${f(p.now,2)} ${pct((p.now/p.entry-1)*100)} · stop $${f(p.stop,2)}`;li.querySelector("b").textContent=p.ticker;ul.appendChild(li)});
+ const ul=mk("ul");b.open.forEach(p=>{const li=mk("li");li.innerHTML=`<b></b> ${p.kind=="midday"?"(midday) ":""}bought ${p.entry_date} at $${f(p.entry,2)}, now $${f(p.now,2)} ${pct((p.now/p.entry-1)*100)} · stop $${f(p.stop,2)}`;li.querySelector("b").textContent=p.ticker;ul.appendChild(li)});
  b.closed.slice(-10).reverse().forEach(p=>{const li=mk("li");li.innerHTML=`<b></b> ${p.entry_date} → ${p.exit_date}: ${pct(p.ret)} (${p.reason})`;li.querySelector("b").textContent=p.ticker;ul.appendChild(li)});e.appendChild(ul)}
-fetch("comparison.json?"+Date.now()).then(r=>r.ok?r.json():null).then(c=>{if(!c||!c.length)return;$("cmp").style.display="";
+fetch("comparison.json?"+Date.now()).then(r=>r.ok?r.json():null).then(cj=>{if(!cj)return;const c=Array.isArray(cj)?cj:cj.rules,md=Array.isArray(cj)?null:cj.model;if(!c||!c.length)return;$("cmp").style.display="";
  const rows=c.map(x=>`<tr><td></td><td>${x.trades_per_month??"–"}</td><td>${x.win_rate??"–"}%</td><td>${pct(x.avg_trade)}</td><td>${x.profit_factor??"–"}</td><td>${x.median_days??"–"}</td></tr>`).join("");
  $("cbody").innerHTML=`<div style="overflow-x:auto"><table><tr><th>Version</th><th>Trades / month</th><th>Win rate</th><th>Avg trade</th><th>Profit factor</th><th>Median days</th></tr>${rows}</table></div><div class="mu">Profit factor = total gains ÷ total losses. Above 1 made money; 1.5+ is solid.</div>`;
- [...$("cbody").querySelectorAll("tr")].slice(1).forEach((tr,i)=>tr.firstChild.textContent=c[i].version)}).catch(()=>{});
+ [...$("cbody").querySelectorAll("tr")].slice(1).forEach((tr,i)=>tr.firstChild.textContent=c[i].version);
+ if(md){$("cbody").insertAdjacentHTML("beforeend",`<h3>Prediction model test (trained up to ${md.trained_until}, tested from ${md.test_from})</h3><div class="mu">Each day the model ranked every stock; group 10 = most confident. How each group did over the next month vs the S&P 500. AUC ${md.auc} (0.5 = coin flip).</div><div style="overflow-x:auto"><table><tr><th>Group</th><th>Beat the market</th><th>Avg vs market</th></tr>${md.deciles.map(d=>`<tr><td>${d.decile}</td><td>${d.hit}%</td><td>${pct(d.avg_ex)}</td></tr>`).join("")}</table></div>`)}}).catch(()=>{});
 fetch("data.json?"+Date.now()).then(r=>r.json()).then(j=>{D=j.stocks;D.forEach(s=>s.dates=s.dates||j.dates);
- if(j.market_ok!==undefined){const m=$("mkt");m.className="banner"+(j.market_ok?"":" bad");m.textContent=j.market_ok?"Overall market: uptrend (S&P 500 above its 200-day average). Buys allowed.":"Overall market: downtrend (S&P 500 below its 200-day average). No new buys until it recovers."}
+ if(j.market_ok!==undefined){const m=$("mkt");m.className="banner"+(j.market_ok?"":" bad");m.textContent=j.market_ok?"Overall market: uptrend (S&P 500 above its 200-day average).":(j.settings&&j.settings.market_filter?"Overall market: downtrend (S&P 500 below its 200-day average). No new buys until it recovers.":"Overall market: downtrend (S&P 500 below its 200-day average). Losing streaks are more likely; consider smaller positions.")}
  paper(j.paper);
- $("stamp").textContent="Updated "+new Date(j.generated).toLocaleString()+" · "+D.length+" stocks scanned";sigBtns();render();renderPos()})
+ $("stamp").textContent="Updated "+new Date(j.generated).toLocaleString()+(j.session?(j.live?` (${j.session} scan, live prices)`:" (morning scan, yesterday's close)"):"")+" · "+D.length+" stocks scanned";sigBtns();render();renderPos()})
  .catch(()=>{$("stamp").textContent="No data yet. Run the bot once (Actions tab > Run workflow), wait 15 to 30 minutes, then reload."});
 </script></body></html>

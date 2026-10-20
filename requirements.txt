@@ -4,3 +4,4 @@ numpy
 requests
 lxml
 vaderSentiment
+scikit-learn
