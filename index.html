@@ -38,13 +38,13 @@ h3{font-size:14px;margin:12px 0 4px}.foot{font-size:12px;color:var(--mu);margin:
 <div id="list"></div>
 <div class="foot">Signals come from rules tested on past prices. Past results don't guarantee future ones. Research ideas only, not financial advice.</div>
 <script>
-const $=id=>document.getElementById(id);let D=[],SIG="all";
+const $=id=>document.getElementById(id);let D=[],SIG="all",SHOW=50;
 const f=(n,d=1)=>n==null?"–":(+n).toFixed(d);
 const pct=n=>n==null?"–":`<span class="${n>=0?'up':'dn'}">${n>=0?'+':''}${f(n)}%</span>`;
 const LBL={buy:"BUY",sell:"SELL",hold:"HOLD",wait:"WAIT"};
 function mk(t,c,h){const e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e}
 function txt(t,c,s){const e=mk(t,c);e.textContent=s;return e}
-function chart(s){const c=s.closes,W=600,H=130,lo=Math.min(...c),hi=Math.max(...c),r=hi-lo||1;
+function chart(s){const c=s.closes.map((v,i,a)=>v??a.find(x=>x!=null)),W=600,H=130,lo=Math.min(...c),hi=Math.max(...c),r=hi-lo||1;
  const y=v=>(H-14-(v-lo)/r*(H-28)).toFixed(1);
  const pts=c.map((v,i)=>`${(i/(c.length-1)*W).toFixed(1)},${y(v)}`).join(" ");
  const mark=(d,col)=>{const i=s.dates.indexOf(d);return i<0?"":`<circle cx="${(i/(c.length-1)*W).toFixed(1)}" cy="${y(c[i])}" r="5" fill="${col}"/>`};
@@ -59,7 +59,7 @@ function render(){
  let a=D.filter(s=>(SIG=="all"||s.signal==SIG)&&(isNaN(mx)||s.price<=mx)&&(!q||s.ticker.includes(q))&&(!$("val").checked||s.validated)&&(!$("qual").checked||s.quality));
  const key=s=>k=="edge"?s.test.strategy.ret-s.test.hold.ret:s[k];
  a.sort((x,y)=>k=="price"?x.price-y.price:(key(y)??-1e9)-(key(x)??-1e9));
- const L=$("list");L.innerHTML="";
+ const L=$("list");L.innerHTML="";const total=a.length;a=a.slice(0,SHOW);
  if(!a.length){L.appendChild(txt("div","mu","No stocks match these filters. If you filtered to BUY, nothing passed every check today, and waiting is a valid choice."));return}
  a.forEach(s=>{const c=mk("div","card"),t=mk("div","top"),left=mk("div");
   left.innerHTML=`<span class="tk"></span> $${f(s.price,2)} <div class="mu">Today ${pct(s.ret1)} · 5-day ${pct(s.ret5)}</div>`;
@@ -69,15 +69,17 @@ function render(){
   s.blockers.forEach(r=>tg.appendChild(txt("span","tag b","⚠ "+r)));left.appendChild(tg);
   const right=mk("div","",`<span class="sig ${s.signal}">${LBL[s.signal]}</span>`);right.style.textAlign="right";
   t.append(left,right);
-  const d=mk("div","det");d.innerHTML=chart(s);
+  const d=mk("div","det");const build=()=>{if(d.dataset.b)return;d.dataset.b=1;d.innerHTML=chart(s);
   const lv=mk("p");lv.textContent=s.signal=="sell"?`Exit level broken: price is below the 50-day average ($${f(s.sma50,2)}) or the trailing exit ($${f(s.trail,2)}).`
    :`If buying near $${f(s.price,2)}: stop-loss ~$${f(s.stop,2)} (${f((s.stop/s.price-1)*100)}%), then sell if it closes below the trailing exit (currently $${f(s.trail,2)}) or the 50-day average ($${f(s.sma50,2)}). Reference target ~$${f(s.target,2)}.`;d.appendChild(lv);
   d.appendChild(txt("h3","","How this exact buy/sell rule did on "+s.ticker));d.insertAdjacentHTML("beforeend",btTable(s));
   if(s.recent_trades.length){d.appendChild(txt("h3","","Recent signals from the rule"));const ul=mk("ul");s.recent_trades.slice().reverse().forEach(x=>{const li=mk("li");li.innerHTML=`${x.buy} → ${x.sell}: ${pct(x.ret)}`;ul.appendChild(li)});d.appendChild(ul)}
-  d.appendChild(txt("h3","","Business check"));d.appendChild(txt("div","mu",(s.quality==null?"Unknown: ":s.quality?"Passes: ":"Fails: ")+s.quality_notes.join(" · ")+(s.earnings?` · next earnings ${s.earnings}`:"")));
+  d.appendChild(txt("h3","","Business check"));d.appendChild(txt("div","mu",(!s.checked?"":s.quality==null?"Unknown: ":s.quality?"Passes: ":"Fails: ")+s.quality_notes.join(" · ")+(s.earnings?` · next earnings ${s.earnings}`:"")));
   d.appendChild(txt("div","mu",`RSI ${f(s.rsi,0)} · volume ${f(s.vol_ratio)}x normal · news tone ${f(s.sent,2)}`));
   if(s.heads.length){d.appendChild(txt("h3","","News"));const ul=mk("ul");s.heads.forEach(n=>{const li=mk("li"),a=txt("a","",n.title);if(/^https?:/.test(n.link)){a.href=n.link;a.target="_blank";a.rel="noopener"}li.appendChild(a);ul.appendChild(li)});d.appendChild(ul)}
-  t.onclick=()=>c.classList.toggle("open");c.append(t,d);L.appendChild(c)})}
+  };
+  t.onclick=()=>{build();c.classList.toggle("open")};c.append(t,d);L.appendChild(c)});
+ if(total>SHOW){const m=txt("button","chip",`Show more (${total-SHOW} left)`);m.style.margin="8px 0";m.onclick=()=>{SHOW+=50;render()};L.appendChild(m)}}
 let P=[];try{P=JSON.parse(localStorage.getItem("pos")||"[]")}catch(e){}
 function savePos(){try{localStorage.setItem("pos",JSON.stringify(P))}catch(e){}}
 function renderPos(){const b=$("plist");b.innerHTML="";P.forEach((p,i)=>{const s=D.find(x=>x.ticker==p.t),r=mk("div","row");
@@ -88,11 +90,11 @@ function renderPos(){const b=$("plist");b.innerHTML="";P.forEach((p,i)=>{const s
  const x=mk("button","chip","Remove");x.onclick=()=>{P.splice(i,1);savePos();renderPos()};r.appendChild(x);b.appendChild(r)})}
 $("padd").onclick=()=>{const t=$("pt").value.trim().toUpperCase(),b=parseFloat($("pb").value);if(t&&b>0){P.push({t,b});savePos();$("pt").value=$("pb").value="";renderPos()}};
 function sigBtns(){const b=$("sigs");b.innerHTML="";["all","buy","hold","sell","wait"].forEach(k=>{const n=k=="all"?D.length:D.filter(s=>s.signal==k).length;
- const e=txt("button","chip"+(SIG==k?" on":""),(k=="all"?"All":LBL[k])+` (${n})`);e.onclick=()=>{SIG=k;sigBtns();render()};b.appendChild(e)})}
-const PR=[10,25,50,100,""];PR.forEach(v=>{const b=txt("button","chip",v?"Under $"+v:"Any");b.onclick=()=>{$("max").value=v;render();sync()};$("chips").appendChild(b)});
+ const e=txt("button","chip"+(SIG==k?" on":""),(k=="all"?"All":LBL[k])+` (${n})`);e.onclick=()=>{SIG=k;SHOW=50;sigBtns();render()};b.appendChild(e)})}
+const PR=[10,25,50,100,""];PR.forEach(v=>{const b=txt("button","chip",v?"Under $"+v:"Any");b.onclick=()=>{$("max").value=v;SHOW=50;render();sync()};$("chips").appendChild(b)});
 function sync(){[...$("chips").children].forEach((b,i)=>b.classList.toggle("on",String($("max").value)==String(PR[i])))}
-["max","q","sort","val","qual"].forEach(i=>$(i).addEventListener("input",()=>{render();sync()}));sync();
-fetch("data.json?"+Date.now()).then(r=>r.json()).then(j=>{D=j.stocks;
+["max","q","sort","val","qual"].forEach(i=>$(i).addEventListener("input",()=>{SHOW=50;render();sync()}));sync();
+fetch("data.json?"+Date.now()).then(r=>r.json()).then(j=>{D=j.stocks;D.forEach(s=>s.dates=s.dates||j.dates);
  $("stamp").textContent="Updated "+new Date(j.generated).toLocaleString()+" · "+D.length+" stocks scanned";sigBtns();render();renderPos()})
- .catch(()=>{$("stamp").textContent="No data yet. Run the bot once (Actions tab > Run workflow), wait 2 to 5 minutes, then reload."});
+ .catch(()=>{$("stamp").textContent="No data yet. Run the bot once (Actions tab > Run workflow), wait 15 to 30 minutes, then reload."});
 </script></body></html>
