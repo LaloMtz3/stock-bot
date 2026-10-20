@@ -1,7 +1,7 @@
-name: Daytime sell checks
-# Runs at 9am, 12pm and 2pm Central. GitHub only understands UTC, so both
-# summer and winter times are listed; the "Check the time" step skips the
-# ones that don't match Central time today.
+name: Daytime scans
+# Full rescans with live prices at 9am, 12pm and 2pm Central. GitHub only
+# understands UTC, so summer and winter times are both listed; the
+# "Check the time" step skips the ones that don't match Central time today.
 on:
   schedule:
     - cron: "0 14 * * 1-5"
@@ -17,9 +17,9 @@ concurrency:
   group: stock-bot
   cancel-in-progress: false
 jobs:
-  check:
+  scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 40
     steps:
       - name: Check the time
         id: gate
@@ -43,7 +43,7 @@ jobs:
       - if: steps.gate.outputs.go == 'true'
         run: python stock_idea_bot.py
         env:
-          MODE: intraday
+          MODE: scan
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           DASHBOARD_URL: ${{ secrets.DASHBOARD_URL }}
           HOLDINGS: ${{ secrets.HOLDINGS }}
@@ -51,7 +51,7 @@ jobs:
         run: |
           git config user.name "stock-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add alerts_state.json || true
-          git commit -m "Alert log" || echo "no changes"
+          git add data.json paper_trades.json today.json
+          git commit -m "Daytime scan" || echo "no changes"
           git pull --rebase
           git push

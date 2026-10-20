@@ -28,7 +28,7 @@ jobs:
       - run: |
           git config user.name "stock-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add data.json paper_trades.json
+          git add data.json paper_trades.json today.json
           git commit -m "Daily update" || echo "no changes"
           git pull --rebase
           git push
