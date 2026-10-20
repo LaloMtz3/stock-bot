@@ -1,0 +1,23 @@
+{
+ "date": "2026-10-20",
+ "buys": {
+  "ROST": {
+   "price": 236.83,
+   "stop": 225.65,
+   "sma50": 232.45,
+   "time": "2pm",
+   "now": 236.83,
+   "since": 0.0
+  },
+  "AHR": {
+   "price": 54.1,
+   "stop": 51.69,
+   "sma50": 53.21,
+   "time": "2pm",
+   "now": 54.1,
+   "since": 0.0
+  }
+ },
+ "cancelled": [],
+ "sell_alerts": []
+}

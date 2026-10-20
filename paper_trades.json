@@ -1,0 +1,49 @@
+{
+ "open": [
+  {
+   "ticker": "ROST",
+   "kind": "midday",
+   "entry_date": "2026-10-20",
+   "entry": 236.83,
+   "stop": 225.65,
+   "peak": 236.83,
+   "last_checked": "2026-10-20",
+   "now": 236.83,
+   "tier": "high"
+  },
+  {
+   "ticker": "AHR",
+   "kind": "midday",
+   "entry_date": "2026-10-20",
+   "entry": 54.1,
+   "stop": 51.69,
+   "peak": 54.1,
+   "last_checked": "2026-10-20",
+   "now": 54.1,
+   "tier": "high"
+  }
+ ],
+ "closed": [],
+ "summary": {
+  "open": 2,
+  "closed": 0,
+  "win_rate": null,
+  "avg_ret": null,
+  "avg_win": null,
+  "avg_loss": null,
+  "morning": {
+   "closed": 0,
+   "win_rate": null,
+   "avg_ret": null,
+   "avg_win": null,
+   "avg_loss": null
+  },
+  "midday": {
+   "closed": 0,
+   "win_rate": null,
+   "avg_ret": null,
+   "avg_win": null,
+   "avg_loss": null
+  }
+ }
+}
