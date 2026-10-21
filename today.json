@@ -6,8 +6,32 @@
    "stop": 226.06,
    "sma50": 232.45,
    "time": "morning",
-   "now": 235.6,
-   "since": -0.69
+   "now": 236.98,
+   "since": -0.11
+  },
+  "DVN": {
+   "price": 49.98,
+   "stop": 47.23,
+   "sma50": 48.17,
+   "time": "12pm",
+   "now": 49.98,
+   "since": 0.0
+  },
+  "ADI": {
+   "price": 407.59,
+   "stop": 381.42,
+   "sma50": 383.79,
+   "time": "12pm",
+   "now": 407.59,
+   "since": 0.0
+  },
+  "NDSN": {
+   "price": 331.98,
+   "stop": 319.0,
+   "sma50": 321.62,
+   "time": "12pm",
+   "now": 331.98,
+   "since": 0.0
   }
  },
  "cancelled": [],

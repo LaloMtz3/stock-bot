@@ -8,7 +8,7 @@
    "stop": 225.65,
    "peak": 236.83,
    "last_checked": "2026-10-20",
-   "now": 235.6,
+   "now": 236.98,
    "tier": "high"
   },
   {
@@ -19,13 +19,46 @@
    "stop": 51.69,
    "peak": 54.1,
    "last_checked": "2026-10-20",
-   "now": 54.08,
+   "now": 53.71,
+   "tier": "high"
+  },
+  {
+   "ticker": "DVN",
+   "kind": "midday",
+   "entry_date": "2026-10-21",
+   "entry": 49.98,
+   "stop": 47.23,
+   "peak": 49.98,
+   "last_checked": "2026-10-21",
+   "now": 49.98,
+   "tier": "high"
+  },
+  {
+   "ticker": "ADI",
+   "kind": "midday",
+   "entry_date": "2026-10-21",
+   "entry": 407.59,
+   "stop": 381.42,
+   "peak": 407.59,
+   "last_checked": "2026-10-21",
+   "now": 407.59,
+   "tier": "high"
+  },
+  {
+   "ticker": "NDSN",
+   "kind": "midday",
+   "entry_date": "2026-10-21",
+   "entry": 331.98,
+   "stop": 319.0,
+   "peak": 331.98,
+   "last_checked": "2026-10-21",
+   "now": 331.98,
    "tier": "high"
   }
  ],
  "closed": [],
  "summary": {
-  "open": 2,
+  "open": 5,
   "closed": 0,
   "win_rate": null,
   "avg_ret": null,
