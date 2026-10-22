@@ -1,37 +1,21 @@
 {
- "date": "2026-10-21",
+ "date": "2026-10-22",
  "buys": {
-  "ROST": {
-   "price": 237.24,
-   "stop": 226.06,
-   "sma50": 232.45,
+  "TXN": {
+   "price": 284.65,
+   "stop": 265.24,
+   "sma50": 272.12,
    "time": "morning",
-   "now": 235.15,
-   "since": -0.88
-  },
-  "DVN": {
-   "price": 49.98,
-   "stop": 47.23,
-   "sma50": 48.17,
-   "time": "12pm",
-   "now": 50.03,
-   "since": 0.1
+   "now": 284.65,
+   "since": 0.0
   },
   "ADI": {
-   "price": 407.59,
-   "stop": 381.42,
-   "sma50": 383.79,
-   "time": "12pm",
-   "now": 406.58,
-   "since": -0.25
-  },
-  "NDSN": {
-   "price": 331.98,
-   "stop": 319.0,
-   "sma50": 321.62,
-   "time": "12pm",
-   "now": 330.4,
-   "since": -0.48
+   "price": 405.96,
+   "stop": 379.68,
+   "sma50": 383.75,
+   "time": "morning",
+   "now": 405.96,
+   "since": 0.0
   }
  },
  "cancelled": [],
