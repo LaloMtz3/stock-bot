@@ -6,16 +6,16 @@
    "stop": 265.24,
    "sma50": 272.12,
    "time": "morning",
-   "now": 284.65,
-   "since": 0.0
+   "now": 281.42,
+   "since": -1.13
   },
   "ADI": {
    "price": 405.96,
    "stop": 379.68,
    "sma50": 383.75,
    "time": "morning",
-   "now": 405.96,
-   "since": 0.0
+   "now": 387.57,
+   "since": -4.53
   }
  },
  "cancelled": [],
