@@ -7,8 +7,8 @@
    "entry": 236.83,
    "stop": 225.65,
    "peak": 236.83,
-   "last_checked": "2026-10-21",
-   "now": 235.11,
+   "last_checked": "2026-10-22",
+   "now": 236.67,
    "tier": "high"
   },
   {
@@ -18,8 +18,8 @@
    "entry": 49.98,
    "stop": 47.23,
    "peak": 49.98,
-   "last_checked": "2026-10-21",
-   "now": 49.29,
+   "last_checked": "2026-10-22",
+   "now": 49.18,
    "tier": "high"
   },
   {
@@ -29,19 +29,8 @@
    "entry": 407.59,
    "stop": 381.42,
    "peak": 407.59,
-   "last_checked": "2026-10-21",
-   "now": 387.54,
-   "tier": "high"
-  },
-  {
-   "ticker": "NDSN",
-   "kind": "midday",
-   "entry_date": "2026-10-21",
-   "entry": 331.98,
-   "stop": 319.0,
-   "peak": 331.98,
-   "last_checked": "2026-10-21",
-   "now": 315.77,
+   "last_checked": "2026-10-22",
+   "now": 385.76,
    "tier": "high"
   },
   {
@@ -51,8 +40,41 @@
    "entry": 284.65,
    "stop": 265.24,
    "peak": 284.65,
-   "last_checked": "2026-10-21",
-   "now": 282.74,
+   "last_checked": "2026-10-22",
+   "now": 279.5,
+   "tier": "high"
+  },
+  {
+   "ticker": "UBSI",
+   "kind": "morning",
+   "entry_date": "2026-10-22",
+   "entry": 48.46,
+   "stop": 46.73,
+   "peak": 48.46,
+   "last_checked": "2026-10-22",
+   "now": 48.46,
+   "tier": "high"
+  },
+  {
+   "ticker": "RS",
+   "kind": "morning",
+   "entry_date": "2026-10-22",
+   "entry": 417.92,
+   "stop": 395.51,
+   "peak": 417.92,
+   "last_checked": "2026-10-22",
+   "now": 417.92,
+   "tier": "high"
+  },
+  {
+   "ticker": "COLB",
+   "kind": "morning",
+   "entry_date": "2026-10-22",
+   "entry": 29.89,
+   "stop": 28.69,
+   "peak": 29.89,
+   "last_checked": "2026-10-22",
+   "now": 29.89,
    "tier": "high"
   }
  ],
@@ -71,15 +93,30 @@
    "exit": 52.86,
    "ret": -2.29,
    "reason": "below 50-day avg"
+  },
+  {
+   "ticker": "NDSN",
+   "kind": "midday",
+   "entry_date": "2026-10-21",
+   "entry": 331.98,
+   "stop": 319.0,
+   "peak": 331.98,
+   "last_checked": "2026-10-21",
+   "now": 315.77,
+   "tier": "high",
+   "exit_date": "2026-10-22",
+   "exit": 318.71,
+   "ret": -4.0,
+   "reason": "stop-loss"
   }
  ],
  "summary": {
-  "open": 5,
-  "closed": 1,
+  "open": 7,
+  "closed": 2,
   "win_rate": 0.0,
-  "avg_ret": -2.29,
+  "avg_ret": -3.15,
   "avg_win": null,
-  "avg_loss": -2.29,
+  "avg_loss": -3.15,
   "morning": {
    "closed": 0,
    "win_rate": null,
@@ -88,11 +125,11 @@
    "avg_loss": null
   },
   "midday": {
-   "closed": 1,
+   "closed": 2,
    "win_rate": 0.0,
-   "avg_ret": -2.29,
+   "avg_ret": -3.15,
    "avg_win": null,
-   "avg_loss": -2.29
+   "avg_loss": -3.15
   }
  }
 }

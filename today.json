@@ -1,21 +1,29 @@
 {
- "date": "2026-10-22",
+ "date": "2026-10-23",
  "buys": {
-  "TXN": {
-   "price": 284.65,
-   "stop": 265.24,
-   "sma50": 272.12,
+  "UBSI": {
+   "price": 48.46,
+   "stop": 46.73,
+   "sma50": 46.91,
    "time": "morning",
-   "now": 282.74,
-   "since": -0.67
+   "now": 48.46,
+   "since": 0.0
   },
-  "ADI": {
-   "price": 405.96,
-   "stop": 379.68,
-   "sma50": 383.75,
+  "RS": {
+   "price": 417.92,
+   "stop": 395.51,
+   "sma50": 398.23,
    "time": "morning",
-   "now": 387.54,
-   "since": -4.54
+   "now": 417.92,
+   "since": 0.0
+  },
+  "COLB": {
+   "price": 29.89,
+   "stop": 28.69,
+   "sma50": 29.67,
+   "time": "morning",
+   "now": 29.89,
+   "since": 0.0
   }
  },
  "cancelled": [],
