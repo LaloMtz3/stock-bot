@@ -6,16 +6,16 @@
    "stop": 46.73,
    "sma50": 46.91,
    "time": "morning",
-   "now": 48.71,
-   "since": 0.52
+   "now": 48.67,
+   "since": 0.43
   },
   "RS": {
    "price": 417.92,
    "stop": 395.51,
    "sma50": 398.23,
    "time": "morning",
-   "now": 418.33,
-   "since": 0.1
+   "now": 419.32,
+   "since": 0.33
   },
   "COLB": {
    "price": 29.89,
@@ -30,8 +30,24 @@
    "stop": 278.46,
    "sma50": 287.05,
    "time": "9am",
-   "now": 291.98,
-   "since": 0.83
+   "now": 294.01,
+   "since": 1.53
+  },
+  "NSC": {
+   "price": 331.56,
+   "stop": 320.4,
+   "sma50": 326.59,
+   "time": "2pm",
+   "now": 331.56,
+   "since": 0.0
+  },
+  "ASB": {
+   "price": 30.27,
+   "stop": 29.13,
+   "sma50": 29.75,
+   "time": "2pm",
+   "now": 30.27,
+   "since": 0.0
   }
  },
  "cancelled": [],

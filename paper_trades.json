@@ -8,7 +8,7 @@
    "stop": 225.65,
    "peak": 236.83,
    "last_checked": "2026-10-22",
-   "now": 230.79,
+   "now": 229.2,
    "tier": "high"
   },
   {
@@ -19,7 +19,7 @@
    "stop": 47.23,
    "peak": 49.98,
    "last_checked": "2026-10-22",
-   "now": 51.24,
+   "now": 51.35,
    "tier": "high"
   },
   {
@@ -30,7 +30,7 @@
    "stop": 381.42,
    "peak": 407.59,
    "last_checked": "2026-10-22",
-   "now": 389.37,
+   "now": 390.32,
    "tier": "high"
   },
   {
@@ -41,7 +41,7 @@
    "stop": 265.24,
    "peak": 284.65,
    "last_checked": "2026-10-22",
-   "now": 283.44,
+   "now": 284.23,
    "tier": "high"
   },
   {
@@ -52,7 +52,7 @@
    "stop": 46.73,
    "peak": 48.46,
    "last_checked": "2026-10-22",
-   "now": 48.71,
+   "now": 48.67,
    "tier": "high"
   },
   {
@@ -63,7 +63,7 @@
    "stop": 395.51,
    "peak": 417.92,
    "last_checked": "2026-10-22",
-   "now": 418.33,
+   "now": 419.32,
    "tier": "high"
   },
   {
@@ -85,7 +85,29 @@
    "stop": 278.46,
    "peak": 289.58,
    "last_checked": "2026-10-23",
-   "now": 291.98,
+   "now": 294.01,
+   "tier": "high"
+  },
+  {
+   "ticker": "NSC",
+   "kind": "midday",
+   "entry_date": "2026-10-23",
+   "entry": 331.56,
+   "stop": 320.4,
+   "peak": 331.56,
+   "last_checked": "2026-10-23",
+   "now": 331.56,
+   "tier": "high"
+  },
+  {
+   "ticker": "ASB",
+   "kind": "midday",
+   "entry_date": "2026-10-23",
+   "entry": 30.27,
+   "stop": 29.13,
+   "peak": 30.27,
+   "last_checked": "2026-10-23",
+   "now": 30.27,
    "tier": "high"
   }
  ],
@@ -122,7 +144,7 @@
   }
  ],
  "summary": {
-  "open": 8,
+  "open": 10,
   "closed": 2,
   "win_rate": 0.0,
   "avg_ret": -3.15,
