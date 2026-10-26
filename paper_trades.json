@@ -8,7 +8,7 @@
    "stop": 47.23,
    "peak": 51.38999938964844,
    "last_checked": "2026-10-23",
-   "now": 51.39,
+   "now": 51.53,
    "tier": "high"
   },
   {
@@ -19,7 +19,7 @@
    "stop": 381.42,
    "peak": 407.59,
    "last_checked": "2026-10-23",
-   "now": 391.07,
+   "now": 405.6,
    "tier": "high"
   },
   {
@@ -30,7 +30,7 @@
    "stop": 265.24,
    "peak": 284.69000244140625,
    "last_checked": "2026-10-23",
-   "now": 284.69,
+   "now": 292.33,
    "tier": "high"
   },
   {
@@ -41,7 +41,7 @@
    "stop": 46.73,
    "peak": 48.66999816894531,
    "last_checked": "2026-10-23",
-   "now": 48.67,
+   "now": 48.92,
    "tier": "high"
   },
   {
@@ -52,7 +52,7 @@
    "stop": 395.51,
    "peak": 417.92,
    "last_checked": "2026-10-23",
-   "now": 415.62,
+   "now": 419.3,
    "tier": "high"
   },
   {
@@ -63,7 +63,7 @@
    "stop": 28.69,
    "peak": 30.860000610351562,
    "last_checked": "2026-10-23",
-   "now": 30.86,
+   "now": 31.15,
    "tier": "high"
   },
   {
@@ -74,7 +74,7 @@
    "stop": 278.46,
    "peak": 289.58,
    "last_checked": "2026-10-23",
-   "now": 294.01,
+   "now": 295.09,
    "tier": "high"
   },
   {
@@ -85,7 +85,7 @@
    "stop": 320.4,
    "peak": 331.56,
    "last_checked": "2026-10-23",
-   "now": 331.56,
+   "now": 332.51,
    "tier": "high"
   },
   {
@@ -96,7 +96,7 @@
    "stop": 29.13,
    "peak": 30.27,
    "last_checked": "2026-10-23",
-   "now": 30.27,
+   "now": 30.37,
    "tier": "high"
   },
   {
@@ -107,7 +107,73 @@
    "stop": 144.78,
    "peak": 155.82,
    "last_checked": "2026-10-23",
-   "now": 155.82,
+   "now": 163.12,
+   "tier": "high"
+  },
+  {
+   "ticker": "USB",
+   "kind": "midday",
+   "entry_date": "2026-10-26",
+   "entry": 59.88,
+   "stop": 57.52,
+   "peak": 59.88,
+   "last_checked": "2026-10-26",
+   "now": 59.88,
+   "tier": "high"
+  },
+  {
+   "ticker": "FNB",
+   "kind": "midday",
+   "entry_date": "2026-10-26",
+   "entry": 18.39,
+   "stop": 17.67,
+   "peak": 18.39,
+   "last_checked": "2026-10-26",
+   "now": 18.39,
+   "tier": "high"
+  },
+  {
+   "ticker": "FITB",
+   "kind": "midday",
+   "entry_date": "2026-10-26",
+   "entry": 53.21,
+   "stop": 50.98,
+   "peak": 53.21,
+   "last_checked": "2026-10-26",
+   "now": 53.21,
+   "tier": "high"
+  },
+  {
+   "ticker": "PNFP",
+   "kind": "midday",
+   "entry_date": "2026-10-26",
+   "entry": 101.14,
+   "stop": 96.42,
+   "peak": 101.14,
+   "last_checked": "2026-10-26",
+   "now": 101.14,
+   "tier": "high"
+  },
+  {
+   "ticker": "SSB",
+   "kind": "midday",
+   "entry_date": "2026-10-26",
+   "entry": 106.1,
+   "stop": 101.62,
+   "peak": 106.1,
+   "last_checked": "2026-10-26",
+   "now": 106.1,
+   "tier": "high"
+  },
+  {
+   "ticker": "EGP",
+   "kind": "midday",
+   "entry_date": "2026-10-26",
+   "entry": 200.91,
+   "stop": 191.86,
+   "peak": 200.91,
+   "last_checked": "2026-10-26",
+   "now": 200.91,
    "tier": "high"
   }
  ],
@@ -159,7 +225,7 @@
   }
  ],
  "summary": {
-  "open": 10,
+  "open": 16,
   "closed": 3,
   "win_rate": 0.0,
   "avg_ret": -3.16,

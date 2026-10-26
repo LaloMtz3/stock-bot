@@ -6,15 +6,71 @@
    "stop": 144.78,
    "sma50": 138.07,
    "time": "morning",
-   "now": 155.82,
-   "since": 0.0
+   "now": 163.12,
+   "since": 4.68
   },
   "NSC": {
    "price": 329.99,
    "stop": 318.83,
    "sma50": 326.56,
    "time": "morning",
-   "now": 329.99,
+   "now": 332.51,
+   "since": 0.76
+  },
+  "USB": {
+   "price": 59.88,
+   "stop": 57.52,
+   "sma50": 59.82,
+   "time": "10am",
+   "now": 59.88,
+   "since": 0.0
+  },
+  "FNB": {
+   "price": 18.39,
+   "stop": 17.67,
+   "sma50": 17.87,
+   "time": "10am",
+   "now": 18.39,
+   "since": 0.0
+  },
+  "FITB": {
+   "price": 53.21,
+   "stop": 50.98,
+   "sma50": 52.63,
+   "time": "10am",
+   "now": 53.21,
+   "since": 0.0
+  },
+  "PNFP": {
+   "price": 101.14,
+   "stop": 96.42,
+   "sma50": 97.76,
+   "time": "10am",
+   "now": 101.14,
+   "since": 0.0
+  },
+  "ASB": {
+   "price": 30.37,
+   "stop": 29.25,
+   "sma50": 29.71,
+   "time": "10am",
+   "now": 30.37,
+   "since": 0.0
+  },
+  "SSB": {
+   "price": 106.1,
+   "stop": 101.62,
+   "sma50": 103.85,
+   "time": "10am",
+   "now": 106.1,
+   "since": 0.0
+  },
+  "EGP": {
+   "price": 200.91,
+   "stop": 191.86,
+   "sma50": 198.12,
+   "time": "10am",
+   "now": 200.91,
    "since": 0.0
   }
  },
