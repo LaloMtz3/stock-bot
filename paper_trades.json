@@ -1,25 +1,14 @@
 {
  "open": [
   {
-   "ticker": "ROST",
-   "kind": "midday",
-   "entry_date": "2026-10-20",
-   "entry": 236.83,
-   "stop": 225.65,
-   "peak": 236.83,
-   "last_checked": "2026-10-22",
-   "now": 229.2,
-   "tier": "high"
-  },
-  {
    "ticker": "DVN",
    "kind": "midday",
    "entry_date": "2026-10-21",
    "entry": 49.98,
    "stop": 47.23,
-   "peak": 49.98,
-   "last_checked": "2026-10-22",
-   "now": 51.35,
+   "peak": 51.38999938964844,
+   "last_checked": "2026-10-23",
+   "now": 51.39,
    "tier": "high"
   },
   {
@@ -29,8 +18,8 @@
    "entry": 407.59,
    "stop": 381.42,
    "peak": 407.59,
-   "last_checked": "2026-10-22",
-   "now": 390.32,
+   "last_checked": "2026-10-23",
+   "now": 391.07,
    "tier": "high"
   },
   {
@@ -39,9 +28,9 @@
    "entry_date": "2026-10-21",
    "entry": 284.65,
    "stop": 265.24,
-   "peak": 284.65,
-   "last_checked": "2026-10-22",
-   "now": 284.23,
+   "peak": 284.69000244140625,
+   "last_checked": "2026-10-23",
+   "now": 284.69,
    "tier": "high"
   },
   {
@@ -50,8 +39,8 @@
    "entry_date": "2026-10-22",
    "entry": 48.46,
    "stop": 46.73,
-   "peak": 48.46,
-   "last_checked": "2026-10-22",
+   "peak": 48.66999816894531,
+   "last_checked": "2026-10-23",
    "now": 48.67,
    "tier": "high"
   },
@@ -62,8 +51,8 @@
    "entry": 417.92,
    "stop": 395.51,
    "peak": 417.92,
-   "last_checked": "2026-10-22",
-   "now": 419.32,
+   "last_checked": "2026-10-23",
+   "now": 415.62,
    "tier": "high"
   },
   {
@@ -72,9 +61,9 @@
    "entry_date": "2026-10-22",
    "entry": 29.89,
    "stop": 28.69,
-   "peak": 29.89,
-   "last_checked": "2026-10-22",
-   "now": 30.93,
+   "peak": 30.860000610351562,
+   "last_checked": "2026-10-23",
+   "now": 30.86,
    "tier": "high"
   },
   {
@@ -109,6 +98,17 @@
    "last_checked": "2026-10-23",
    "now": 30.27,
    "tier": "high"
+  },
+  {
+   "ticker": "ANF",
+   "kind": "morning",
+   "entry_date": "2026-10-23",
+   "entry": 155.82,
+   "stop": 144.78,
+   "peak": 155.82,
+   "last_checked": "2026-10-23",
+   "now": 155.82,
+   "tier": "high"
   }
  ],
  "closed": [
@@ -141,15 +141,30 @@
    "exit": 318.71,
    "ret": -4.0,
    "reason": "stop-loss"
+  },
+  {
+   "ticker": "ROST",
+   "kind": "midday",
+   "entry_date": "2026-10-20",
+   "entry": 236.83,
+   "stop": 225.65,
+   "peak": 236.83,
+   "last_checked": "2026-10-22",
+   "now": 229.2,
+   "tier": "high",
+   "exit_date": "2026-10-23",
+   "exit": 229.3,
+   "ret": -3.18,
+   "reason": "below 50-day avg"
   }
  ],
  "summary": {
   "open": 10,
-  "closed": 2,
+  "closed": 3,
   "win_rate": 0.0,
-  "avg_ret": -3.15,
+  "avg_ret": -3.16,
   "avg_win": null,
-  "avg_loss": -3.15,
+  "avg_loss": -3.16,
   "morning": {
    "closed": 0,
    "win_rate": null,
@@ -158,11 +173,11 @@
    "avg_loss": null
   },
   "midday": {
-   "closed": 2,
+   "closed": 3,
    "win_rate": 0.0,
-   "avg_ret": -3.15,
+   "avg_ret": -3.16,
    "avg_win": null,
-   "avg_loss": -3.15
+   "avg_loss": -3.16
   }
  }
 }
