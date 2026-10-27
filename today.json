@@ -1,77 +1,61 @@
 {
- "date": "2026-10-26",
+ "date": "2026-10-27",
  "buys": {
-  "ANF": {
-   "price": 155.82,
-   "stop": 144.78,
-   "sma50": 138.07,
+  "PNFP": {
+   "price": 100.31,
+   "stop": 95.57,
+   "sma50": 97.75,
    "time": "morning",
-   "now": 164.76,
-   "since": 5.74
+   "now": 100.31,
+   "since": 0.0
   },
-  "NSC": {
-   "price": 329.99,
-   "stop": 318.83,
-   "sma50": 326.56,
+  "OKTA": {
+   "price": 220.01,
+   "stop": 195.1,
+   "sma50": 186.46,
    "time": "morning",
-   "now": 334.32,
-   "since": 1.31
-  },
-  "USB": {
-   "price": 59.88,
-   "stop": 57.52,
-   "sma50": 59.82,
-   "time": "10am",
-   "now": 59.88,
+   "now": 220.01,
    "since": 0.0
   },
   "FNB": {
-   "price": 18.39,
-   "stop": 17.67,
+   "price": 18.33,
+   "stop": 17.61,
    "sma50": 17.87,
-   "time": "10am",
-   "now": 18.43,
-   "since": 0.22
-  },
-  "FITB": {
-   "price": 53.21,
-   "stop": 50.98,
-   "sma50": 52.63,
-   "time": "10am",
-   "now": 53.17,
-   "since": -0.08
-  },
-  "PNFP": {
-   "price": 101.14,
-   "stop": 96.42,
-   "sma50": 97.76,
-   "time": "10am",
-   "now": 100.92,
-   "since": -0.22
+   "time": "morning",
+   "now": 18.33,
+   "since": 0.0
   },
   "ASB": {
-   "price": 30.37,
-   "stop": 29.25,
+   "price": 30.23,
+   "stop": 29.11,
    "sma50": 29.71,
-   "time": "10am",
-   "now": 30.35,
-   "since": -0.07
+   "time": "morning",
+   "now": 30.23,
+   "since": 0.0
   },
   "SSB": {
-   "price": 106.1,
-   "stop": 101.62,
-   "sma50": 103.85,
-   "time": "10am",
-   "now": 105.76,
-   "since": -0.32
+   "price": 105.4,
+   "stop": 100.88,
+   "sma50": 103.84,
+   "time": "morning",
+   "now": 105.4,
+   "since": 0.0
   },
-  "EGP": {
-   "price": 200.91,
-   "stop": 191.86,
-   "sma50": 198.12,
-   "time": "10am",
-   "now": 200.06,
-   "since": -0.42
+  "TXN": {
+   "price": 298.12,
+   "stop": 277.62,
+   "sma50": 272.78,
+   "time": "morning",
+   "now": 298.12,
+   "since": 0.0
+  },
+  "FITB": {
+   "price": 53.1,
+   "stop": 50.86,
+   "sma50": 52.63,
+   "time": "morning",
+   "now": 53.1,
+   "since": 0.0
   }
  },
  "cancelled": [],

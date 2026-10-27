@@ -6,9 +6,9 @@
    "entry_date": "2026-10-21",
    "entry": 49.98,
    "stop": 47.23,
-   "peak": 51.38999938964844,
-   "last_checked": "2026-10-23",
-   "now": 51.67,
+   "peak": 51.63999938964844,
+   "last_checked": "2026-10-26",
+   "now": 51.64,
    "tier": "high"
   },
   {
@@ -17,9 +17,9 @@
    "entry_date": "2026-10-21",
    "entry": 407.59,
    "stop": 381.42,
-   "peak": 407.59,
-   "last_checked": "2026-10-23",
-   "now": 408.91,
+   "peak": 407.92999267578125,
+   "last_checked": "2026-10-26",
+   "now": 407.93,
    "tier": "high"
   },
   {
@@ -28,9 +28,9 @@
    "entry_date": "2026-10-21",
    "entry": 284.65,
    "stop": 265.24,
-   "peak": 284.69000244140625,
-   "last_checked": "2026-10-23",
-   "now": 297.93,
+   "peak": 298.1199951171875,
+   "last_checked": "2026-10-26",
+   "now": 298.12,
    "tier": "high"
   },
   {
@@ -39,9 +39,9 @@
    "entry_date": "2026-10-22",
    "entry": 48.46,
    "stop": 46.73,
-   "peak": 48.66999816894531,
-   "last_checked": "2026-10-23",
-   "now": 49.05,
+   "peak": 48.91999816894531,
+   "last_checked": "2026-10-26",
+   "now": 48.92,
    "tier": "high"
   },
   {
@@ -50,9 +50,9 @@
    "entry_date": "2026-10-22",
    "entry": 417.92,
    "stop": 395.51,
-   "peak": 417.92,
-   "last_checked": "2026-10-23",
-   "now": 420.2,
+   "peak": 421.8699951171875,
+   "last_checked": "2026-10-26",
+   "now": 421.87,
    "tier": "high"
   },
   {
@@ -61,9 +61,9 @@
    "entry_date": "2026-10-22",
    "entry": 29.89,
    "stop": 28.69,
-   "peak": 30.860000610351562,
-   "last_checked": "2026-10-23",
-   "now": 31.16,
+   "peak": 31.059999465942383,
+   "last_checked": "2026-10-26",
+   "now": 31.06,
    "tier": "high"
   },
   {
@@ -72,9 +72,9 @@
    "entry_date": "2026-10-23",
    "entry": 289.58,
    "stop": 278.46,
-   "peak": 289.58,
-   "last_checked": "2026-10-23",
-   "now": 297.23,
+   "peak": 296.9700012207031,
+   "last_checked": "2026-10-26",
+   "now": 296.97,
    "tier": "high"
   },
   {
@@ -83,9 +83,9 @@
    "entry_date": "2026-10-23",
    "entry": 331.56,
    "stop": 320.4,
-   "peak": 331.56,
-   "last_checked": "2026-10-23",
-   "now": 334.32,
+   "peak": 333.989990234375,
+   "last_checked": "2026-10-26",
+   "now": 333.99,
    "tier": "high"
   },
   {
@@ -95,8 +95,8 @@
    "entry": 30.27,
    "stop": 29.13,
    "peak": 30.27,
-   "last_checked": "2026-10-23",
-   "now": 30.35,
+   "last_checked": "2026-10-26",
+   "now": 30.23,
    "tier": "high"
   },
   {
@@ -105,9 +105,9 @@
    "entry_date": "2026-10-23",
    "entry": 155.82,
    "stop": 144.78,
-   "peak": 155.82,
-   "last_checked": "2026-10-23",
-   "now": 164.76,
+   "peak": 164.72999572753906,
+   "last_checked": "2026-10-26",
+   "now": 164.73,
    "tier": "high"
   },
   {
@@ -175,6 +175,17 @@
    "last_checked": "2026-10-26",
    "now": 200.06,
    "tier": "high"
+  },
+  {
+   "ticker": "OKTA",
+   "kind": "morning",
+   "entry_date": "2026-10-26",
+   "entry": 220.01,
+   "stop": 195.1,
+   "peak": 220.01,
+   "last_checked": "2026-10-26",
+   "now": 220.01,
+   "tier": "high"
   }
  ],
  "closed": [
@@ -225,7 +236,7 @@
   }
  ],
  "summary": {
-  "open": 16,
+  "open": 17,
   "closed": 3,
   "win_rate": 0.0,
   "avg_ret": -3.16,
