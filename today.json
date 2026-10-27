@@ -6,55 +6,63 @@
    "stop": 95.57,
    "sma50": 97.75,
    "time": "morning",
-   "now": 100.31,
-   "since": 0.0
+   "now": 99.75,
+   "since": -0.56
   },
   "OKTA": {
    "price": 220.01,
    "stop": 195.1,
    "sma50": 186.46,
    "time": "morning",
-   "now": 220.01,
-   "since": 0.0
+   "now": 221.65,
+   "since": 0.75
   },
   "FNB": {
    "price": 18.33,
    "stop": 17.61,
    "sma50": 17.87,
    "time": "morning",
-   "now": 18.33,
-   "since": 0.0
+   "now": 18.19,
+   "since": -0.76
   },
   "ASB": {
    "price": 30.23,
    "stop": 29.11,
    "sma50": 29.71,
    "time": "morning",
-   "now": 30.23,
-   "since": 0.0
+   "now": 30.11,
+   "since": -0.4
   },
   "SSB": {
    "price": 105.4,
    "stop": 100.88,
    "sma50": 103.84,
    "time": "morning",
-   "now": 105.4,
-   "since": 0.0
+   "now": 105.34,
+   "since": -0.06
   },
   "TXN": {
    "price": 298.12,
    "stop": 277.62,
    "sma50": 272.78,
    "time": "morning",
-   "now": 298.12,
-   "since": 0.0
+   "now": 302.73,
+   "since": 1.55
   },
   "FITB": {
    "price": 53.1,
    "stop": 50.86,
    "sma50": 52.63,
    "time": "morning",
-   "now": 53.1,
+   "now": 53.18,
+   "since": 0.15
+  },
+  "ADI": {
+   "price": 416.08,
+   "stop": 387.72,
+   "sma50": 384.96,
+   "time": "9am",
+   "now": 416.08,
    "since": 0.0
   }
  },
