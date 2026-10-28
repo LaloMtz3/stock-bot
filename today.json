@@ -6,50 +6,68 @@
    "stop": 229.54,
    "sma50": 236.47,
    "time": "morning",
-   "now": 246.32,
-   "since": -0.19
+   "now": 247.2,
+   "since": 0.16
   },
   "TXN": {
    "price": 308.91,
    "stop": 288.57,
    "sma50": 273.3,
    "time": "morning",
-   "now": 305.75,
-   "since": -1.02
+   "now": 306.9,
+   "since": -0.65
   },
   "FNB": {
    "price": 18.09,
    "stop": 17.41,
    "sma50": 17.83,
    "time": "9am",
-   "now": 18.13,
-   "since": 0.22
+   "now": 18.06,
+   "since": -0.17
   },
   "ADI": {
    "price": 426.74,
    "stop": 397.77,
    "sma50": 386.17,
    "time": "9am",
-   "now": 424.8,
-   "since": -0.45
+   "now": 426.85,
+   "since": 0.03
   },
   "USB": {
    "price": 59.71,
    "stop": 57.51,
    "sma50": 59.64,
    "time": "12pm",
-   "now": 59.71,
-   "since": 0.0
+   "now": 59.56,
+   "since": -0.25
   },
   "HQY": {
    "price": 101.49,
    "stop": 95.73,
    "sma50": 95.46,
    "time": "12pm",
-   "now": 101.49,
+   "now": 101.17,
+   "since": -0.32
+  },
+  "PKG": {
+   "price": 246.65,
+   "stop": 236.04,
+   "sma50": 236.59,
+   "time": "2pm",
+   "now": 246.65,
+   "since": 0.0
+  },
+  "RTX": {
+   "price": 196.9,
+   "stop": 186.6,
+   "sma50": 195.48,
+   "time": "2pm",
+   "now": 196.9,
    "since": 0.0
   }
  },
- "cancelled": [],
+ "cancelled": [
+  "USB"
+ ],
  "sell_alerts": []
 }
