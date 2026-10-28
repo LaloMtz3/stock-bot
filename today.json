@@ -1,77 +1,21 @@
 {
- "date": "2026-10-27",
+ "date": "2026-10-28",
  "buys": {
-  "PNFP": {
-   "price": 100.31,
-   "stop": 95.57,
-   "sma50": 97.75,
+  "STLD": {
+   "price": 246.8,
+   "stop": 229.54,
+   "sma50": 236.47,
    "time": "morning",
-   "now": 99.82,
-   "since": -0.49
-  },
-  "OKTA": {
-   "price": 220.01,
-   "stop": 195.1,
-   "sma50": 186.46,
-   "time": "morning",
-   "now": 227.03,
-   "since": 3.19
-  },
-  "FNB": {
-   "price": 18.33,
-   "stop": 17.61,
-   "sma50": 17.87,
-   "time": "morning",
-   "now": 18.25,
-   "since": -0.44
-  },
-  "ASB": {
-   "price": 30.23,
-   "stop": 29.11,
-   "sma50": 29.71,
-   "time": "morning",
-   "now": 30.25,
-   "since": 0.07
-  },
-  "SSB": {
-   "price": 105.4,
-   "stop": 100.88,
-   "sma50": 103.84,
-   "time": "morning",
-   "now": 105.76,
-   "since": 0.34
+   "now": 246.8,
+   "since": 0.0
   },
   "TXN": {
-   "price": 298.12,
-   "stop": 277.62,
-   "sma50": 272.78,
+   "price": 308.91,
+   "stop": 288.57,
+   "sma50": 273.3,
    "time": "morning",
-   "now": 309.02,
-   "since": 3.66
-  },
-  "FITB": {
-   "price": 53.1,
-   "stop": 50.86,
-   "sma50": 52.63,
-   "time": "morning",
-   "now": 53.62,
-   "since": 0.98
-  },
-  "ADI": {
-   "price": 416.08,
-   "stop": 387.72,
-   "sma50": 384.96,
-   "time": "9am",
-   "now": 426.66,
-   "since": 2.54
-  },
-  "STLD": {
-   "price": 244.57,
-   "stop": 227.48,
-   "sma50": 236.43,
-   "time": "12pm",
-   "now": 245.39,
-   "since": 0.34
+   "now": 308.91,
+   "since": 0.0
   }
  },
  "cancelled": [],

@@ -7,8 +7,8 @@
    "entry": 49.98,
    "stop": 47.23,
    "peak": 51.63999938964844,
-   "last_checked": "2026-10-26",
-   "now": 51.33,
+   "last_checked": "2026-10-27",
+   "now": 51.23,
    "tier": "high"
   },
   {
@@ -17,9 +17,9 @@
    "entry_date": "2026-10-21",
    "entry": 407.59,
    "stop": 381.42,
-   "peak": 407.92999267578125,
-   "last_checked": "2026-10-26",
-   "now": 426.66,
+   "peak": 425.3500061035156,
+   "last_checked": "2026-10-27",
+   "now": 425.35,
    "tier": "high"
   },
   {
@@ -28,9 +28,9 @@
    "entry_date": "2026-10-21",
    "entry": 284.65,
    "stop": 265.24,
-   "peak": 298.1199951171875,
-   "last_checked": "2026-10-26",
-   "now": 309.02,
+   "peak": 308.9100036621094,
+   "last_checked": "2026-10-27",
+   "now": 308.91,
    "tier": "high"
   },
   {
@@ -40,8 +40,8 @@
    "entry": 48.46,
    "stop": 46.73,
    "peak": 48.91999816894531,
-   "last_checked": "2026-10-26",
-   "now": 48.59,
+   "last_checked": "2026-10-27",
+   "now": 48.52,
    "tier": "high"
   },
   {
@@ -50,9 +50,9 @@
    "entry_date": "2026-10-22",
    "entry": 417.92,
    "stop": 395.51,
-   "peak": 421.8699951171875,
-   "last_checked": "2026-10-26",
-   "now": 431.21,
+   "peak": 432.7900085449219,
+   "last_checked": "2026-10-27",
+   "now": 432.79,
    "tier": "high"
   },
   {
@@ -62,8 +62,8 @@
    "entry": 29.89,
    "stop": 28.69,
    "peak": 31.059999465942383,
-   "last_checked": "2026-10-26",
-   "now": 31.06,
+   "last_checked": "2026-10-27",
+   "now": 31.04,
    "tier": "high"
   },
   {
@@ -72,9 +72,9 @@
    "entry_date": "2026-10-23",
    "entry": 289.58,
    "stop": 278.46,
-   "peak": 296.9700012207031,
-   "last_checked": "2026-10-26",
-   "now": 300.46,
+   "peak": 299.8800048828125,
+   "last_checked": "2026-10-27",
+   "now": 299.88,
    "tier": "high"
   },
   {
@@ -83,9 +83,9 @@
    "entry_date": "2026-10-23",
    "entry": 331.56,
    "stop": 320.4,
-   "peak": 333.989990234375,
-   "last_checked": "2026-10-26",
-   "now": 338.96,
+   "peak": 339.739990234375,
+   "last_checked": "2026-10-27",
+   "now": 339.74,
    "tier": "high"
   },
   {
@@ -95,8 +95,8 @@
    "entry": 30.27,
    "stop": 29.13,
    "peak": 30.27,
-   "last_checked": "2026-10-26",
-   "now": 30.25,
+   "last_checked": "2026-10-27",
+   "now": 30.21,
    "tier": "high"
   },
   {
@@ -105,9 +105,9 @@
    "entry_date": "2026-10-23",
    "entry": 155.82,
    "stop": 144.78,
-   "peak": 164.72999572753906,
-   "last_checked": "2026-10-26",
-   "now": 165.05,
+   "peak": 165.3800048828125,
+   "last_checked": "2026-10-27",
+   "now": 165.38,
    "tier": "high"
   },
   {
@@ -117,8 +117,8 @@
    "entry": 59.88,
    "stop": 57.52,
    "peak": 59.88,
-   "last_checked": "2026-10-26",
-   "now": 59.76,
+   "last_checked": "2026-10-27",
+   "now": 59.74,
    "tier": "high"
   },
   {
@@ -128,8 +128,8 @@
    "entry": 18.39,
    "stop": 17.67,
    "peak": 18.39,
-   "last_checked": "2026-10-26",
-   "now": 18.25,
+   "last_checked": "2026-10-27",
+   "now": 18.24,
    "tier": "high"
   },
   {
@@ -138,9 +138,9 @@
    "entry_date": "2026-10-26",
    "entry": 53.21,
    "stop": 50.98,
-   "peak": 53.21,
-   "last_checked": "2026-10-26",
-   "now": 53.62,
+   "peak": 53.59000015258789,
+   "last_checked": "2026-10-27",
+   "now": 53.59,
    "tier": "high"
   },
   {
@@ -150,8 +150,8 @@
    "entry": 101.14,
    "stop": 96.42,
    "peak": 101.14,
-   "last_checked": "2026-10-26",
-   "now": 99.82,
+   "last_checked": "2026-10-27",
+   "now": 99.73,
    "tier": "high"
   },
   {
@@ -161,19 +161,8 @@
    "entry": 106.1,
    "stop": 101.62,
    "peak": 106.1,
-   "last_checked": "2026-10-26",
-   "now": 105.76,
-   "tier": "high"
-  },
-  {
-   "ticker": "EGP",
-   "kind": "midday",
-   "entry_date": "2026-10-26",
-   "entry": 200.91,
-   "stop": 191.86,
-   "peak": 200.91,
-   "last_checked": "2026-10-26",
-   "now": 198.53,
+   "last_checked": "2026-10-27",
+   "now": 105.68,
    "tier": "high"
   },
   {
@@ -182,9 +171,9 @@
    "entry_date": "2026-10-26",
    "entry": 220.01,
    "stop": 195.1,
-   "peak": 220.01,
-   "last_checked": "2026-10-26",
-   "now": 227.03,
+   "peak": 226.07000732421875,
+   "last_checked": "2026-10-27",
+   "now": 226.07,
    "tier": "high"
   },
   {
@@ -244,15 +233,30 @@
    "exit": 229.3,
    "ret": -3.18,
    "reason": "below 50-day avg"
+  },
+  {
+   "ticker": "EGP",
+   "kind": "midday",
+   "entry_date": "2026-10-26",
+   "entry": 200.91,
+   "stop": 191.86,
+   "peak": 200.91,
+   "last_checked": "2026-10-26",
+   "now": 198.53,
+   "tier": "high",
+   "exit_date": "2026-10-27",
+   "exit": 197.45,
+   "ret": -1.72,
+   "reason": "below 50-day avg"
   }
  ],
  "summary": {
-  "open": 18,
-  "closed": 3,
+  "open": 17,
+  "closed": 4,
   "win_rate": 0.0,
-  "avg_ret": -3.16,
+  "avg_ret": -2.8,
   "avg_win": null,
-  "avg_loss": -3.16,
+  "avg_loss": -2.8,
   "morning": {
    "closed": 0,
    "win_rate": null,
@@ -261,11 +265,11 @@
    "avg_loss": null
   },
   "midday": {
-   "closed": 3,
+   "closed": 4,
    "win_rate": 0.0,
-   "avg_ret": -3.16,
+   "avg_ret": -2.8,
    "avg_win": null,
-   "avg_loss": -3.16
+   "avg_loss": -2.8
   }
  }
 }
