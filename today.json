@@ -6,15 +6,31 @@
    "stop": 229.54,
    "sma50": 236.47,
    "time": "morning",
-   "now": 246.8,
-   "since": 0.0
+   "now": 239.41,
+   "since": -2.99
   },
   "TXN": {
    "price": 308.91,
    "stop": 288.57,
    "sma50": 273.3,
    "time": "morning",
-   "now": 308.91,
+   "now": 308.43,
+   "since": -0.16
+  },
+  "FNB": {
+   "price": 18.09,
+   "stop": 17.41,
+   "sma50": 17.83,
+   "time": "9am",
+   "now": 18.09,
+   "since": 0.0
+  },
+  "ADI": {
+   "price": 426.74,
+   "stop": 397.77,
+   "sma50": 386.17,
+   "time": "9am",
+   "now": 426.74,
    "since": 0.0
   }
  },
