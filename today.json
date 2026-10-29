@@ -6,63 +6,79 @@
    "stop": 231.67,
    "sma50": 236.49,
    "time": "morning",
-   "now": 251.22,
-   "since": 0.49
+   "now": 252.35,
+   "since": 0.94
   },
   "JLL": {
    "price": 333.34,
    "stop": 309.73,
    "sma50": 332.69,
    "time": "morning",
-   "now": 346.33,
-   "since": 3.9
+   "now": 348.23,
+   "since": 4.47
   },
   "KEX": {
    "price": 146.07,
    "stop": 138.58,
    "sma50": 137.12,
    "time": "morning",
-   "now": 145.62,
-   "since": -0.31
+   "now": 143.84,
+   "since": -1.53
   },
   "FNB": {
    "price": 18.13,
    "stop": 17.42,
    "sma50": 17.83,
    "time": "morning",
-   "now": 18.45,
-   "since": 1.77
+   "now": 18.26,
+   "since": 0.72
   },
   "HQY": {
    "price": 101.34,
    "stop": 95.58,
    "sma50": 95.46,
    "time": "morning",
-   "now": 101.85,
-   "since": 0.5
+   "now": 101.86,
+   "since": 0.51
   },
   "TXN": {
    "price": 307.86,
    "stop": 288.66,
    "sma50": 274.85,
    "time": "9am",
-   "now": 307.86,
-   "since": 0.0
+   "now": 308.07,
+   "since": 0.07
   },
   "ADI": {
    "price": 426.37,
    "stop": 397.68,
    "sma50": 387.29,
    "time": "9am",
-   "now": 426.37,
-   "since": 0.0
+   "now": 427.88,
+   "since": 0.35
   },
   "OKTA": {
    "price": 217.38,
    "stop": 191.38,
    "sma50": 191.21,
    "time": "9am",
-   "now": 217.38,
+   "now": 217.33,
+   "since": -0.02
+  },
+  "DAL": {
+   "price": 81.54,
+   "stop": 75.36,
+   "sma50": 80.31,
+   "time": "12pm",
+   "now": 81.54,
+   "since": 0.0
+  },
+  "NTAP": {
+   "price": 222.04,
+   "stop": 203.7,
+   "sma50": 204.81,
+   "time": "12pm",
+   "now": 222.04,
    "since": 0.0
   }
  },
