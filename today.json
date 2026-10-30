@@ -6,63 +6,71 @@
    "stop": 139.85,
    "sma50": 146.04,
    "time": "morning",
-   "now": 155.0,
-   "since": -3.12
+   "now": 151.77,
+   "since": -5.14
   },
   "EPR": {
    "price": 58.34,
    "stop": 55.66,
    "sma50": 57.11,
    "time": "morning",
-   "now": 57.67,
-   "since": -1.15
+   "now": 58.11,
+   "since": -0.39
   },
   "CUZ": {
    "price": 29.09,
    "stop": 27.73,
    "sma50": 28.18,
    "time": "morning",
-   "now": 29.14,
-   "since": 0.17
+   "now": 29.39,
+   "since": 1.03
   },
   "OKTA": {
    "price": 221.86,
    "stop": 195.86,
    "sma50": 191.3,
    "time": "morning",
-   "now": 209.78,
-   "since": -5.44
+   "now": 205.82,
+   "since": -7.23
   },
   "ASB": {
    "price": 30.33,
    "stop": 29.16,
    "sma50": 29.64,
    "time": "9am",
-   "now": 30.33,
-   "since": 0.0
+   "now": 30.22,
+   "since": -0.36
   },
   "USB": {
    "price": 59.94,
    "stop": 57.54,
    "sma50": 59.58,
    "time": "9am",
-   "now": 59.94,
-   "since": 0.0
+   "now": 59.6,
+   "since": -0.57
   },
   "EWBC": {
    "price": 132.1,
    "stop": 127.11,
    "sma50": 128.02,
    "time": "9am",
-   "now": 132.1,
-   "since": 0.0
+   "now": 130.99,
+   "since": -0.84
   },
   "CB": {
    "price": 365.2,
    "stop": 351.85,
    "sma50": 343.06,
    "time": "9am",
-   "now": 365.2,
+   "now": 365.73,
+   "since": 0.15
+  },
+  "TXN": {
+   "price": 297.67,
+   "stop": 276.54,
+   "sma50": 275.6,
+   "time": "12pm",
+   "now": 297.67,
    "since": 0.0
   }
  },
