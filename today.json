@@ -1,92 +1,36 @@
 {
- "date": "2026-10-29",
+ "date": "2026-10-30",
  "buys": {
-  "STLD": {
-   "price": 249.99,
-   "stop": 231.67,
-   "sma50": 236.49,
+  "ENTG": {
+   "price": 160.0,
+   "stop": 139.85,
+   "sma50": 146.04,
    "time": "morning",
-   "now": 253.33,
-   "since": 1.34
+   "now": 160.0,
+   "since": 0.0
   },
-  "JLL": {
-   "price": 333.34,
-   "stop": 309.73,
-   "sma50": 332.69,
+  "EPR": {
+   "price": 58.34,
+   "stop": 55.66,
+   "sma50": 57.11,
    "time": "morning",
-   "now": 350.35,
-   "since": 5.1
+   "now": 58.34,
+   "since": 0.0
   },
-  "KEX": {
-   "price": 146.07,
-   "stop": 138.58,
-   "sma50": 137.12,
+  "CUZ": {
+   "price": 29.09,
+   "stop": 27.73,
+   "sma50": 28.18,
    "time": "morning",
-   "now": 144.29,
-   "since": -1.22
-  },
-  "FNB": {
-   "price": 18.13,
-   "stop": 17.42,
-   "sma50": 17.83,
-   "time": "morning",
-   "now": 18.28,
-   "since": 0.83
-  },
-  "HQY": {
-   "price": 101.34,
-   "stop": 95.58,
-   "sma50": 95.46,
-   "time": "morning",
-   "now": 101.41,
-   "since": 0.07
-  },
-  "TXN": {
-   "price": 307.86,
-   "stop": 288.66,
-   "sma50": 274.85,
-   "time": "9am",
-   "now": 311.46,
-   "since": 1.17
-  },
-  "ADI": {
-   "price": 426.37,
-   "stop": 397.68,
-   "sma50": 387.29,
-   "time": "9am",
-   "now": 430.48,
-   "since": 0.96
+   "now": 29.09,
+   "since": 0.0
   },
   "OKTA": {
-   "price": 217.38,
-   "stop": 191.38,
-   "sma50": 191.21,
-   "time": "9am",
-   "now": 219.15,
-   "since": 0.81
-  },
-  "DAL": {
-   "price": 81.54,
-   "stop": 75.36,
-   "sma50": 80.31,
-   "time": "12pm",
-   "now": 81.55,
-   "since": 0.01
-  },
-  "NTAP": {
-   "price": 222.04,
-   "stop": 203.7,
-   "sma50": 204.81,
-   "time": "12pm",
-   "now": 217.84,
-   "since": -1.89
-  },
-  "JCI": {
-   "price": 157.08,
-   "stop": 146.75,
-   "sma50": 147.08,
-   "time": "2pm",
-   "now": 157.08,
+   "price": 221.86,
+   "stop": 195.86,
+   "sma50": 191.3,
+   "time": "morning",
+   "now": 221.86,
    "since": 0.0
   }
  },
