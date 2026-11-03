@@ -6,72 +6,88 @@
    "stop": 281.13,
    "sma50": 275.13,
    "time": "morning",
-   "now": 313.79,
-   "since": 3.9
+   "now": 312.72,
+   "since": 3.54
   },
   "STLD": {
    "price": 251.91,
    "stop": 232.87,
    "sma50": 238.07,
    "time": "morning",
-   "now": 249.33,
-   "since": -1.02
+   "now": 248.65,
+   "since": -1.29
   },
   "ADI": {
    "price": 428.24,
    "stop": 395.04,
    "sma50": 390.37,
    "time": "9am",
-   "now": 423.74,
-   "since": -1.05
+   "now": 422.05,
+   "since": -1.45
   },
   "ENTG": {
    "price": 160.83,
    "stop": 139.97,
    "sma50": 146.85,
    "time": "9am",
-   "now": 155.02,
-   "since": -3.61
+   "now": 153.34,
+   "since": -4.66
   },
   "BTSG": {
    "price": 69.05,
    "stop": 63.86,
    "sma50": 60.28,
    "time": "9am",
-   "now": 68.68,
-   "since": -0.54
+   "now": 69.27,
+   "since": 0.32
   },
   "IEX": {
    "price": 239.25,
    "stop": 226.8,
    "sma50": 229.89,
    "time": "9am",
-   "now": 238.62,
-   "since": -0.26
+   "now": 237.58,
+   "since": -0.7
   },
   "UMBF": {
    "price": 137.58,
    "stop": 130.71,
    "sma50": 135.32,
    "time": "9am",
-   "now": 137.21,
-   "since": -0.27
+   "now": 136.22,
+   "since": -0.99
   },
   "CBOE": {
    "price": 340.03,
    "stop": 313.75,
    "sma50": 296.15,
    "time": "9am",
-   "now": 343.8,
-   "since": 1.11
+   "now": 340.8,
+   "since": 0.23
   },
   "TRU": {
    "price": 78.47,
    "stop": 70.59,
    "sma50": 74.25,
    "time": "9am",
-   "now": 79.18,
-   "since": 0.9
+   "now": 78.08,
+   "since": -0.5
+  },
+  "NSC": {
+   "price": 342.3,
+   "stop": 329.03,
+   "sma50": 326.05,
+   "time": "2pm",
+   "now": 342.3,
+   "since": 0.0
+  },
+  "UBSI": {
+   "price": 48.56,
+   "stop": 46.68,
+   "sma50": 47.01,
+   "time": "2pm",
+   "now": 48.56,
+   "since": 0.0
   }
  },
  "cancelled": [],
