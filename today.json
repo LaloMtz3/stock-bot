@@ -1,37 +1,21 @@
 {
- "date": "2026-11-02",
+ "date": "2026-11-03",
  "buys": {
-  "VRSN": {
-   "price": 307.21,
-   "stop": 289.53,
-   "sma50": 295.98,
-   "time": "morning",
-   "now": 308.46,
-   "since": 0.41
-  },
-  "UMBF": {
-   "price": 137.07,
-   "stop": 130.39,
-   "sma50": 135.43,
-   "time": "9am",
-   "now": 138.19,
-   "since": 0.82
-  },
   "TXN": {
-   "price": 308.33,
-   "stop": 287.44,
-   "sma50": 275.26,
-   "time": "12pm",
-   "now": 302.75,
-   "since": -1.81
+   "price": 302.02,
+   "stop": 281.13,
+   "sma50": 275.13,
+   "time": "morning",
+   "now": 302.02,
+   "since": 0.0
   },
-  "EPR": {
-   "price": 58.84,
-   "stop": 56.12,
-   "sma50": 56.75,
-   "time": "12pm",
-   "now": 59.59,
-   "since": 1.27
+  "STLD": {
+   "price": 251.91,
+   "stop": 232.87,
+   "sma50": 238.07,
+   "time": "morning",
+   "now": 251.91,
+   "since": 0.0
   }
  },
  "cancelled": [],

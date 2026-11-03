@@ -1,25 +1,14 @@
 {
  "open": [
   {
-   "ticker": "DVN",
-   "kind": "midday",
-   "entry_date": "2026-10-21",
-   "entry": 49.98,
-   "stop": 47.23,
-   "peak": 52.150001525878906,
-   "last_checked": "2026-10-30",
-   "now": 48.73,
-   "tier": "high"
-  },
-  {
    "ticker": "ADI",
    "kind": "midday",
    "entry_date": "2026-10-21",
    "entry": 407.59,
    "stop": 381.42,
    "peak": 433.2799987792969,
-   "last_checked": "2026-10-30",
-   "now": 414.2,
+   "last_checked": "2026-11-02",
+   "now": 412.85,
    "tier": "high"
   },
   {
@@ -29,8 +18,8 @@
    "entry": 284.65,
    "stop": 265.24,
    "peak": 312.94000244140625,
-   "last_checked": "2026-10-30",
-   "now": 302.75,
+   "last_checked": "2026-11-02",
+   "now": 302.02,
    "tier": "high"
   },
   {
@@ -39,9 +28,9 @@
    "entry_date": "2026-10-22",
    "entry": 48.46,
    "stop": 46.73,
-   "peak": 48.91999816894531,
-   "last_checked": "2026-10-30",
-   "now": 49.49,
+   "peak": 49.310001373291016,
+   "last_checked": "2026-11-02",
+   "now": 49.31,
    "tier": "high"
   },
   {
@@ -50,9 +39,9 @@
    "entry_date": "2026-10-22",
    "entry": 417.92,
    "stop": 395.51,
-   "peak": 439.7099914550781,
-   "last_checked": "2026-10-30",
-   "now": 446.54,
+   "peak": 448.0799865722656,
+   "last_checked": "2026-11-02",
+   "now": 448.08,
    "tier": "high"
   },
   {
@@ -61,8 +50,8 @@
    "entry_date": "2026-10-22",
    "entry": 29.89,
    "stop": 28.69,
-   "peak": 31.059999465942383,
-   "last_checked": "2026-10-30",
+   "peak": 31.239999771118164,
+   "last_checked": "2026-11-02",
    "now": 31.24,
    "tier": "high"
   },
@@ -72,9 +61,9 @@
    "entry_date": "2026-10-23",
    "entry": 289.58,
    "stop": 278.46,
-   "peak": 304.0,
-   "last_checked": "2026-10-30",
-   "now": 307.11,
+   "peak": 307.0,
+   "last_checked": "2026-11-02",
+   "now": 307.0,
    "tier": "high"
   },
   {
@@ -83,9 +72,9 @@
    "entry_date": "2026-10-23",
    "entry": 331.56,
    "stop": 320.4,
-   "peak": 342.6400146484375,
-   "last_checked": "2026-10-30",
-   "now": 346.49,
+   "peak": 345.67999267578125,
+   "last_checked": "2026-11-02",
+   "now": 345.68,
    "tier": "high"
   },
   {
@@ -94,9 +83,9 @@
    "entry_date": "2026-10-23",
    "entry": 30.27,
    "stop": 29.13,
-   "peak": 30.530000686645508,
-   "last_checked": "2026-10-30",
-   "now": 31.22,
+   "peak": 31.1299991607666,
+   "last_checked": "2026-11-02",
+   "now": 31.13,
    "tier": "high"
   },
   {
@@ -106,8 +95,8 @@
    "entry": 155.82,
    "stop": 144.78,
    "peak": 165.77000427246094,
-   "last_checked": "2026-10-30",
-   "now": 165.16,
+   "last_checked": "2026-11-02",
+   "now": 164.17,
    "tier": "high"
   },
   {
@@ -116,8 +105,8 @@
    "entry_date": "2026-10-26",
    "entry": 18.39,
    "stop": 17.67,
-   "peak": 18.39,
-   "last_checked": "2026-10-30",
+   "peak": 18.440000534057617,
+   "last_checked": "2026-11-02",
    "now": 18.44,
    "tier": "high"
   },
@@ -127,9 +116,9 @@
    "entry_date": "2026-10-26",
    "entry": 53.21,
    "stop": 50.98,
-   "peak": 54.439998626708984,
-   "last_checked": "2026-10-30",
-   "now": 54.91,
+   "peak": 54.970001220703125,
+   "last_checked": "2026-11-02",
+   "now": 54.97,
    "tier": "high"
   },
   {
@@ -138,9 +127,9 @@
    "entry_date": "2026-10-26",
    "entry": 101.14,
    "stop": 96.42,
-   "peak": 101.70999908447266,
-   "last_checked": "2026-10-30",
-   "now": 104.2,
+   "peak": 104.31999969482422,
+   "last_checked": "2026-11-02",
+   "now": 104.32,
    "tier": "high"
   },
   {
@@ -149,20 +138,9 @@
    "entry_date": "2026-10-26",
    "entry": 106.1,
    "stop": 101.62,
-   "peak": 106.1,
-   "last_checked": "2026-10-30",
-   "now": 107.34,
-   "tier": "high"
-  },
-  {
-   "ticker": "OKTA",
-   "kind": "morning",
-   "entry_date": "2026-10-26",
-   "entry": 220.01,
-   "stop": 195.1,
-   "peak": 226.07000732421875,
-   "last_checked": "2026-10-30",
-   "now": 185.43,
+   "peak": 107.01000213623047,
+   "last_checked": "2026-11-02",
+   "now": 107.01,
    "tier": "high"
   },
   {
@@ -172,8 +150,8 @@
    "entry": 244.57,
    "stop": 227.48,
    "peak": 253.52999877929688,
-   "last_checked": "2026-10-30",
-   "now": 250.75,
+   "last_checked": "2026-11-02",
+   "now": 251.91,
    "tier": "high"
   },
   {
@@ -182,9 +160,9 @@
    "entry_date": "2026-10-28",
    "entry": 101.49,
    "stop": 95.73,
-   "peak": 102.47000122070312,
-   "last_checked": "2026-10-30",
-   "now": 103.93,
+   "peak": 103.66999816894531,
+   "last_checked": "2026-11-02",
+   "now": 103.67,
    "tier": "high"
   },
   {
@@ -193,9 +171,9 @@
    "entry_date": "2026-10-28",
    "entry": 246.65,
    "stop": 236.04,
-   "peak": 256.82000732421875,
-   "last_checked": "2026-10-30",
-   "now": 257.62,
+   "peak": 258.6400146484375,
+   "last_checked": "2026-11-02",
+   "now": 258.64,
    "tier": "high"
   },
   {
@@ -204,9 +182,9 @@
    "entry_date": "2026-10-28",
    "entry": 196.9,
    "stop": 186.6,
-   "peak": 199.8000030517578,
-   "last_checked": "2026-10-30",
-   "now": 202.38,
+   "peak": 202.7899932861328,
+   "last_checked": "2026-11-02",
+   "now": 202.79,
    "tier": "high"
   },
   {
@@ -215,9 +193,9 @@
    "entry_date": "2026-10-28",
    "entry": 333.34,
    "stop": 309.73,
-   "peak": 359.7900085449219,
-   "last_checked": "2026-10-30",
-   "now": 380.14,
+   "peak": 379.2900085449219,
+   "last_checked": "2026-11-02",
+   "now": 379.29,
    "tier": "high"
   },
   {
@@ -227,19 +205,8 @@
    "entry": 146.07,
    "stop": 138.58,
    "peak": 146.07,
-   "last_checked": "2026-10-30",
-   "now": 140.36,
-   "tier": "high"
-  },
-  {
-   "ticker": "JCI",
-   "kind": "midday",
-   "entry_date": "2026-10-29",
-   "entry": 157.08,
-   "stop": 146.75,
-   "peak": 157.08,
-   "last_checked": "2026-10-30",
-   "now": 146.55,
+   "last_checked": "2026-11-02",
+   "now": 140.64,
    "tier": "high"
   },
   {
@@ -249,8 +216,8 @@
    "entry": 160.0,
    "stop": 139.85,
    "peak": 160.0,
-   "last_checked": "2026-10-30",
-   "now": 151.25,
+   "last_checked": "2026-11-02",
+   "now": 151.56,
    "tier": "high"
   },
   {
@@ -259,9 +226,9 @@
    "entry_date": "2026-10-29",
    "entry": 58.34,
    "stop": 55.66,
-   "peak": 58.34,
-   "last_checked": "2026-10-30",
-   "now": 59.59,
+   "peak": 59.58000183105469,
+   "last_checked": "2026-11-02",
+   "now": 59.58,
    "tier": "high"
   },
   {
@@ -270,9 +237,9 @@
    "entry_date": "2026-10-29",
    "entry": 29.09,
    "stop": 27.73,
-   "peak": 29.549999237060547,
-   "last_checked": "2026-10-30",
-   "now": 29.91,
+   "peak": 29.799999237060547,
+   "last_checked": "2026-11-02",
+   "now": 29.8,
    "tier": "high"
   },
   {
@@ -281,9 +248,9 @@
    "entry_date": "2026-10-30",
    "entry": 59.94,
    "stop": 57.54,
-   "peak": 59.94,
-   "last_checked": "2026-10-30",
-   "now": 60.55,
+   "peak": 60.4900016784668,
+   "last_checked": "2026-11-02",
+   "now": 60.49,
    "tier": "high"
   },
   {
@@ -292,9 +259,9 @@
    "entry_date": "2026-10-30",
    "entry": 132.1,
    "stop": 127.11,
-   "peak": 132.1,
-   "last_checked": "2026-10-30",
-   "now": 133.34,
+   "peak": 133.14999389648438,
+   "last_checked": "2026-11-02",
+   "now": 133.15,
    "tier": "high"
   },
   {
@@ -303,9 +270,9 @@
    "entry_date": "2026-10-30",
    "entry": 365.2,
    "stop": 351.85,
-   "peak": 365.2,
-   "last_checked": "2026-10-30",
-   "now": 369.76,
+   "peak": 368.9800109863281,
+   "last_checked": "2026-11-02",
+   "now": 368.98,
    "tier": "high"
   },
   {
@@ -314,9 +281,9 @@
    "entry_date": "2026-10-30",
    "entry": 307.21,
    "stop": 289.53,
-   "peak": 307.21,
-   "last_checked": "2026-10-30",
-   "now": 308.46,
+   "peak": 308.3999938964844,
+   "last_checked": "2026-11-02",
+   "now": 308.4,
    "tier": "high"
   },
   {
@@ -436,28 +403,73 @@
    "exit": 199.18,
    "ret": -10.3,
    "reason": "stop-loss"
+  },
+  {
+   "ticker": "DVN",
+   "kind": "midday",
+   "entry_date": "2026-10-21",
+   "entry": 49.98,
+   "stop": 47.23,
+   "peak": 52.150001525878906,
+   "last_checked": "2026-10-30",
+   "now": 48.73,
+   "tier": "high",
+   "exit_date": "2026-11-02",
+   "exit": 48.63,
+   "ret": -2.7,
+   "reason": "below 50-day avg"
+  },
+  {
+   "ticker": "OKTA",
+   "kind": "morning",
+   "entry_date": "2026-10-26",
+   "entry": 220.01,
+   "stop": 195.1,
+   "peak": 226.07000732421875,
+   "last_checked": "2026-10-30",
+   "now": 185.43,
+   "tier": "high",
+   "exit_date": "2026-11-02",
+   "exit": 184.87,
+   "ret": -15.97,
+   "reason": "stop-loss"
+  },
+  {
+   "ticker": "JCI",
+   "kind": "midday",
+   "entry_date": "2026-10-29",
+   "entry": 157.08,
+   "stop": 146.75,
+   "peak": 157.08,
+   "last_checked": "2026-10-30",
+   "now": 146.55,
+   "tier": "high",
+   "exit_date": "2026-11-02",
+   "exit": 146.49,
+   "ret": -6.74,
+   "reason": "stop-loss"
   }
  ],
  "summary": {
-  "open": 30,
-  "closed": 7,
+  "open": 27,
+  "closed": 10,
   "win_rate": 0.0,
-  "avg_ret": -3.38,
+  "avg_ret": -4.91,
   "avg_win": null,
-  "avg_loss": -3.38,
+  "avg_loss": -4.91,
   "morning": {
-   "closed": 0,
-   "win_rate": null,
-   "avg_ret": null,
+   "closed": 1,
+   "win_rate": 0.0,
+   "avg_ret": -15.97,
    "avg_win": null,
-   "avg_loss": null
+   "avg_loss": -15.97
   },
   "midday": {
-   "closed": 7,
+   "closed": 9,
    "win_rate": 0.0,
-   "avg_ret": -3.38,
+   "avg_ret": -3.68,
    "avg_win": null,
-   "avg_loss": -3.38
+   "avg_loss": -3.68
   }
  }
 }
