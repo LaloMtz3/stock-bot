@@ -1,92 +1,84 @@
 {
- "date": "2026-11-03",
+ "date": "2026-11-04",
  "buys": {
-  "TXN": {
-   "price": 302.02,
-   "stop": 281.13,
-   "sma50": 275.13,
-   "time": "morning",
-   "now": 312.72,
-   "since": 3.54
-  },
-  "STLD": {
-   "price": 251.91,
-   "stop": 232.87,
-   "sma50": 238.07,
-   "time": "morning",
-   "now": 248.65,
-   "since": -1.29
-  },
-  "ADI": {
-   "price": 428.24,
-   "stop": 395.04,
-   "sma50": 390.37,
-   "time": "9am",
-   "now": 422.05,
-   "since": -1.45
-  },
-  "ENTG": {
-   "price": 160.83,
-   "stop": 139.97,
-   "sma50": 146.85,
-   "time": "9am",
-   "now": 153.34,
-   "since": -4.66
-  },
-  "BTSG": {
-   "price": 69.05,
-   "stop": 63.86,
-   "sma50": 60.28,
-   "time": "9am",
-   "now": 69.27,
-   "since": 0.32
-  },
-  "IEX": {
-   "price": 239.25,
-   "stop": 226.8,
-   "sma50": 229.89,
-   "time": "9am",
-   "now": 237.58,
-   "since": -0.7
-  },
-  "UMBF": {
-   "price": 137.58,
-   "stop": 130.71,
-   "sma50": 135.32,
-   "time": "9am",
-   "now": 136.22,
-   "since": -0.99
-  },
-  "CBOE": {
-   "price": 340.03,
-   "stop": 313.75,
-   "sma50": 296.15,
-   "time": "9am",
-   "now": 340.8,
-   "since": 0.23
-  },
-  "TRU": {
-   "price": 78.47,
-   "stop": 70.59,
-   "sma50": 74.25,
-   "time": "9am",
-   "now": 78.08,
-   "since": -0.5
-  },
   "NSC": {
-   "price": 342.3,
-   "stop": 329.03,
-   "sma50": 326.05,
-   "time": "2pm",
-   "now": 342.3,
+   "price": 340.95,
+   "stop": 327.65,
+   "sma50": 326.02,
+   "time": "morning",
+   "now": 340.95,
    "since": 0.0
   },
-  "UBSI": {
-   "price": 48.56,
-   "stop": 46.68,
-   "sma50": 47.01,
-   "time": "2pm",
-   "now": 48.56,
+  "SBRA": {
+   "price": 20.35,
+   "stop": 19.35,
+   "sma50": 19.85,
+   "time": "morning",
+   "now": 20.35,
+   "since": 0.0
+  },
+  "STLD": {
+   "price": 247.66,
+   "stop": 228.39,
+   "sma50": 238.45,
+   "time": "morning",
+   "now": 247.66,
+   "since": 0.0
+  },
+  "WAB": {
+   "price": 291.78,
+   "stop": 275.56,
+   "sma50": 285.24,
+   "time": "morning",
+   "now": 291.78,
+   "since": 0.0
+  },
+  "UNP": {
+   "price": 303.43,
+   "stop": 291.16,
+   "sma50": 287.21,
+   "time": "morning",
+   "now": 303.43,
+   "since": 0.0
+  },
+  "TRU": {
+   "price": 78.55,
+   "stop": 70.64,
+   "sma50": 74.25,
+   "time": "morning",
+   "now": 78.55,
+   "since": 0.0
+  },
+  "EPR": {
+   "price": 59.49,
+   "stop": 56.76,
+   "sma50": 56.76,
+   "time": "morning",
+   "now": 59.49,
+   "since": 0.0
+  },
+  "LECO": {
+   "price": 284.55,
+   "stop": 265.64,
+   "sma50": 267.69,
+   "time": "morning",
+   "now": 284.55,
+   "since": 0.0
+  },
+  "CR": {
+   "price": 206.7,
+   "stop": 189.28,
+   "sma50": 202.34,
+   "time": "morning",
+   "now": 206.7,
+   "since": 0.0
+  },
+  "OHI": {
+   "price": 47.53,
+   "stop": 45.43,
+   "sma50": 46.18,
+   "time": "morning",
+   "now": 47.53,
    "since": 0.0
   }
  },
