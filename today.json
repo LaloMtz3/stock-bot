@@ -6,82 +6,101 @@
    "stop": 327.65,
    "sma50": 326.02,
    "time": "morning",
-   "now": 340.95,
-   "since": 0.0
+   "now": 339.73,
+   "since": -0.36
   },
   "SBRA": {
    "price": 20.35,
    "stop": 19.35,
    "sma50": 19.85,
    "time": "morning",
-   "now": 20.35,
-   "since": 0.0
+   "now": 20.56,
+   "since": 1.03
   },
   "STLD": {
    "price": 247.66,
    "stop": 228.39,
    "sma50": 238.45,
    "time": "morning",
-   "now": 247.66,
-   "since": 0.0
+   "now": 236.3,
+   "since": -4.59
   },
   "WAB": {
    "price": 291.78,
    "stop": 275.56,
    "sma50": 285.24,
    "time": "morning",
-   "now": 291.78,
-   "since": 0.0
+   "now": 285.89,
+   "since": -2.02
   },
   "UNP": {
    "price": 303.43,
    "stop": 291.16,
    "sma50": 287.21,
    "time": "morning",
-   "now": 303.43,
-   "since": 0.0
+   "now": 303.78,
+   "since": 0.12
   },
   "TRU": {
    "price": 78.55,
    "stop": 70.64,
    "sma50": 74.25,
    "time": "morning",
-   "now": 78.55,
-   "since": 0.0
+   "now": 82.02,
+   "since": 4.42
   },
   "EPR": {
    "price": 59.49,
    "stop": 56.76,
    "sma50": 56.76,
    "time": "morning",
-   "now": 59.49,
-   "since": 0.0
+   "now": 59.6,
+   "since": 0.18
   },
   "LECO": {
    "price": 284.55,
    "stop": 265.64,
    "sma50": 267.69,
    "time": "morning",
-   "now": 284.55,
-   "since": 0.0
+   "now": 280.0,
+   "since": -1.6
   },
   "CR": {
    "price": 206.7,
    "stop": 189.28,
    "sma50": 202.34,
    "time": "morning",
-   "now": 206.7,
-   "since": 0.0
+   "now": 199.63,
+   "since": -3.42
   },
   "OHI": {
    "price": 47.53,
    "stop": 45.43,
    "sma50": 46.18,
    "time": "morning",
-   "now": 47.53,
+   "now": 48.33,
+   "since": 1.68
+  },
+  "UMBF": {
+   "price": 138.65,
+   "stop": 130.59,
+   "sma50": 135.21,
+   "time": "9am",
+   "now": 138.65,
+   "since": 0.0
+  },
+  "CB": {
+   "price": 371.57,
+   "stop": 358.69,
+   "sma50": 344.64,
+   "time": "9am",
+   "now": 371.57,
    "since": 0.0
   }
  },
- "cancelled": [],
+ "cancelled": [
+  "STLD",
+  "CR"
+ ],
  "sell_alerts": []
 }
