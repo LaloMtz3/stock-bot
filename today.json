@@ -6,32 +6,32 @@
    "stop": 282.39,
    "sma50": 283.14,
    "time": "9am",
-   "now": 295.5,
-   "since": 0.0
+   "now": 286.86,
+   "since": -2.92
   },
   "UMBF": {
    "price": 137.23,
    "stop": 129.04,
    "sma50": 135.09,
    "time": "9am",
-   "now": 137.23,
-   "since": 0.0
+   "now": 135.21,
+   "since": -1.47
   },
   "SSB": {
    "price": 106.18,
    "stop": 101.26,
    "sma50": 103.59,
    "time": "9am",
-   "now": 106.18,
-   "since": 0.0
+   "now": 104.86,
+   "since": -1.24
   },
   "EBAY": {
    "price": 123.21,
    "stop": 115.79,
    "sma50": 112.15,
    "time": "9am",
-   "now": 123.21,
-   "since": 0.0
+   "now": 121.35,
+   "since": -1.51
   }
  },
  "cancelled": [],
