@@ -6,39 +6,55 @@
    "stop": 60.06,
    "sma50": 60.63,
    "time": "morning",
-   "now": 64.69,
-   "since": -1.78
+   "now": 67.45,
+   "since": 2.41
   },
   "CB": {
    "price": 371.63,
    "stop": 357.81,
    "sma50": 345.27,
    "time": "morning",
-   "now": 366.99,
-   "since": -1.25
+   "now": 365.95,
+   "since": -1.53
   },
   "HOMB": {
    "price": 30.01,
    "stop": 28.75,
    "sma50": 29.39,
    "time": "9am",
-   "now": 30.01,
-   "since": 0.0
+   "now": 29.96,
+   "since": -0.17
   },
   "PRI": {
    "price": 286.88,
    "stop": 273.15,
    "sma50": 282.92,
    "time": "9am",
-   "now": 286.88,
-   "since": 0.0
+   "now": 288.87,
+   "since": 0.69
   },
   "AFG": {
    "price": 154.18,
    "stop": 147.98,
    "sma50": 144.21,
    "time": "9am",
-   "now": 154.18,
+   "now": 154.81,
+   "since": 0.41
+  },
+  "ASB": {
+   "price": 30.46,
+   "stop": 28.97,
+   "sma50": 29.67,
+   "time": "12pm",
+   "now": 30.46,
+   "since": 0.0
+  },
+  "VRSN": {
+   "price": 308.67,
+   "stop": 288.26,
+   "sma50": 298.12,
+   "time": "12pm",
+   "now": 308.67,
    "since": 0.0
   }
  },
