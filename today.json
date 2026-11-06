@@ -6,15 +6,39 @@
    "stop": 60.06,
    "sma50": 60.63,
    "time": "morning",
-   "now": 65.86,
-   "since": 0.0
+   "now": 64.69,
+   "since": -1.78
   },
   "CB": {
    "price": 371.63,
    "stop": 357.81,
    "sma50": 345.27,
    "time": "morning",
-   "now": 371.63,
+   "now": 366.99,
+   "since": -1.25
+  },
+  "HOMB": {
+   "price": 30.01,
+   "stop": 28.75,
+   "sma50": 29.39,
+   "time": "9am",
+   "now": 30.01,
+   "since": 0.0
+  },
+  "PRI": {
+   "price": 286.88,
+   "stop": 273.15,
+   "sma50": 282.92,
+   "time": "9am",
+   "now": 286.88,
+   "since": 0.0
+  },
+  "AFG": {
+   "price": 154.18,
+   "stop": 147.98,
+   "sma50": 144.21,
+   "time": "9am",
+   "now": 154.18,
    "since": 0.0
   }
  },
