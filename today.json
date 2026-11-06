@@ -1,41 +1,23 @@
 {
- "date": "2026-11-05",
+ "date": "2026-11-06",
  "buys": {
-  "PRI": {
-   "price": 295.5,
-   "stop": 282.39,
-   "sma50": 283.14,
-   "time": "9am",
-   "now": 286.58,
-   "since": -3.02
+  "BTSG": {
+   "price": 65.86,
+   "stop": 60.06,
+   "sma50": 60.63,
+   "time": "morning",
+   "now": 65.86,
+   "since": 0.0
   },
-  "UMBF": {
-   "price": 137.23,
-   "stop": 129.04,
-   "sma50": 135.09,
-   "time": "9am",
-   "now": 134.81,
-   "since": -1.76
-  },
-  "SSB": {
-   "price": 106.18,
-   "stop": 101.26,
-   "sma50": 103.59,
-   "time": "9am",
-   "now": 104.89,
-   "since": -1.21
-  },
-  "EBAY": {
-   "price": 123.21,
-   "stop": 115.79,
-   "sma50": 112.15,
-   "time": "9am",
-   "now": 122.89,
-   "since": -0.26
+  "CB": {
+   "price": 371.63,
+   "stop": 357.81,
+   "sma50": 345.27,
+   "time": "morning",
+   "now": 371.63,
+   "since": 0.0
   }
  },
- "cancelled": [
-  "UMBF"
- ],
+ "cancelled": [],
  "sell_alerts": []
 }
