@@ -6,7 +6,55 @@
    "stop": 148.35,
    "sma50": 144.22,
    "time": "morning",
-   "now": 154.55,
+   "now": 156.74,
+   "since": 1.42
+  },
+  "NTRS": {
+   "price": 177.88,
+   "stop": 168.38,
+   "sma50": 173.96,
+   "time": "9am",
+   "now": 177.88,
+   "since": 0.0
+  },
+  "PRI": {
+   "price": 295.9,
+   "stop": 281.52,
+   "sma50": 283.11,
+   "time": "9am",
+   "now": 295.9,
+   "since": 0.0
+  },
+  "ZION": {
+   "price": 66.53,
+   "stop": 63.35,
+   "sma50": 65.1,
+   "time": "9am",
+   "now": 66.53,
+   "since": 0.0
+  },
+  "CBOE": {
+   "price": 353.28,
+   "stop": 326.54,
+   "sma50": 299.49,
+   "time": "9am",
+   "now": 353.28,
+   "since": 0.0
+  },
+  "AMP": {
+   "price": 516.47,
+   "stop": 488.21,
+   "sma50": 513.86,
+   "time": "9am",
+   "now": 516.47,
+   "since": 0.0
+  },
+  "CFG": {
+   "price": 65.35,
+   "stop": 62.2,
+   "sma50": 65.34,
+   "time": "9am",
+   "now": 65.35,
    "since": 0.0
   }
  },
