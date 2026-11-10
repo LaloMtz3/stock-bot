@@ -1,125 +1,69 @@
 {
- "date": "2026-11-09",
+ "date": "2026-11-10",
  "buys": {
-  "AFG": {
-   "price": 154.55,
-   "stop": 148.35,
-   "sma50": 144.22,
-   "time": "morning",
-   "now": 157.74,
-   "since": 2.06
-  },
   "NTRS": {
-   "price": 177.88,
-   "stop": 168.38,
-   "sma50": 173.96,
-   "time": "9am",
-   "now": 178.21,
-   "since": 0.19
+   "price": 177.65,
+   "stop": 168.05,
+   "sma50": 173.95,
+   "time": "morning",
+   "now": 177.65,
+   "since": 0.0
   },
   "PRI": {
-   "price": 295.9,
-   "stop": 281.52,
-   "sma50": 283.11,
-   "time": "9am",
-   "now": 299.45,
-   "since": 1.2
+   "price": 299.22,
+   "stop": 284.31,
+   "sma50": 283.17,
+   "time": "morning",
+   "now": 299.22,
+   "since": 0.0
   },
-  "ZION": {
-   "price": 66.53,
-   "stop": 63.35,
-   "sma50": 65.1,
-   "time": "9am",
-   "now": 66.45,
-   "since": -0.12
-  },
-  "CBOE": {
-   "price": 353.28,
-   "stop": 326.54,
-   "sma50": 299.49,
-   "time": "9am",
-   "now": 353.08,
-   "since": -0.06
-  },
-  "AMP": {
-   "price": 516.47,
-   "stop": 488.21,
-   "sma50": 513.86,
-   "time": "9am",
-   "now": 520.23,
-   "since": 0.73
-  },
-  "CFG": {
-   "price": 65.35,
-   "stop": 62.2,
-   "sma50": 65.34,
-   "time": "9am",
-   "now": 65.42,
-   "since": 0.11
-  },
-  "ESS": {
-   "price": 277.09,
-   "stop": 262.52,
-   "sma50": 271.2,
-   "time": "12pm",
-   "now": 275.85,
-   "since": -0.45
-  },
-  "CBSH": {
-   "price": 56.66,
-   "stop": 54.22,
-   "sma50": 56.07,
-   "time": "12pm",
-   "now": 56.21,
-   "since": -0.79
-  },
-  "PNC": {
-   "price": 233.04,
-   "stop": 222.7,
-   "sma50": 227.14,
-   "time": "12pm",
-   "now": 232.07,
-   "since": -0.42
+  "LNTH": {
+   "price": 101.01,
+   "stop": 100.16,
+   "sma50": 100.28,
+   "time": "morning",
+   "now": 101.01,
+   "since": 0.0
   },
   "BNY": {
-   "price": 152.38,
-   "stop": 145.67,
-   "sma50": 149.56,
-   "time": "12pm",
-   "now": 151.65,
-   "since": -0.48
+   "price": 151.23,
+   "stop": 144.53,
+   "sma50": 149.53,
+   "time": "morning",
+   "now": 151.23,
+   "since": 0.0
   },
-  "ED": {
-   "price": 119.37,
-   "stop": 114.47,
-   "sma50": 109.14,
-   "time": "12pm",
-   "now": 118.47,
-   "since": -0.75
+  "AMH": {
+   "price": 32.9,
+   "stop": 31.58,
+   "sma50": 31.39,
+   "time": "morning",
+   "now": 32.9,
+   "since": 0.0
   },
-  "ASB": {
-   "price": 31.2,
-   "stop": 29.69,
-   "sma50": 29.68,
-   "time": "12pm",
-   "now": 30.94,
-   "since": -0.83
+  "EQIX": {
+   "price": 1054.5,
+   "stop": 973.91,
+   "sma50": 1016.92,
+   "time": "morning",
+   "now": 1054.5,
+   "since": 0.0
   },
-  "RJF": {
-   "price": 167.86,
-   "stop": 158.84,
-   "sma50": 162.95,
-   "time": "12pm",
-   "now": 167.94,
-   "since": 0.05
+  "USB": {
+   "price": 60.95,
+   "stop": 58.06,
+   "sma50": 59.38,
+   "time": "morning",
+   "now": 60.95,
+   "since": 0.0
   },
-  "HOMB": {
-   "price": 30.48,
-   "stop": 29.2,
-   "sma50": 29.4,
-   "time": "12pm",
-   "now": 30.32,
-   "since": -0.52
+  "OHI": {
+   "price": 48.83,
+   "stop": 46.47,
+   "sma50": 45.74,
+   "time": "morning",
+   "now": 48.83,
+   "since": 0.0
   }
  },
  "cancelled": [],
