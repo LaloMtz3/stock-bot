@@ -1,116 +1,92 @@
 {
- "date": "2026-11-10",
+ "date": "2026-11-11",
  "buys": {
   "NTRS": {
-   "price": 177.65,
-   "stop": 168.05,
-   "sma50": 173.95,
+   "price": 177.89,
+   "stop": 168.78,
+   "sma50": 173.82,
    "time": "morning",
-   "now": 177.47,
-   "since": -0.1
-  },
-  "PRI": {
-   "price": 299.22,
-   "stop": 284.31,
-   "sma50": 283.17,
-   "time": "morning",
-   "now": 304.54,
-   "since": 1.78
-  },
-  "LNTH": {
-   "price": 101.01,
-   "stop": 100.16,
-   "sma50": 100.28,
-   "time": "morning",
-   "now": 101.68,
-   "since": 0.66
-  },
-  "BNY": {
-   "price": 151.23,
-   "stop": 144.53,
-   "sma50": 149.53,
-   "time": "morning",
-   "now": 150.69,
-   "since": -0.36
-  },
-  "AMH": {
-   "price": 32.9,
-   "stop": 31.58,
-   "sma50": 31.39,
-   "time": "morning",
-   "now": 32.7,
-   "since": -0.61
-  },
-  "EQIX": {
-   "price": 1054.5,
-   "stop": 973.91,
-   "sma50": 1016.92,
-   "time": "morning",
-   "now": 1050.8,
-   "since": -0.35
-  },
-  "USB": {
-   "price": 60.95,
-   "stop": 58.06,
-   "sma50": 59.38,
-   "time": "morning",
-   "now": 60.76,
-   "since": -0.31
-  },
-  "OHI": {
-   "price": 48.83,
-   "stop": 46.47,
-   "sma50": 45.74,
-   "time": "morning",
-   "now": 48.64,
-   "since": -0.39
-  },
-  "EVRG": {
-   "price": 87.41,
-   "stop": 84.18,
-   "sma50": 82.07,
-   "time": "9am",
-   "now": 88.15,
-   "since": 0.85
-  },
-  "PNC": {
-   "price": 229.62,
-   "stop": 218.86,
-   "sma50": 226.95,
-   "time": "9am",
-   "now": 230.65,
-   "since": 0.45
+   "now": 177.89,
+   "since": 0.0
   },
   "ZION": {
-   "price": 66.43,
-   "stop": 63.22,
+   "price": 66.32,
+   "stop": 63.1,
    "sma50": 65.09,
-   "time": "12pm",
-   "now": 66.42,
-   "since": -0.02
+   "time": "morning",
+   "now": 66.32,
+   "since": 0.0
   },
-  "FITB": {
-   "price": 54.33,
-   "stop": 51.64,
-   "sma50": 52.47,
-   "time": "12pm",
-   "now": 54.29,
-   "since": -0.07
+  "EQIX": {
+   "price": 1050.0,
+   "stop": 969.0,
+   "sma50": 1016.98,
+   "time": "morning",
+   "now": 1050.0,
+   "since": 0.0
   },
-  "CBSH": {
-   "price": 56.11,
-   "stop": 53.69,
-   "sma50": 56.03,
-   "time": "12pm",
-   "now": 56.07,
-   "since": -0.07
+  "FIVE": {
+   "price": 253.51,
+   "stop": 233.76,
+   "sma50": 231.63,
+   "time": "morning",
+   "now": 253.51,
+   "since": 0.0
+  },
+  "HAE": {
+   "price": 122.36,
+   "stop": 113.27,
+   "sma50": 112.14,
+   "time": "morning",
+   "now": 122.36,
+   "since": 0.0
+  },
+  "PNC": {
+   "price": 231.3,
+   "stop": 220.49,
+   "sma50": 226.98,
+   "time": "morning",
+   "now": 231.3,
+   "since": 0.0
+  },
+  "AMH": {
+   "price": 32.78,
+   "stop": 31.5,
+   "sma50": 31.38,
+   "time": "morning",
+   "now": 32.78,
+   "since": 0.0
+  },
+  "WAB": {
+   "price": 303.49,
+   "stop": 284.58,
+   "sma50": 284.95,
+   "time": "morning",
+   "now": 303.49,
+   "since": 0.0
+  },
+  "USB": {
+   "price": 60.75,
+   "stop": 57.84,
+   "sma50": 59.37,
+   "time": "morning",
+   "now": 60.75,
+   "since": 0.0
   },
   "ITT": {
-   "price": 215.99,
-   "stop": 197.82,
-   "sma50": 201.7,
-   "time": "2pm",
-   "now": 215.99,
+   "price": 216.37,
+   "stop": 198.2,
+   "sma50": 201.71,
+   "time": "morning",
+   "now": 216.37,
+   "since": 0.0
+  },
+  "AMP": {
+   "price": 519.96,
+   "stop": 489.56,
+   "sma50": 511.56,
+   "time": "morning",
+   "now": 519.96,
    "since": 0.0
   }
  },
