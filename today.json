@@ -6,55 +6,79 @@
    "stop": 172.91,
    "sma50": 192.4,
    "time": "morning",
-   "now": 202.57,
-   "since": 2.99
+   "now": 205.61,
+   "since": 4.54
   },
   "BNY": {
    "price": 152.87,
    "stop": 146.55,
    "sma50": 149.03,
    "time": "9am",
-   "now": 152.87,
-   "since": 0.0
+   "now": 153.58,
+   "since": 0.46
   },
   "NTRS": {
    "price": 178.97,
    "stop": 170.28,
    "sma50": 173.67,
    "time": "9am",
-   "now": 178.97,
-   "since": 0.0
+   "now": 178.61,
+   "since": -0.2
   },
   "PNC": {
    "price": 230.96,
    "stop": 220.26,
    "sma50": 226.73,
    "time": "9am",
-   "now": 230.96,
-   "since": 0.0
+   "now": 230.92,
+   "since": -0.02
   },
   "FIVE": {
    "price": 250.12,
    "stop": 229.66,
    "sma50": 231.89,
    "time": "9am",
-   "now": 250.12,
-   "since": 0.0
+   "now": 247.55,
+   "since": -1.03
   },
   "BMY": {
    "price": 63.2,
    "stop": 59.99,
    "sma50": 61.75,
    "time": "9am",
-   "now": 63.2,
-   "since": 0.0
+   "now": 62.94,
+   "since": -0.41
   },
   "CB": {
    "price": 372.23,
    "stop": 358.82,
    "sma50": 348.27,
    "time": "9am",
-   "now": 372.23,
+   "now": 372.83,
+   "since": 0.16
+  },
+  "APD": {
+   "price": 316.58,
+   "stop": 304.52,
+   "sma50": 294.7,
+   "time": "12pm",
+   "now": 316.58,
+   "since": 0.0
+  },
+  "JAZZ": {
+   "price": 242.95,
+   "stop": 226.78,
+   "sma50": 229.3,
+   "time": "12pm",
+   "now": 242.95,
+   "since": 0.0
+  },
+  "OMC": {
+   "price": 87.93,
+   "stop": 82.62,
+   "sma50": 79.64,
+   "time": "12pm",
+   "now": 87.93,
    "since": 0.0
   }
  },
