@@ -6,15 +6,31 @@
    "stop": 223.73,
    "sma50": 229.25,
    "time": "morning",
-   "now": 240.37,
-   "since": 0.0
+   "now": 238.11,
+   "since": -0.94
   },
   "PNC": {
    "price": 231.03,
    "stop": 220.33,
    "sma50": 226.73,
    "time": "morning",
-   "now": 231.03,
+   "now": 231.51,
+   "since": 0.21
+  },
+  "NTRS": {
+   "price": 176.93,
+   "stop": 168.25,
+   "sma50": 173.45,
+   "time": "9am",
+   "now": 176.93,
+   "since": 0.0
+  },
+  "BNY": {
+   "price": 151.62,
+   "stop": 145.24,
+   "sma50": 148.79,
+   "time": "9am",
+   "now": 151.62,
    "since": 0.0
   }
  },
