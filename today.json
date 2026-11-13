@@ -6,32 +6,48 @@
    "stop": 223.73,
    "sma50": 229.25,
    "time": "morning",
-   "now": 240.59,
-   "since": 0.09
+   "now": 242.58,
+   "since": 0.92
   },
   "PNC": {
    "price": 231.03,
    "stop": 220.33,
    "sma50": 226.73,
    "time": "morning",
-   "now": 231.54,
-   "since": 0.22
+   "now": 231.93,
+   "since": 0.39
   },
   "NTRS": {
    "price": 176.93,
    "stop": 168.25,
    "sma50": 173.45,
    "time": "9am",
-   "now": 177.45,
-   "since": 0.29
+   "now": 177.96,
+   "since": 0.58
   },
   "BNY": {
    "price": 151.62,
    "stop": 145.24,
    "sma50": 148.79,
    "time": "9am",
-   "now": 152.3,
-   "since": 0.45
+   "now": 152.58,
+   "since": 0.63
+  },
+  "CFG": {
+   "price": 65.07,
+   "stop": 61.91,
+   "sma50": 65.02,
+   "time": "2pm",
+   "now": 65.07,
+   "since": 0.0
+  },
+  "ZION": {
+   "price": 66.2,
+   "stop": 63.19,
+   "sma50": 64.54,
+   "time": "2pm",
+   "now": 66.2,
+   "since": 0.0
   }
  },
  "cancelled": [],
