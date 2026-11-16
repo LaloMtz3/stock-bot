@@ -1,52 +1,28 @@
 {
- "date": "2026-11-13",
+ "date": "2026-11-16",
  "buys": {
-  "JAZZ": {
-   "price": 240.37,
-   "stop": 223.73,
-   "sma50": 229.25,
-   "time": "morning",
-   "now": 242.58,
-   "since": 0.92
-  },
-  "PNC": {
-   "price": 231.03,
-   "stop": 220.33,
-   "sma50": 226.73,
-   "time": "morning",
-   "now": 231.93,
-   "since": 0.39
-  },
   "NTRS": {
-   "price": 176.93,
-   "stop": 168.25,
-   "sma50": 173.45,
-   "time": "9am",
-   "now": 177.96,
-   "since": 0.58
-  },
-  "BNY": {
-   "price": 151.62,
-   "stop": 145.24,
-   "sma50": 148.79,
-   "time": "9am",
-   "now": 152.58,
-   "since": 0.63
+   "price": 178.24,
+   "stop": 169.54,
+   "sma50": 173.48,
+   "time": "morning",
+   "now": 178.24,
+   "since": 0.0
   },
   "CFG": {
-   "price": 65.07,
-   "stop": 61.91,
-   "sma50": 65.02,
-   "time": "2pm",
-   "now": 65.07,
+   "price": 65.26,
+   "stop": 62.1,
+   "sma50": 65.03,
+   "time": "morning",
+   "now": 65.26,
    "since": 0.0
   },
   "ZION": {
-   "price": 66.2,
-   "stop": 63.19,
+   "price": 66.34,
+   "stop": 63.32,
    "sma50": 64.54,
-   "time": "2pm",
-   "now": 66.2,
+   "time": "morning",
+   "now": 66.34,
    "since": 0.0
   }
  },
