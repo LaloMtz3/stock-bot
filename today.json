@@ -6,31 +6,47 @@
    "stop": 169.54,
    "sma50": 173.48,
    "time": "morning",
-   "now": 176.55,
-   "since": -0.95
+   "now": 174.66,
+   "since": -2.01
   },
   "CFG": {
    "price": 65.26,
    "stop": 62.1,
    "sma50": 65.03,
    "time": "morning",
-   "now": 64.75,
-   "since": -0.78
+   "now": 64.03,
+   "since": -1.88
   },
   "ZION": {
    "price": 66.34,
    "stop": 63.32,
    "sma50": 64.54,
    "time": "morning",
-   "now": 65.9,
-   "since": -0.66
+   "now": 65.27,
+   "since": -1.61
   },
   "BNY": {
    "price": 152.14,
    "stop": 145.67,
    "sma50": 148.59,
    "time": "10am",
-   "now": 152.14,
+   "now": 151.11,
+   "since": -0.68
+  },
+  "APD": {
+   "price": 315.24,
+   "stop": 302.99,
+   "sma50": 295.3,
+   "time": "12pm",
+   "now": 315.24,
+   "since": 0.0
+  },
+  "PGR": {
+   "price": 237.67,
+   "stop": 227.7,
+   "sma50": 220.33,
+   "time": "12pm",
+   "now": 237.67,
    "since": 0.0
   }
  },
