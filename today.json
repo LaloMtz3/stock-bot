@@ -6,23 +6,39 @@
    "stop": 85.14,
    "sma50": 82.65,
    "time": "morning",
-   "now": 88.38,
-   "since": 0.0
+   "now": 88.13,
+   "since": -0.28
   },
   "BNY": {
    "price": 151.69,
    "stop": 145.19,
    "sma50": 148.58,
    "time": "morning",
-   "now": 151.69,
-   "since": 0.0
+   "now": 149.22,
+   "since": -1.63
   },
   "ARMK": {
    "price": 55.37,
    "stop": 51.16,
    "sma50": 55.15,
    "time": "morning",
-   "now": 55.37,
+   "now": 56.51,
+   "since": 2.06
+  },
+  "TXNM": {
+   "price": 58.98,
+   "stop": 58.25,
+   "sma50": 58.19,
+   "time": "9am",
+   "now": 58.98,
+   "since": 0.0
+  },
+  "APD": {
+   "price": 314.08,
+   "stop": 300.78,
+   "sma50": 295.64,
+   "time": "9am",
+   "now": 314.08,
    "since": 0.0
   }
  },
