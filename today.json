@@ -1,105 +1,31 @@
 {
- "date": "2026-11-16",
+ "date": "2026-11-17",
  "buys": {
-  "NTRS": {
-   "price": 178.24,
-   "stop": 169.54,
-   "sma50": 173.48,
+  "EVRG": {
+   "price": 88.38,
+   "stop": 85.14,
+   "sma50": 82.65,
    "time": "morning",
-   "now": 175.12,
-   "since": -1.75
-  },
-  "CFG": {
-   "price": 65.26,
-   "stop": 62.1,
-   "sma50": 65.03,
-   "time": "morning",
-   "now": 64.2,
-   "since": -1.62
-  },
-  "ZION": {
-   "price": 66.34,
-   "stop": 63.32,
-   "sma50": 64.54,
-   "time": "morning",
-   "now": 65.49,
-   "since": -1.28
+   "now": 88.38,
+   "since": 0.0
   },
   "BNY": {
-   "price": 152.14,
-   "stop": 145.67,
-   "sma50": 148.59,
-   "time": "10am",
-   "now": 151.28,
-   "since": -0.57
-  },
-  "APD": {
-   "price": 315.24,
-   "stop": 302.99,
-   "sma50": 295.3,
-   "time": "12pm",
-   "now": 313.33,
-   "since": -0.61
-  },
-  "PGR": {
-   "price": 237.67,
-   "stop": 227.7,
-   "sma50": 220.33,
-   "time": "12pm",
-   "now": 237.22,
-   "since": -0.19
-  },
-  "EVRG": {
-   "price": 88.37,
-   "stop": 85.13,
-   "sma50": 82.65,
-   "time": "2pm",
-   "now": 88.37,
+   "price": 151.69,
+   "stop": 145.19,
+   "sma50": 148.58,
+   "time": "morning",
+   "now": 151.69,
    "since": 0.0
   },
-  "UNP": {
-   "price": 304.33,
-   "stop": 291.57,
-   "sma50": 287.57,
-   "time": "2pm",
-   "now": 304.33,
-   "since": 0.0
-  },
-  "ED": {
-   "price": 122.04,
-   "stop": 117.23,
-   "sma50": 110.37,
-   "time": "2pm",
-   "now": 122.04,
-   "since": 0.0
-  },
-  "NSC": {
-   "price": 329.7,
-   "stop": 314.92,
-   "sma50": 322.98,
-   "time": "2pm",
-   "now": 329.7,
-   "since": 0.0
-  },
-  "BMY": {
-   "price": 62.91,
-   "stop": 59.28,
-   "sma50": 61.59,
-   "time": "2pm",
-   "now": 62.91,
-   "since": 0.0
-  },
-  "PAG": {
-   "price": 212.01,
-   "stop": 209.93,
-   "sma50": 207.96,
-   "time": "2pm",
-   "now": 212.01,
+  "ARMK": {
+   "price": 55.37,
+   "stop": 51.16,
+   "sma50": 55.15,
+   "time": "morning",
+   "now": 55.37,
    "since": 0.0
   }
  },
- "cancelled": [
-  "CFG"
- ],
+ "cancelled": [],
  "sell_alerts": []
 }

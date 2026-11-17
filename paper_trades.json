@@ -7,8 +7,8 @@
    "entry": 48.46,
    "stop": 46.73,
    "peak": 49.310001373291016,
-   "last_checked": "2026-11-13",
-   "now": 47.79,
+   "last_checked": "2026-11-16",
+   "now": 47.99,
    "tier": "high"
   },
   {
@@ -18,8 +18,8 @@
    "entry": 417.92,
    "stop": 395.51,
    "peak": 448.0799865722656,
-   "last_checked": "2026-11-13",
-   "now": 420.8,
+   "last_checked": "2026-11-16",
+   "now": 421.07,
    "tier": "high"
   },
   {
@@ -29,8 +29,8 @@
    "entry": 29.89,
    "stop": 28.69,
    "peak": 31.3700008392334,
-   "last_checked": "2026-11-13",
-   "now": 30.4,
+   "last_checked": "2026-11-16",
+   "now": 30.53,
    "tier": "high"
   },
   {
@@ -40,8 +40,8 @@
    "entry": 289.58,
    "stop": 278.46,
    "peak": 308.5299987792969,
-   "last_checked": "2026-11-13",
-   "now": 304.33,
+   "last_checked": "2026-11-16",
+   "now": 303.71,
    "tier": "high"
   },
   {
@@ -51,19 +51,8 @@
    "entry": 30.27,
    "stop": 29.13,
    "peak": 31.350000381469727,
-   "last_checked": "2026-11-13",
-   "now": 30.59,
-   "tier": "high"
-  },
-  {
-   "ticker": "ANF",
-   "kind": "morning",
-   "entry_date": "2026-10-23",
-   "entry": 155.82,
-   "stop": 144.78,
-   "peak": 171.08999633789062,
-   "last_checked": "2026-11-13",
-   "now": 145.79,
+   "last_checked": "2026-11-16",
+   "now": 30.67,
    "tier": "high"
   },
   {
@@ -73,8 +62,8 @@
    "entry": 18.39,
    "stop": 17.67,
    "peak": 18.450000762939453,
-   "last_checked": "2026-11-13",
-   "now": 17.95,
+   "last_checked": "2026-11-16",
+   "now": 18.04,
    "tier": "high"
   },
   {
@@ -84,8 +73,8 @@
    "entry": 53.21,
    "stop": 50.98,
    "peak": 54.970001220703125,
-   "last_checked": "2026-11-13",
-   "now": 53.47,
+   "last_checked": "2026-11-16",
+   "now": 53.63,
    "tier": "high"
   },
   {
@@ -95,8 +84,8 @@
    "entry": 101.14,
    "stop": 96.42,
    "peak": 104.31999969482422,
-   "last_checked": "2026-11-13",
-   "now": 100.39,
+   "last_checked": "2026-11-16",
+   "now": 100.42,
    "tier": "high"
   },
   {
@@ -106,8 +95,8 @@
    "entry": 106.1,
    "stop": 101.62,
    "peak": 107.01000213623047,
-   "last_checked": "2026-11-13",
-   "now": 104.16,
+   "last_checked": "2026-11-16",
+   "now": 104.56,
    "tier": "high"
   },
   {
@@ -117,8 +106,8 @@
    "entry": 101.49,
    "stop": 95.73,
    "peak": 108.83999633789062,
-   "last_checked": "2026-11-13",
-   "now": 104.54,
+   "last_checked": "2026-11-16",
+   "now": 104.58,
    "tier": "high"
   },
   {
@@ -128,8 +117,8 @@
    "entry": 246.65,
    "stop": 236.04,
    "peak": 259.1700134277344,
-   "last_checked": "2026-11-13",
-   "now": 249.96,
+   "last_checked": "2026-11-16",
+   "now": 250.47,
    "tier": "high"
   },
   {
@@ -139,8 +128,8 @@
    "entry": 333.34,
    "stop": 309.73,
    "peak": 390.3299865722656,
-   "last_checked": "2026-11-13",
-   "now": 366.55,
+   "last_checked": "2026-11-16",
+   "now": 366.99,
    "tier": "high"
   },
   {
@@ -150,8 +139,8 @@
    "entry": 58.34,
    "stop": 55.66,
    "peak": 61.18000030517578,
-   "last_checked": "2026-11-13",
-   "now": 59.94,
+   "last_checked": "2026-11-16",
+   "now": 60.21,
    "tier": "high"
   },
   {
@@ -161,8 +150,8 @@
    "entry": 29.09,
    "stop": 27.73,
    "peak": 30.329999923706055,
-   "last_checked": "2026-11-13",
-   "now": 29.79,
+   "last_checked": "2026-11-16",
+   "now": 29.91,
    "tier": "high"
   },
   {
@@ -172,8 +161,8 @@
    "entry": 59.94,
    "stop": 57.54,
    "peak": 61.029998779296875,
-   "last_checked": "2026-11-13",
-   "now": 60.2,
+   "last_checked": "2026-11-16",
+   "now": 60.43,
    "tier": "high"
   },
   {
@@ -183,8 +172,8 @@
    "entry": 132.1,
    "stop": 127.11,
    "peak": 134.05999755859375,
-   "last_checked": "2026-11-13",
-   "now": 129.34,
+   "last_checked": "2026-11-16",
+   "now": 129.61,
    "tier": "high"
   },
   {
@@ -193,9 +182,9 @@
    "entry_date": "2026-10-30",
    "entry": 365.2,
    "stop": 351.85,
-   "peak": 375.739990234375,
-   "last_checked": "2026-11-13",
-   "now": 380.83,
+   "peak": 381.2799987792969,
+   "last_checked": "2026-11-16",
+   "now": 381.28,
    "tier": "high"
   },
   {
@@ -205,8 +194,8 @@
    "entry": 307.21,
    "stop": 289.53,
    "peak": 318.0299987792969,
-   "last_checked": "2026-11-13",
-   "now": 309.7,
+   "last_checked": "2026-11-16",
+   "now": 308.43,
    "tier": "high"
   },
   {
@@ -216,8 +205,8 @@
    "entry": 69.05,
    "stop": 63.86,
    "peak": 72.62000274658203,
-   "last_checked": "2026-11-13",
-   "now": 71.36,
+   "last_checked": "2026-11-16",
+   "now": 71.37,
    "tier": "high"
   },
   {
@@ -226,9 +215,9 @@
    "entry_date": "2026-11-03",
    "entry": 340.03,
    "stop": 313.75,
-   "peak": 375.4200134277344,
-   "last_checked": "2026-11-13",
-   "now": 376.58,
+   "peak": 377.5,
+   "last_checked": "2026-11-16",
+   "now": 377.5,
    "tier": "high"
   },
   {
@@ -238,8 +227,8 @@
    "entry": 78.47,
    "stop": 70.59,
    "peak": 83.11000061035156,
-   "last_checked": "2026-11-13",
-   "now": 81.43,
+   "last_checked": "2026-11-16",
+   "now": 81.49,
    "tier": "high"
   },
   {
@@ -249,8 +238,8 @@
    "entry": 20.35,
    "stop": 19.35,
    "peak": 21.469999313354492,
-   "last_checked": "2026-11-13",
-   "now": 20.33,
+   "last_checked": "2026-11-16",
+   "now": 20.35,
    "tier": "high"
   },
   {
@@ -260,8 +249,8 @@
    "entry": 284.55,
    "stop": 265.64,
    "peak": 288.1400146484375,
-   "last_checked": "2026-11-13",
-   "now": 276.42,
+   "last_checked": "2026-11-16",
+   "now": 276.14,
    "tier": "high"
   },
   {
@@ -271,8 +260,8 @@
    "entry": 47.53,
    "stop": 45.43,
    "peak": 49.16999816894531,
-   "last_checked": "2026-11-13",
-   "now": 46.87,
+   "last_checked": "2026-11-16",
+   "now": 47.08,
    "tier": "high"
   },
   {
@@ -282,8 +271,8 @@
    "entry": 154.15,
    "stop": 148.43,
    "peak": 161.19000244140625,
-   "last_checked": "2026-11-13",
-   "now": 159.32,
+   "last_checked": "2026-11-16",
+   "now": 159.45,
    "tier": "high"
   },
   {
@@ -293,8 +282,8 @@
    "entry": 295.5,
    "stop": 282.39,
    "peak": 304.1300048828125,
-   "last_checked": "2026-11-13",
-   "now": 294.07,
+   "last_checked": "2026-11-16",
+   "now": 295.44,
    "tier": "high"
   },
   {
@@ -304,8 +293,8 @@
    "entry": 123.21,
    "stop": 115.79,
    "peak": 123.5199966430664,
-   "last_checked": "2026-11-13",
-   "now": 120.62,
+   "last_checked": "2026-11-16",
+   "now": 120.89,
    "tier": "high"
   },
   {
@@ -315,8 +304,8 @@
    "entry": 30.01,
    "stop": 28.75,
    "peak": 30.399999618530273,
-   "last_checked": "2026-11-13",
-   "now": 29.78,
+   "last_checked": "2026-11-16",
+   "now": 29.86,
    "tier": "high"
   },
   {
@@ -326,8 +315,8 @@
    "entry": 177.88,
    "stop": 168.38,
    "peak": 178.7100067138672,
-   "last_checked": "2026-11-13",
-   "now": 175.12,
+   "last_checked": "2026-11-16",
+   "now": 175.45,
    "tier": "high"
   },
   {
@@ -337,8 +326,8 @@
    "entry": 66.53,
    "stop": 63.35,
    "peak": 66.54000091552734,
-   "last_checked": "2026-11-13",
-   "now": 65.49,
+   "last_checked": "2026-11-16",
+   "now": 65.72,
    "tier": "high"
   },
   {
@@ -348,8 +337,8 @@
    "entry": 516.47,
    "stop": 488.21,
    "peak": 520.0599975585938,
-   "last_checked": "2026-11-13",
-   "now": 512.93,
+   "last_checked": "2026-11-16",
+   "now": 514.06,
    "tier": "high"
   },
   {
@@ -359,8 +348,8 @@
    "entry": 277.09,
    "stop": 262.52,
    "peak": 277.09,
-   "last_checked": "2026-11-13",
-   "now": 272.62,
+   "last_checked": "2026-11-16",
+   "now": 273.46,
    "tier": "high"
   },
   {
@@ -370,8 +359,8 @@
    "entry": 233.04,
    "stop": 222.7,
    "peak": 233.04,
-   "last_checked": "2026-11-13",
-   "now": 228.82,
+   "last_checked": "2026-11-16",
+   "now": 229.61,
    "tier": "high"
   },
   {
@@ -381,8 +370,8 @@
    "entry": 152.38,
    "stop": 145.67,
    "peak": 153.41000366210938,
-   "last_checked": "2026-11-13",
-   "now": 151.28,
+   "last_checked": "2026-11-16",
+   "now": 151.69,
    "tier": "high"
   },
   {
@@ -391,9 +380,9 @@
    "entry_date": "2026-11-09",
    "entry": 119.37,
    "stop": 114.47,
-   "peak": 121.0,
-   "last_checked": "2026-11-13",
-   "now": 122.04,
+   "peak": 121.87999725341797,
+   "last_checked": "2026-11-16",
+   "now": 121.88,
    "tier": "high"
   },
   {
@@ -403,8 +392,8 @@
    "entry": 167.86,
    "stop": 158.84,
    "peak": 168.63999938964844,
-   "last_checked": "2026-11-13",
-   "now": 166.45,
+   "last_checked": "2026-11-16",
+   "now": 167.1,
    "tier": "high"
   },
   {
@@ -413,9 +402,9 @@
    "entry_date": "2026-11-09",
    "entry": 101.01,
    "stop": 100.16,
-   "peak": 101.62000274658203,
-   "last_checked": "2026-11-13",
-   "now": 101.75,
+   "peak": 101.72000122070312,
+   "last_checked": "2026-11-16",
+   "now": 101.72,
    "tier": "high"
   },
   {
@@ -425,8 +414,8 @@
    "entry": 32.9,
    "stop": 31.58,
    "peak": 32.9,
-   "last_checked": "2026-11-13",
-   "now": 32.4,
+   "last_checked": "2026-11-16",
+   "now": 32.52,
    "tier": "high"
   },
   {
@@ -436,8 +425,8 @@
    "entry": 1054.5,
    "stop": 973.91,
    "peak": 1072.77001953125,
-   "last_checked": "2026-11-13",
-   "now": 1043.57,
+   "last_checked": "2026-11-16",
+   "now": 1043.06,
    "tier": "high"
   },
   {
@@ -447,8 +436,8 @@
    "entry": 87.41,
    "stop": 84.18,
    "peak": 88.77999877929688,
-   "last_checked": "2026-11-13",
-   "now": 88.37,
+   "last_checked": "2026-11-16",
+   "now": 88.38,
    "tier": "high"
   },
   {
@@ -458,8 +447,8 @@
    "entry": 215.99,
    "stop": 197.82,
    "peak": 215.99,
-   "last_checked": "2026-11-13",
-   "now": 206.6,
+   "last_checked": "2026-11-16",
+   "now": 207.48,
    "tier": "high"
   },
   {
@@ -469,8 +458,8 @@
    "entry": 253.51,
    "stop": 233.76,
    "peak": 253.51,
-   "last_checked": "2026-11-13",
-   "now": 241.12,
+   "last_checked": "2026-11-16",
+   "now": 241.56,
    "tier": "high"
   },
   {
@@ -480,8 +469,8 @@
    "entry": 122.36,
    "stop": 113.27,
    "peak": 122.94000244140625,
-   "last_checked": "2026-11-13",
-   "now": 121.36,
+   "last_checked": "2026-11-16",
+   "now": 121.34,
    "tier": "high"
   },
   {
@@ -491,19 +480,8 @@
    "entry": 303.49,
    "stop": 284.58,
    "peak": 304.17999267578125,
-   "last_checked": "2026-11-13",
-   "now": 291.9,
-   "tier": "high"
-  },
-  {
-   "ticker": "ANET",
-   "kind": "morning",
-   "entry_date": "2026-11-11",
-   "entry": 196.68,
-   "stop": 172.91,
-   "peak": 206.6300048828125,
-   "last_checked": "2026-11-13",
-   "now": 185.61,
+   "last_checked": "2026-11-16",
+   "now": 291.74,
    "tier": "high"
   },
   {
@@ -513,8 +491,8 @@
    "entry": 63.2,
    "stop": 59.99,
    "peak": 63.43000030517578,
-   "last_checked": "2026-11-13",
-   "now": 62.91,
+   "last_checked": "2026-11-16",
+   "now": 62.93,
    "tier": "high"
   },
   {
@@ -524,8 +502,8 @@
    "entry": 316.58,
    "stop": 304.52,
    "peak": 316.58,
-   "last_checked": "2026-11-13",
-   "now": 313.33,
+   "last_checked": "2026-11-16",
+   "now": 313.9,
    "tier": "high"
   },
   {
@@ -535,8 +513,8 @@
    "entry": 242.95,
    "stop": 226.78,
    "peak": 242.95,
-   "last_checked": "2026-11-13",
-   "now": 239.84,
+   "last_checked": "2026-11-16",
+   "now": 239.77,
    "tier": "high"
   },
   {
@@ -545,20 +523,9 @@
    "entry_date": "2026-11-12",
    "entry": 87.93,
    "stop": 82.62,
-   "peak": 87.9800033569336,
-   "last_checked": "2026-11-13",
-   "now": 88.1,
-   "tier": "high"
-  },
-  {
-   "ticker": "CFG",
-   "kind": "midday",
-   "entry_date": "2026-11-13",
-   "entry": 65.07,
-   "stop": 61.91,
-   "peak": 65.07,
-   "last_checked": "2026-11-13",
-   "now": 64.2,
+   "peak": 88.0,
+   "last_checked": "2026-11-16",
+   "now": 88.0,
    "tier": "high"
   },
   {
@@ -592,6 +559,17 @@
    "peak": 212.01,
    "last_checked": "2026-11-16",
    "now": 212.01,
+   "tier": "high"
+  },
+  {
+   "ticker": "ARMK",
+   "kind": "morning",
+   "entry_date": "2026-11-16",
+   "entry": 55.37,
+   "stop": 51.16,
+   "peak": 55.37,
+   "last_checked": "2026-11-16",
+   "now": 55.37,
    "tier": "high"
   }
  ],
@@ -955,28 +933,73 @@
    "exit": 55.89,
    "ret": -1.36,
    "reason": "below 50-day avg"
+  },
+  {
+   "ticker": "ANF",
+   "kind": "morning",
+   "entry_date": "2026-10-23",
+   "entry": 155.82,
+   "stop": 144.78,
+   "peak": 171.08999633789062,
+   "last_checked": "2026-11-13",
+   "now": 145.79,
+   "tier": "high",
+   "exit_date": "2026-11-16",
+   "exit": 145.77,
+   "ret": -6.45,
+   "reason": "trailing exit"
+  },
+  {
+   "ticker": "ANET",
+   "kind": "morning",
+   "entry_date": "2026-11-11",
+   "entry": 196.68,
+   "stop": 172.91,
+   "peak": 206.6300048828125,
+   "last_checked": "2026-11-13",
+   "now": 185.61,
+   "tier": "high",
+   "exit_date": "2026-11-16",
+   "exit": 187.02,
+   "ret": -4.91,
+   "reason": "below 50-day avg"
+  },
+  {
+   "ticker": "CFG",
+   "kind": "midday",
+   "entry_date": "2026-11-13",
+   "entry": 65.07,
+   "stop": 61.91,
+   "peak": 65.07,
+   "last_checked": "2026-11-13",
+   "now": 64.2,
+   "tier": "high",
+   "exit_date": "2026-11-16",
+   "exit": 64.44,
+   "ret": -0.97,
+   "reason": "below 50-day avg"
   }
  ],
  "summary": {
-  "open": 54,
-  "closed": 24,
+  "open": 52,
+  "closed": 27,
   "win_rate": 0.0,
-  "avg_ret": -5.21,
+  "avg_ret": -5.08,
   "avg_win": null,
-  "avg_loss": -5.21,
+  "avg_loss": -5.08,
   "morning": {
-   "closed": 6,
+   "closed": 8,
    "win_rate": 0.0,
-   "avg_ret": -8.4,
+   "avg_ret": -7.72,
    "avg_win": null,
-   "avg_loss": -8.4
+   "avg_loss": -7.72
   },
   "midday": {
-   "closed": 18,
+   "closed": 19,
    "win_rate": 0.0,
-   "avg_ret": -4.14,
+   "avg_ret": -3.97,
    "avg_win": null,
-   "avg_loss": -4.14
+   "avg_loss": -3.97
   }
  }
 }
