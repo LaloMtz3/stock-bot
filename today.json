@@ -6,15 +6,23 @@
    "stop": 52.17,
    "sma50": 55.13,
    "time": "morning",
-   "now": 56.58,
-   "since": 0.0
+   "now": 56.46,
+   "since": -0.21
   },
   "OGE": {
    "price": 50.95,
    "stop": 49.15,
    "sma50": 47.44,
    "time": "morning",
-   "now": 50.95,
+   "now": 51.06,
+   "since": 0.22
+  },
+  "CB": {
+   "price": 370.67,
+   "stop": 356.43,
+   "sma50": 351.13,
+   "time": "9am",
+   "now": 370.67,
    "since": 0.0
   }
  },
