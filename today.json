@@ -6,39 +6,47 @@
    "stop": 52.17,
    "sma50": 55.13,
    "time": "morning",
-   "now": 57.01,
-   "since": 0.76
+   "now": 56.7,
+   "since": 0.21
   },
   "OGE": {
    "price": 50.95,
    "stop": 49.15,
    "sma50": 47.44,
    "time": "morning",
-   "now": 51.24,
-   "since": 0.57
+   "now": 51.18,
+   "since": 0.45
   },
   "CB": {
    "price": 370.67,
    "stop": 356.43,
    "sma50": 351.13,
    "time": "9am",
-   "now": 370.91,
-   "since": 0.06
+   "now": 371.79,
+   "since": 0.3
   },
   "CART": {
    "price": 58.98,
    "stop": 57.07,
    "sma50": 51.15,
    "time": "12pm",
-   "now": 58.98,
-   "since": 0.0
+   "now": 58.71,
+   "since": -0.46
   },
   "EPR": {
    "price": 60.22,
    "stop": 57.33,
    "sma50": 57.0,
    "time": "12pm",
-   "now": 60.22,
+   "now": 60.23,
+   "since": 0.02
+  },
+  "TXNM": {
+   "price": 58.96,
+   "stop": 58.24,
+   "sma50": 58.22,
+   "time": "2pm",
+   "now": 58.96,
    "since": 0.0
   }
  },
