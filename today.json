@@ -1,60 +1,20 @@
 {
- "date": "2026-11-17",
+ "date": "2026-11-18",
  "buys": {
-  "EVRG": {
-   "price": 88.38,
-   "stop": 85.14,
-   "sma50": 82.65,
-   "time": "morning",
-   "now": 87.21,
-   "since": -1.32
-  },
-  "BNY": {
-   "price": 151.69,
-   "stop": 145.19,
-   "sma50": 148.58,
-   "time": "morning",
-   "now": 149.88,
-   "since": -1.19
-  },
   "ARMK": {
-   "price": 55.37,
-   "stop": 51.16,
-   "sma50": 55.15,
+   "price": 56.58,
+   "stop": 52.17,
+   "sma50": 55.13,
    "time": "morning",
-   "now": 56.44,
-   "since": 1.93
-  },
-  "TXNM": {
-   "price": 58.98,
-   "stop": 58.25,
-   "sma50": 58.19,
-   "time": "9am",
-   "now": 58.92,
-   "since": -0.1
-  },
-  "APD": {
-   "price": 314.08,
-   "stop": 300.78,
-   "sma50": 295.64,
-   "time": "9am",
-   "now": 308.41,
-   "since": -1.81
+   "now": 56.58,
+   "since": 0.0
   },
   "OGE": {
-   "price": 51.17,
-   "stop": 49.39,
-   "sma50": 47.45,
-   "time": "12pm",
-   "now": 51.16,
-   "since": -0.02
-  },
-  "CB": {
-   "price": 375.18,
-   "stop": 360.83,
-   "sma50": 350.44,
-   "time": "2pm",
-   "now": 375.18,
+   "price": 50.95,
+   "stop": 49.15,
+   "sma50": 47.44,
+   "time": "morning",
+   "now": 50.95,
    "since": 0.0
   }
  },
