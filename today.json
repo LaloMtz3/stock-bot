@@ -6,15 +6,31 @@
    "stop": 52.47,
    "sma50": 55.12,
    "time": "morning",
-   "now": 56.85,
-   "since": 0.0
+   "now": 55.36,
+   "since": -2.62
   },
   "OGE": {
    "price": 51.23,
    "stop": 49.42,
    "sma50": 47.54,
    "time": "morning",
-   "now": 51.23,
+   "now": 50.55,
+   "since": -1.33
+  },
+  "SN": {
+   "price": 223.02,
+   "stop": 205.34,
+   "sma50": 194.72,
+   "time": "9am",
+   "now": 223.02,
+   "since": 0.0
+  },
+  "AMZN": {
+   "price": 268.42,
+   "stop": 247.5,
+   "sma50": 255.45,
+   "time": "9am",
+   "now": 268.42,
    "since": 0.0
   }
  },
