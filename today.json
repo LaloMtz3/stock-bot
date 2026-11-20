@@ -1,47 +1,6 @@
 {
- "date": "2026-11-19",
- "buys": {
-  "ARMK": {
-   "price": 56.85,
-   "stop": 52.47,
-   "sma50": 55.12,
-   "time": "morning",
-   "now": 55.25,
-   "since": -2.81
-  },
-  "OGE": {
-   "price": 51.23,
-   "stop": 49.42,
-   "sma50": 47.54,
-   "time": "morning",
-   "now": 50.93,
-   "since": -0.59
-  },
-  "SN": {
-   "price": 223.02,
-   "stop": 205.34,
-   "sma50": 194.72,
-   "time": "9am",
-   "now": 217.38,
-   "since": -2.53
-  },
-  "AMZN": {
-   "price": 268.42,
-   "stop": 247.5,
-   "sma50": 255.45,
-   "time": "9am",
-   "now": 257.92,
-   "since": -3.91
-  },
-  "COLM": {
-   "price": 74.42,
-   "stop": 69.22,
-   "sma50": 62.56,
-   "time": "12pm",
-   "now": 74.59,
-   "since": 0.23
-  }
- },
+ "date": "2026-11-20",
+ "buys": {},
  "cancelled": [],
  "sell_alerts": []
 }
