@@ -1,6 +1,23 @@
 {
- "date": "2026-11-20",
- "buys": {},
+ "date": "2026-11-23",
+ "buys": {
+  "TREX": {
+   "price": 51.7,
+   "stop": 45.66,
+   "sma50": 48.06,
+   "time": "morning",
+   "now": 51.7,
+   "since": 0.0
+  },
+  "QLYS": {
+   "price": 197.69,
+   "stop": 164.96,
+   "sma50": 193.64,
+   "time": "morning",
+   "now": 197.69,
+   "since": 0.0
+  }
+ },
  "cancelled": [],
  "sell_alerts": []
 }
