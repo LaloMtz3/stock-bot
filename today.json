@@ -1,33 +1,6 @@
 {
- "date": "2026-11-23",
- "buys": {
-  "TREX": {
-   "price": 51.7,
-   "stop": 45.66,
-   "sma50": 48.06,
-   "time": "morning",
-   "now": 51.7,
-   "since": 0.0
-  },
-  "QLYS": {
-   "price": 197.69,
-   "stop": 164.96,
-   "sma50": 193.64,
-   "time": "morning",
-   "now": 197.69,
-   "since": 0.0
-  },
-  "CRL": {
-   "price": 338.26,
-   "stop": 304.41,
-   "sma50": 317.25,
-   "time": "9pm",
-   "now": 338.26,
-   "since": 0.0
-  }
- },
- "cancelled": [
-  "QLYS"
- ],
+ "date": "2026-11-24",
+ "buys": {},
+ "cancelled": [],
  "sell_alerts": []
 }
