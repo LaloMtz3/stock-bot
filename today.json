@@ -1,6 +1,63 @@
 {
  "date": "2026-11-24",
- "buys": {},
+ "buys": {
+  "KRYS": {
+   "price": 344.42,
+   "stop": 321.09,
+   "sma50": 322.27,
+   "time": "5pm",
+   "now": 344.42,
+   "since": 0.0
+  },
+  "AIZ": {
+   "price": 322.64,
+   "stop": 309.81,
+   "sma50": 289.35,
+   "time": "5pm",
+   "now": 322.64,
+   "since": 0.0
+  },
+  "ED": {
+   "price": 119.55,
+   "stop": 114.8,
+   "sma50": 111.12,
+   "time": "5pm",
+   "now": 119.55,
+   "since": 0.0
+  },
+  "DAL": {
+   "price": 84.5,
+   "stop": 78.16,
+   "sma50": 82.49,
+   "time": "5pm",
+   "now": 84.5,
+   "since": 0.0
+  },
+  "CRL": {
+   "price": 336.13,
+   "stop": 305.11,
+   "sma50": 318.52,
+   "time": "5pm",
+   "now": 336.13,
+   "since": 0.0
+  },
+  "SIRI": {
+   "price": 32.15,
+   "stop": 30.3,
+   "sma50": 28.42,
+   "time": "5pm",
+   "now": 32.15,
+   "since": 0.0
+  },
+  "DGX": {
+   "price": 265.61,
+   "stop": 254.73,
+   "sma50": 244.35,
+   "time": "5pm",
+   "now": 265.61,
+   "since": 0.0
+  }
+ },
  "cancelled": [],
  "sell_alerts": []
 }
