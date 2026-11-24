@@ -6,16 +6,24 @@
    "stop": 45.66,
    "sma50": 48.06,
    "time": "morning",
-   "now": 49.83,
-   "since": -3.62
+   "now": 51.7,
+   "since": 0.0
   },
   "QLYS": {
    "price": 197.69,
    "stop": 164.96,
    "sma50": 193.64,
    "time": "morning",
-   "now": 185.92,
-   "since": -5.95
+   "now": 197.69,
+   "since": 0.0
+  },
+  "CRL": {
+   "price": 338.26,
+   "stop": 304.41,
+   "sma50": 317.25,
+   "time": "9pm",
+   "now": 338.26,
+   "since": 0.0
   }
  },
  "cancelled": [
