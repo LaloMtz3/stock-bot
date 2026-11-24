@@ -6,18 +6,20 @@
    "stop": 45.66,
    "sma50": 48.06,
    "time": "morning",
-   "now": 51.7,
-   "since": 0.0
+   "now": 49.83,
+   "since": -3.62
   },
   "QLYS": {
    "price": 197.69,
    "stop": 164.96,
    "sma50": 193.64,
    "time": "morning",
-   "now": 197.69,
-   "since": 0.0
+   "now": 185.92,
+   "since": -5.95
   }
  },
- "cancelled": [],
+ "cancelled": [
+  "QLYS"
+ ],
  "sell_alerts": []
 }
