@@ -6,56 +6,64 @@
    "stop": 321.09,
    "sma50": 322.27,
    "time": "5pm",
-   "now": 321.26,
-   "since": -6.72
+   "now": 344.42,
+   "since": 0.0
   },
   "AIZ": {
    "price": 322.64,
    "stop": 309.81,
    "sma50": 289.35,
    "time": "5pm",
-   "now": 319.05,
-   "since": -1.11
+   "now": 322.64,
+   "since": 0.0
   },
   "ED": {
    "price": 119.55,
    "stop": 114.8,
    "sma50": 111.12,
    "time": "5pm",
-   "now": 118.48,
-   "since": -0.9
+   "now": 119.55,
+   "since": 0.0
   },
   "DAL": {
    "price": 84.5,
    "stop": 78.16,
    "sma50": 82.49,
    "time": "5pm",
-   "now": 84.34,
-   "since": -0.19
+   "now": 84.5,
+   "since": 0.0
   },
   "CRL": {
    "price": 336.13,
    "stop": 305.11,
    "sma50": 318.52,
    "time": "5pm",
-   "now": 338.26,
-   "since": 0.63
+   "now": 336.13,
+   "since": 0.0
   },
   "SIRI": {
    "price": 32.15,
    "stop": 30.3,
    "sma50": 28.42,
    "time": "5pm",
-   "now": 31.68,
-   "since": -1.46
+   "now": 32.15,
+   "since": 0.0
   },
   "DGX": {
    "price": 265.61,
    "stop": 254.73,
    "sma50": 244.35,
    "time": "5pm",
-   "now": 263.12,
-   "since": -0.94
+   "now": 265.61,
+   "since": 0.0
+  },
+  "ARMK": {
+   "price": 56.83,
+   "stop": 52.79,
+   "sma50": 54.93,
+   "time": "9pm",
+   "now": 56.83,
+   "since": 0.0
   }
  },
  "cancelled": [
