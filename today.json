@@ -1,73 +1,87 @@
 {
- "date": "2026-11-24",
+ "date": "2026-11-25",
  "buys": {
-  "KRYS": {
-   "price": 344.42,
-   "stop": 321.09,
-   "sma50": 322.27,
-   "time": "5pm",
-   "now": 344.42,
+  "ED": {
+   "price": 119.55,
+   "stop": 114.8,
+   "sma50": 111.12,
+   "time": "morning",
+   "now": 119.55,
+   "since": 0.0
+  },
+  "KIM": {
+   "price": 25.79,
+   "stop": 24.87,
+   "sma50": 23.67,
+   "time": "morning",
+   "now": 25.79,
    "since": 0.0
   },
   "AIZ": {
    "price": 322.64,
    "stop": 309.81,
    "sma50": 289.35,
-   "time": "5pm",
+   "time": "morning",
    "now": 322.64,
    "since": 0.0
   },
-  "ED": {
-   "price": 119.55,
-   "stop": 114.8,
-   "sma50": 111.12,
-   "time": "5pm",
-   "now": 119.55,
+  "ADP": {
+   "price": 310.79,
+   "stop": 297.92,
+   "sma50": 286.25,
+   "time": "morning",
+   "now": 310.79,
    "since": 0.0
   },
-  "DAL": {
-   "price": 84.5,
-   "stop": 78.16,
-   "sma50": 82.49,
-   "time": "5pm",
-   "now": 84.5,
+  "LH": {
+   "price": 376.11,
+   "stop": 360.82,
+   "sma50": 336.31,
+   "time": "morning",
+   "now": 376.11,
+   "since": 0.0
+  },
+  "KRYS": {
+   "price": 344.42,
+   "stop": 321.09,
+   "sma50": 322.27,
+   "time": "morning",
+   "now": 344.42,
    "since": 0.0
   },
   "CRL": {
    "price": 336.13,
-   "stop": 305.11,
+   "stop": 304.59,
    "sma50": 318.52,
-   "time": "5pm",
+   "time": "morning",
    "now": 336.13,
+   "since": 0.0
+  },
+  "DGX": {
+   "price": 265.61,
+   "stop": 254.74,
+   "sma50": 244.35,
+   "time": "morning",
+   "now": 265.61,
+   "since": 0.0
+  },
+  "DAL": {
+   "price": 84.5,
+   "stop": 78.15,
+   "sma50": 82.49,
+   "time": "morning",
+   "now": 84.5,
    "since": 0.0
   },
   "SIRI": {
    "price": 32.15,
    "stop": 30.3,
    "sma50": 28.42,
-   "time": "5pm",
+   "time": "morning",
    "now": 32.15,
-   "since": 0.0
-  },
-  "DGX": {
-   "price": 265.61,
-   "stop": 254.73,
-   "sma50": 244.35,
-   "time": "5pm",
-   "now": 265.61,
-   "since": 0.0
-  },
-  "ARMK": {
-   "price": 56.83,
-   "stop": 52.79,
-   "sma50": 54.93,
-   "time": "9pm",
-   "now": 56.83,
    "since": 0.0
   }
  },
- "cancelled": [
-  "KRYS"
- ],
+ "cancelled": [],
  "sell_alerts": []
 }
