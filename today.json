@@ -6,119 +6,159 @@
    "stop": 114.8,
    "sma50": 111.12,
    "time": "morning",
-   "now": 119.55,
-   "since": 0.0
+   "now": 120.37,
+   "since": 0.69
   },
   "KIM": {
    "price": 25.79,
    "stop": 24.87,
    "sma50": 23.67,
    "time": "morning",
-   "now": 25.79,
-   "since": 0.0
+   "now": 26.05,
+   "since": 1.01
   },
   "AIZ": {
    "price": 322.64,
    "stop": 309.81,
    "sma50": 289.35,
    "time": "morning",
-   "now": 322.64,
-   "since": 0.0
+   "now": 325.73,
+   "since": 0.96
   },
   "ADP": {
    "price": 310.79,
    "stop": 297.92,
    "sma50": 286.25,
    "time": "morning",
-   "now": 310.79,
-   "since": 0.0
+   "now": 316.72,
+   "since": 1.91
   },
   "LH": {
    "price": 376.11,
    "stop": 360.82,
    "sma50": 336.31,
    "time": "morning",
-   "now": 376.11,
-   "since": 0.0
+   "now": 368.95,
+   "since": -1.9
   },
   "KRYS": {
    "price": 344.42,
    "stop": 321.09,
    "sma50": 322.27,
    "time": "morning",
-   "now": 344.42,
-   "since": 0.0
+   "now": 345.27,
+   "since": 0.25
   },
   "CRL": {
    "price": 336.13,
    "stop": 304.59,
    "sma50": 318.52,
    "time": "morning",
-   "now": 336.13,
-   "since": 0.0
+   "now": 332.08,
+   "since": -1.2
   },
   "DGX": {
    "price": 265.61,
    "stop": 254.74,
    "sma50": 244.35,
    "time": "morning",
-   "now": 265.61,
-   "since": 0.0
+   "now": 265.64,
+   "since": 0.01
   },
   "DAL": {
    "price": 84.5,
    "stop": 78.15,
    "sma50": 82.49,
    "time": "morning",
-   "now": 84.5,
-   "since": 0.0
+   "now": 82.95,
+   "since": -1.83
   },
   "SIRI": {
    "price": 32.15,
    "stop": 30.3,
    "sma50": 28.42,
    "time": "morning",
-   "now": 32.15,
-   "since": 0.0
+   "now": 32.51,
+   "since": 1.12
   },
   "LIN": {
    "price": 524.61,
    "stop": 505.02,
    "sma50": 498.05,
    "time": "5pm",
-   "now": 516.83,
-   "since": -1.48
+   "now": 524.61,
+   "since": 0.0
   },
   "SN": {
    "price": 232.5,
    "stop": 212.57,
    "sma50": 199.22,
    "time": "5pm",
-   "now": 228.93,
-   "since": -1.54
+   "now": 232.5,
+   "since": 0.0
   },
   "CHD": {
    "price": 113.31,
    "stop": 108.5,
    "sma50": 103.83,
    "time": "5pm",
-   "now": 112.32,
-   "since": -0.87
+   "now": 113.31,
+   "since": 0.0
   },
   "WRB": {
    "price": 79.34,
    "stop": 76.26,
    "sma50": 73.32,
    "time": "5pm",
-   "now": 78.72,
-   "since": -0.78
+   "now": 79.34,
+   "since": 0.0
   },
   "ANF": {
    "price": 168.1,
    "stop": 147.92,
    "sma50": 148.44,
    "time": "7pm",
-   "now": 168.1,
+   "now": 176.96,
+   "since": 5.27
+  },
+  "COST": {
+   "price": 1086.81,
+   "stop": 1050.95,
+   "sma50": 971.06,
+   "time": "8pm",
+   "now": 1086.81,
+   "since": 0.0
+  },
+  "MDLZ": {
+   "price": 67.81,
+   "stop": 65.11,
+   "sma50": 63.19,
+   "time": "8pm",
+   "now": 67.81,
+   "since": 0.0
+  },
+  "EXR": {
+   "price": 161.39,
+   "stop": 155.58,
+   "sma50": 144.87,
+   "time": "8pm",
+   "now": 161.39,
+   "since": 0.0
+  },
+  "CAH": {
+   "price": 282.91,
+   "stop": 271.24,
+   "sma50": 250.54,
+   "time": "8pm",
+   "now": 282.91,
+   "since": 0.0
+  },
+  "TRV": {
+   "price": 406.86,
+   "stop": 389.72,
+   "sma50": 384.93,
+   "time": "8pm",
+   "now": 406.86,
    "since": 0.0
   }
  },
