@@ -505,6 +505,17 @@
    "last_checked": "2026-11-25",
    "now": 355.58,
    "tier": "high"
+  },
+  {
+   "ticker": "PPG",
+   "kind": "midday",
+   "entry_date": "2026-11-25",
+   "entry": 124.61,
+   "stop": 118.14,
+   "peak": 124.61,
+   "last_checked": "2026-11-25",
+   "now": 124.61,
+   "tier": "high"
   }
  ],
  "closed": [
@@ -1470,7 +1481,7 @@
   }
  ],
  "summary": {
-  "open": 46,
+  "open": 47,
   "closed": 64,
   "win_rate": 1.6,
   "avg_ret": -4.38,
