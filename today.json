@@ -6,111 +6,119 @@
    "stop": 114.8,
    "sma50": 111.12,
    "time": "morning",
-   "now": 120.37,
-   "since": 0.69
+   "now": 119.55,
+   "since": 0.0
   },
   "KIM": {
    "price": 25.79,
    "stop": 24.87,
    "sma50": 23.67,
    "time": "morning",
-   "now": 26.05,
-   "since": 1.01
+   "now": 25.79,
+   "since": 0.0
   },
   "AIZ": {
    "price": 322.64,
    "stop": 309.81,
    "sma50": 289.35,
    "time": "morning",
-   "now": 325.73,
-   "since": 0.96
+   "now": 322.64,
+   "since": 0.0
   },
   "ADP": {
    "price": 310.79,
    "stop": 297.92,
    "sma50": 286.25,
    "time": "morning",
-   "now": 316.72,
-   "since": 1.91
+   "now": 310.79,
+   "since": 0.0
   },
   "LH": {
    "price": 376.11,
    "stop": 360.82,
    "sma50": 336.31,
    "time": "morning",
-   "now": 368.95,
-   "since": -1.9
+   "now": 376.11,
+   "since": 0.0
   },
   "KRYS": {
    "price": 344.42,
    "stop": 321.09,
    "sma50": 322.27,
    "time": "morning",
-   "now": 345.27,
-   "since": 0.25
+   "now": 344.42,
+   "since": 0.0
   },
   "CRL": {
    "price": 336.13,
    "stop": 304.59,
    "sma50": 318.52,
    "time": "morning",
-   "now": 332.08,
-   "since": -1.2
+   "now": 336.13,
+   "since": 0.0
   },
   "DGX": {
    "price": 265.61,
    "stop": 254.74,
    "sma50": 244.35,
    "time": "morning",
-   "now": 265.64,
-   "since": 0.01
+   "now": 265.61,
+   "since": 0.0
   },
   "DAL": {
    "price": 84.5,
    "stop": 78.15,
    "sma50": 82.49,
    "time": "morning",
-   "now": 82.95,
-   "since": -1.83
+   "now": 84.5,
+   "since": 0.0
   },
   "SIRI": {
    "price": 32.15,
    "stop": 30.3,
    "sma50": 28.42,
    "time": "morning",
-   "now": 32.51,
-   "since": 1.12
+   "now": 32.15,
+   "since": 0.0
   },
   "LIN": {
    "price": 524.61,
    "stop": 505.02,
    "sma50": 498.05,
    "time": "5pm",
-   "now": 524.61,
-   "since": 0.0
+   "now": 516.83,
+   "since": -1.48
   },
   "SN": {
    "price": 232.5,
    "stop": 212.57,
    "sma50": 199.22,
    "time": "5pm",
-   "now": 232.5,
-   "since": 0.0
+   "now": 228.93,
+   "since": -1.54
   },
   "CHD": {
    "price": 113.31,
    "stop": 108.5,
    "sma50": 103.83,
    "time": "5pm",
-   "now": 113.31,
-   "since": 0.0
+   "now": 112.32,
+   "since": -0.87
   },
   "WRB": {
    "price": 79.34,
    "stop": 76.26,
    "sma50": 73.32,
    "time": "5pm",
-   "now": 79.34,
+   "now": 78.72,
+   "since": -0.78
+  },
+  "ANF": {
+   "price": 168.1,
+   "stop": 147.92,
+   "sma50": 148.44,
+   "time": "7pm",
+   "now": 168.1,
    "since": 0.0
   }
  },
