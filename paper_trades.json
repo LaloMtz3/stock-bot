@@ -516,6 +516,50 @@
    "last_checked": "2026-11-25",
    "now": 124.61,
    "tier": "high"
+  },
+  {
+   "ticker": "CUBE",
+   "kind": "midday",
+   "entry_date": "2026-11-25",
+   "entry": 45.47,
+   "stop": 43.9,
+   "peak": 45.47,
+   "last_checked": "2026-11-25",
+   "now": 45.47,
+   "tier": "high"
+  },
+  {
+   "ticker": "CTAS",
+   "kind": "midday",
+   "entry_date": "2026-11-25",
+   "entry": 227.65,
+   "stop": 218.14,
+   "peak": 227.65,
+   "last_checked": "2026-11-25",
+   "now": 227.65,
+   "tier": "high"
+  },
+  {
+   "ticker": "RSG",
+   "kind": "midday",
+   "entry_date": "2026-11-25",
+   "entry": 254.16,
+   "stop": 245.15,
+   "peak": 254.16,
+   "last_checked": "2026-11-25",
+   "now": 254.16,
+   "tier": "high"
+  },
+  {
+   "ticker": "VLY",
+   "kind": "midday",
+   "entry_date": "2026-11-25",
+   "entry": 14.18,
+   "stop": 13.52,
+   "peak": 14.18,
+   "last_checked": "2026-11-25",
+   "now": 14.18,
+   "tier": "high"
   }
  ],
  "closed": [
@@ -1481,7 +1525,7 @@
   }
  ],
  "summary": {
-  "open": 47,
+  "open": 51,
   "closed": 64,
   "win_rate": 1.6,
   "avg_ret": -4.38,

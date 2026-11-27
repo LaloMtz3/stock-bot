@@ -128,6 +128,62 @@
    "time": "5pm",
    "now": 124.61,
    "since": 0.0
+  },
+  "CUBE": {
+   "price": 45.47,
+   "stop": 43.9,
+   "sma50": 40.83,
+   "time": "7pm",
+   "now": 45.47,
+   "since": 0.0
+  },
+  "OGE": {
+   "price": 51.39,
+   "stop": 49.93,
+   "sma50": 48.08,
+   "time": "7pm",
+   "now": 51.39,
+   "since": 0.0
+  },
+  "EVRG": {
+   "price": 87.77,
+   "stop": 85.17,
+   "sma50": 82.83,
+   "time": "7pm",
+   "now": 87.77,
+   "since": 0.0
+  },
+  "VRSN": {
+   "price": 319.47,
+   "stop": 304.1,
+   "sma50": 302.49,
+   "time": "7pm",
+   "now": 319.47,
+   "since": 0.0
+  },
+  "CTAS": {
+   "price": 227.65,
+   "stop": 218.14,
+   "sma50": 212.23,
+   "time": "7pm",
+   "now": 227.65,
+   "since": 0.0
+  },
+  "RSG": {
+   "price": 254.16,
+   "stop": 245.15,
+   "sma50": 231.99,
+   "time": "7pm",
+   "now": 254.16,
+   "since": 0.0
+  },
+  "VLY": {
+   "price": 14.18,
+   "stop": 13.52,
+   "sma50": 13.5,
+   "time": "7pm",
+   "now": 14.18,
+   "since": 0.0
   }
  },
  "cancelled": [],
