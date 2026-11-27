@@ -6,79 +6,183 @@
    "stop": 25.19,
    "sma50": 23.74,
    "time": "morning",
-   "now": 26.05,
-   "since": 0.0
+   "now": 26.03,
+   "since": -0.08
   },
   "LIN": {
    "price": 524.61,
    "stop": 505.02,
    "sma50": 498.05,
    "time": "morning",
-   "now": 524.61,
-   "since": 0.0
+   "now": 532.61,
+   "since": 1.52
   },
   "PSA": {
    "price": 337.98,
    "stop": 325.16,
    "sma50": 308.9,
    "time": "morning",
-   "now": 337.98,
-   "since": 0.0
+   "now": 338.2,
+   "since": 0.07
   },
   "SN": {
    "price": 232.5,
    "stop": 212.57,
    "sma50": 199.22,
    "time": "morning",
-   "now": 232.5,
-   "since": 0.0
+   "now": 236.98,
+   "since": 1.93
   },
   "ED": {
    "price": 120.37,
    "stop": 115.72,
    "sma50": 111.43,
    "time": "morning",
-   "now": 120.37,
-   "since": 0.0
+   "now": 120.18,
+   "since": -0.16
   },
   "CHD": {
    "price": 113.31,
    "stop": 108.5,
    "sma50": 103.83,
    "time": "morning",
-   "now": 113.31,
-   "since": 0.0
+   "now": 112.62,
+   "since": -0.61
   },
   "ANF": {
    "price": 176.96,
    "stop": 157.1,
    "sma50": 149.19,
    "time": "morning",
-   "now": 176.96,
-   "since": 0.0
+   "now": 184.43,
+   "since": 4.22
   },
   "MDLZ": {
    "price": 67.81,
    "stop": 65.11,
    "sma50": 63.19,
    "time": "morning",
-   "now": 67.81,
-   "since": 0.0
+   "now": 67.77,
+   "since": -0.06
   },
   "EXR": {
    "price": 161.39,
    "stop": 155.58,
    "sma50": 144.87,
    "time": "morning",
-   "now": 161.39,
-   "since": 0.0
+   "now": 161.78,
+   "since": 0.24
   },
   "WRB": {
    "price": 79.34,
    "stop": 76.26,
    "sma50": 73.32,
    "time": "morning",
-   "now": 79.34,
+   "now": 79.31,
+   "since": -0.04
+  },
+  "OGE": {
+   "price": 51.16,
+   "stop": 49.78,
+   "sma50": 48.18,
+   "time": "5pm",
+   "now": 51.16,
+   "since": 0.0
+  },
+  "EVRG": {
+   "price": 87.64,
+   "stop": 85.22,
+   "sma50": 82.97,
+   "time": "5pm",
+   "now": 87.64,
+   "since": 0.0
+  },
+  "HST": {
+   "price": 25.07,
+   "stop": 23.85,
+   "sma50": 24.06,
+   "time": "5pm",
+   "now": 25.07,
+   "since": 0.0
+  },
+  "FAST": {
+   "price": 53.41,
+   "stop": 50.79,
+   "sma50": 51.81,
+   "time": "5pm",
+   "now": 53.41,
+   "since": 0.0
+  },
+  "AXTA": {
+   "price": 36.7,
+   "stop": 34.78,
+   "sma50": 34.35,
+   "time": "5pm",
+   "now": 36.7,
+   "since": 0.0
+  },
+  "UTHR": {
+   "price": 597.72,
+   "stop": 563.02,
+   "sma50": 556.68,
+   "time": "5pm",
+   "now": 597.72,
+   "since": 0.0
+  },
+  "LH": {
+   "price": 370.42,
+   "stop": 356.97,
+   "sma50": 338.18,
+   "time": "5pm",
+   "now": 370.42,
+   "since": 0.0
+  },
+  "MO": {
+   "price": 76.89,
+   "stop": 73.61,
+   "sma50": 73.41,
+   "time": "5pm",
+   "now": 76.89,
+   "since": 0.0
+  },
+  "CAH": {
+   "price": 282.86,
+   "stop": 272.15,
+   "sma50": 251.68,
+   "time": "5pm",
+   "now": 282.86,
+   "since": 0.0
+  },
+  "AIG": {
+   "price": 82.55,
+   "stop": 79.39,
+   "sma50": 79.03,
+   "time": "5pm",
+   "now": 82.55,
+   "since": 0.0
+  },
+  "HLT": {
+   "price": 369.94,
+   "stop": 354.28,
+   "sma50": 345.82,
+   "time": "5pm",
+   "now": 369.94,
+   "since": 0.0
+  },
+  "NSC": {
+   "price": 327.4,
+   "stop": 312.0,
+   "sma50": 322.96,
+   "time": "5pm",
+   "now": 327.4,
+   "since": 0.0
+  },
+  "JAZZ": {
+   "price": 246.25,
+   "stop": 229.75,
+   "sma50": 228.59,
+   "time": "5pm",
+   "now": 246.25,
    "since": 0.0
   }
  },
