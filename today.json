@@ -1,14 +1,6 @@
 {
- "date": "2026-11-26",
+ "date": "2026-11-27",
  "buys": {
-  "LIN": {
-   "price": 524.61,
-   "stop": 505.02,
-   "sma50": 498.05,
-   "time": "morning",
-   "now": 524.61,
-   "since": 0.0
-  },
   "KIM": {
    "price": 26.05,
    "stop": 25.19,
@@ -17,36 +9,12 @@
    "now": 26.05,
    "since": 0.0
   },
-  "APD": {
-   "price": 314.26,
-   "stop": 300.72,
-   "sma50": 297.54,
+  "LIN": {
+   "price": 524.61,
+   "stop": 505.02,
+   "sma50": 498.05,
    "time": "morning",
-   "now": 314.26,
-   "since": 0.0
-  },
-  "MDLZ": {
-   "price": 67.81,
-   "stop": 65.11,
-   "sma50": 63.19,
-   "time": "morning",
-   "now": 67.81,
-   "since": 0.0
-  },
-  "CUZ": {
-   "price": 30.34,
-   "stop": 28.97,
-   "sma50": 28.56,
-   "time": "morning",
-   "now": 30.34,
-   "since": 0.0
-  },
-  "MO": {
-   "price": 76.28,
-   "stop": 72.98,
-   "sma50": 73.27,
-   "time": "morning",
-   "now": 76.28,
+   "now": 524.61,
    "since": 0.0
   },
   "PSA": {
@@ -57,12 +25,12 @@
    "now": 337.98,
    "since": 0.0
   },
-  "AAPL": {
-   "price": 355.58,
-   "stop": 339.53,
-   "sma50": 342.84,
+  "SN": {
+   "price": 232.5,
+   "stop": 212.57,
+   "sma50": 199.22,
    "time": "morning",
-   "now": 355.58,
+   "now": 232.5,
    "since": 0.0
   },
   "ED": {
@@ -73,6 +41,30 @@
    "now": 120.37,
    "since": 0.0
   },
+  "CHD": {
+   "price": 113.31,
+   "stop": 108.5,
+   "sma50": 103.83,
+   "time": "morning",
+   "now": 113.31,
+   "since": 0.0
+  },
+  "ANF": {
+   "price": 176.96,
+   "stop": 157.1,
+   "sma50": 149.19,
+   "time": "morning",
+   "now": 176.96,
+   "since": 0.0
+  },
+  "MDLZ": {
+   "price": 67.81,
+   "stop": 65.11,
+   "sma50": 63.19,
+   "time": "morning",
+   "now": 67.81,
+   "since": 0.0
+  },
   "EXR": {
    "price": 161.39,
    "stop": 155.58,
@@ -81,108 +73,12 @@
    "now": 161.39,
    "since": 0.0
   },
-  "CHD": {
-   "price": 113.31,
-   "stop": 108.5,
-   "sma50": 103.83,
-   "time": "5pm",
-   "now": 113.31,
-   "since": 0.0
-  },
-  "SN": {
-   "price": 232.5,
-   "stop": 212.57,
-   "sma50": 199.22,
-   "time": "5pm",
-   "now": 232.5,
-   "since": 0.0
-  },
-  "DGX": {
-   "price": 265.64,
-   "stop": 255.25,
-   "sma50": 244.74,
-   "time": "5pm",
-   "now": 265.64,
-   "since": 0.0
-  },
-  "ANF": {
-   "price": 176.96,
-   "stop": 157.1,
-   "sma50": 149.19,
-   "time": "5pm",
-   "now": 176.96,
-   "since": 0.0
-  },
-  "ADP": {
-   "price": 316.72,
-   "stop": 303.65,
-   "sma50": 287.12,
-   "time": "5pm",
-   "now": 316.72,
-   "since": 0.0
-  },
-  "PPG": {
-   "price": 124.61,
-   "stop": 118.14,
-   "sma50": 112.78,
-   "time": "5pm",
-   "now": 124.61,
-   "since": 0.0
-  },
-  "CUBE": {
-   "price": 45.47,
-   "stop": 43.9,
-   "sma50": 40.83,
-   "time": "7pm",
-   "now": 45.47,
-   "since": 0.0
-  },
-  "OGE": {
-   "price": 51.39,
-   "stop": 49.93,
-   "sma50": 48.08,
-   "time": "7pm",
-   "now": 51.39,
-   "since": 0.0
-  },
-  "EVRG": {
-   "price": 87.77,
-   "stop": 85.17,
-   "sma50": 82.83,
-   "time": "7pm",
-   "now": 87.77,
-   "since": 0.0
-  },
-  "VRSN": {
-   "price": 319.47,
-   "stop": 304.1,
-   "sma50": 302.49,
-   "time": "7pm",
-   "now": 319.47,
-   "since": 0.0
-  },
-  "CTAS": {
-   "price": 227.65,
-   "stop": 218.14,
-   "sma50": 212.23,
-   "time": "7pm",
-   "now": 227.65,
-   "since": 0.0
-  },
-  "RSG": {
-   "price": 254.16,
-   "stop": 245.15,
-   "sma50": 231.99,
-   "time": "7pm",
-   "now": 254.16,
-   "since": 0.0
-  },
-  "VLY": {
-   "price": 14.18,
-   "stop": 13.52,
-   "sma50": 13.5,
-   "time": "7pm",
-   "now": 14.18,
+  "WRB": {
+   "price": 79.34,
+   "stop": 76.26,
+   "sma50": 73.32,
+   "time": "morning",
+   "now": 79.34,
    "since": 0.0
   }
  },
