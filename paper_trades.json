@@ -637,6 +637,61 @@
    "last_checked": "2026-11-27",
    "now": 327.4,
    "tier": "high"
+  },
+  {
+   "ticker": "SWKS",
+   "kind": "midday",
+   "entry_date": "2026-11-27",
+   "entry": 86.66,
+   "stop": 77.06,
+   "peak": 86.66,
+   "last_checked": "2026-11-27",
+   "now": 86.66,
+   "tier": "high"
+  },
+  {
+   "ticker": "GWW",
+   "kind": "midday",
+   "entry_date": "2026-11-27",
+   "entry": 1431.87,
+   "stop": 1363.57,
+   "peak": 1431.87,
+   "last_checked": "2026-11-27",
+   "now": 1431.87,
+   "tier": "high"
+  },
+  {
+   "ticker": "BTSG",
+   "kind": "midday",
+   "entry_date": "2026-11-27",
+   "entry": 64.92,
+   "stop": 59.54,
+   "peak": 64.92,
+   "last_checked": "2026-11-27",
+   "now": 64.92,
+   "tier": "high"
+  },
+  {
+   "ticker": "JHX",
+   "kind": "midday",
+   "entry_date": "2026-11-27",
+   "entry": 29.04,
+   "stop": 26.7,
+   "peak": 29.04,
+   "last_checked": "2026-11-27",
+   "now": 29.04,
+   "tier": "high"
+  },
+  {
+   "ticker": "QLYS",
+   "kind": "midday",
+   "entry_date": "2026-11-27",
+   "entry": 206.33,
+   "stop": 174.34,
+   "peak": 206.33,
+   "last_checked": "2026-11-27",
+   "now": 206.33,
+   "tier": "high"
   }
  ],
  "closed": [
@@ -1602,7 +1657,7 @@
   }
  ],
  "summary": {
-  "open": 58,
+  "open": 63,
   "closed": 64,
   "win_rate": 1.6,
   "avg_ret": -4.38,

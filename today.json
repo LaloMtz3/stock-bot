@@ -184,6 +184,78 @@
    "time": "5pm",
    "now": 246.25,
    "since": 0.0
+  },
+  "CRL": {
+   "price": 337.39,
+   "stop": 308.61,
+   "sma50": 320.81,
+   "time": "6pm",
+   "now": 337.39,
+   "since": 0.0
+  },
+  "SWKS": {
+   "price": 86.66,
+   "stop": 77.06,
+   "sma50": 83.73,
+   "time": "6pm",
+   "now": 86.66,
+   "since": 0.0
+  },
+  "GWW": {
+   "price": 1431.87,
+   "stop": 1363.57,
+   "sma50": 1354.34,
+   "time": "6pm",
+   "now": 1431.87,
+   "since": 0.0
+  },
+  "CUZ": {
+   "price": 30.41,
+   "stop": 29.08,
+   "sma50": 28.61,
+   "time": "6pm",
+   "now": 30.41,
+   "since": 0.0
+  },
+  "APD": {
+   "price": 319.09,
+   "stop": 306.05,
+   "sma50": 298.24,
+   "time": "6pm",
+   "now": 319.09,
+   "since": 0.0
+  },
+  "BTSG": {
+   "price": 64.92,
+   "stop": 59.54,
+   "sma50": 63.1,
+   "time": "6pm",
+   "now": 64.92,
+   "since": 0.0
+  },
+  "JHX": {
+   "price": 29.04,
+   "stop": 26.7,
+   "sma50": 26.64,
+   "time": "6pm",
+   "now": 29.04,
+   "since": 0.0
+  },
+  "QLYS": {
+   "price": 206.33,
+   "stop": 174.34,
+   "sma50": 194.61,
+   "time": "6pm",
+   "now": 206.33,
+   "since": 0.0
+  },
+  "EPR": {
+   "price": 60.53,
+   "stop": 57.91,
+   "sma50": 57.26,
+   "time": "6pm",
+   "now": 60.53,
+   "since": 0.0
   }
  },
  "cancelled": [],
